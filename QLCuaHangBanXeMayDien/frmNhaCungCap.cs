@@ -16,7 +16,7 @@ namespace QLCuaHangBanXeMayDien
         {
             InitializeComponent();
             //tôi là hùng
-            //lần cuối nữa thôirêtrtểtrtrêtr45ẻ54ty34
+            //lần cuối nữa 3453453t34
         }
 
     }
