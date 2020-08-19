@@ -17,6 +17,7 @@ namespace QLCuaHangBanXeMayDien
         {
             InitializeComponent();
             LoadDataNV();
+            //tôi là tiến
         }
         #region Phương thức của form
         void LoadDataNV()
