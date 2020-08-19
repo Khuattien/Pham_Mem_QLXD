@@ -1,0 +1,69 @@
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.exe.config
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.exe
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.pdb
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csprojAssemblyReference.cache
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmLogin.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.Properties.Resources.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.GenerateResource.cache
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.CoreCompileInputs.cache
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.exe
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.pdb
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmMainController.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmHangHoa.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmKhachHang.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhanVien.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhaCungCap.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhapHang.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmBanHang.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmDoanhThu.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmKhoHang.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmInsertMatHang.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmInforMatHang.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmUpdateHangHoa.resources
+H:\BaiTapLon\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmDSChiTietHangHoa.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.exe.config
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.exe
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.pdb
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmBanHang.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmDoanhThu.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmDSChiTietHangHoa.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmHangHoa.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmInforMatHang.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmInsertMatHang.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmKhachHang.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmKhoHang.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmLogin.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmMainController.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhaCungCap.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhanVien.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhapHang.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmUpdateHangHoa.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.exe
+C:\Users\Admin\Documents\GitHub\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.pdb
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.exe.config
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.exe
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\bin\Debug\QLCuaHangBanXeMayDien.pdb
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csprojAssemblyReference.cache
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmBanHang.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmDoanhThu.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmDSChiTietHangHoa.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmHangHoa.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmInforMatHang.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmInsertMatHang.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmKhachHang.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmKhoHang.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmLogin.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmMainController.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhaCungCap.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhanVien.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmNhapHang.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmUpdateHangHoa.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.Properties.Resources.resources
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.GenerateResource.cache
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.CoreCompileInputs.cache
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.exe
+D:\C#\Bài tập lớn môn lập trình window kỳ phụ 2020\Quan_Ly_Xe_Dien\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.pdb

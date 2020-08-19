@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{690676F4-37C9-4D12-8339-82E14CB909AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLCuaHangBanXeMayDien</RootNamespace>
+    <AssemblyName>QLCuaHangBanXeMayDien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSChiTietHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSChiTietHangHoa.Designer.cs">
+      <DependentUpon>frmDSChiTietHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHangHoa.Designer.cs">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInforMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInforMatHang.Designer.cs">
+      <DependentUpon>frmInforMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertMatHang.Designer.cs">
+      <DependentUpon>frmInsertMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoHang.Designer.cs">
+      <DependentUpon>frmKhoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainController.Designer.cs">
+      <DependentUpon>frmMainController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhaCungCap.Designer.cs">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapHang.Designer.cs">
+      <DependentUpon>frmNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateHangHoa.Designer.cs">
+      <DependentUpon>frmUpdateHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLy_BUS\KhachHangBUS.cs" />
+    <Compile Include="QuanLy_BUS\MatHangBUS.cs" />
+    <Compile Include="QuanLy_BUS\NhanVienBUS.cs" />
+    <Compile Include="QuanLy_DAO\DataProvider.cs" />
+    <Compile Include="QuanLy_DTO\AccountLogin.cs" />
+    <Compile Include="QuanLy_DTO\ChiTietPhieuNhap.cs" />
+    <Compile Include="QuanLy_DTO\ChiTietPhieuXuat.cs" />
+    <Compile Include="QuanLy_DTO\KhachHang.cs" />
+    <Compile Include="QuanLy_DTO\MatHang.cs" />
+    <Compile Include="QuanLy_DTO\NhaCungCap.cs" />
+    <Compile Include="QuanLy_DTO\NhanVien.cs" />
+    <Compile Include="QuanLy_DTO\PhieuNhap.cs" />
+    <Compile Include="QuanLy_DTO\PhieuXuat.cs" />
+    <EmbeddedResource Include="frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDSChiTietHangHoa.resx">
+      <DependentUpon>frmDSChiTietHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHangHoa.resx">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInforMatHang.resx">
+      <DependentUpon>frmInforMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertMatHang.resx">
+      <DependentUpon>frmInsertMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoHang.resx">
+      <DependentUpon>frmKhoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainController.resx">
+      <DependentUpon>frmMainController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapHang.resx">
+      <DependentUpon>frmNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateHangHoa.resx">
+      <DependentUpon>frmUpdateHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DATABASE\DataDaiLyBanXe.sql" />
+    <None Include="Resources\icons8-search-26.png" />
+    <None Include="Resources\icons8-search-32.png" />
+    <None Include="Resources\icons8-image-gallery-32.png" />
+    <None Include="Resources\icons8-view-32 %282%29.png" />
+    <None Include="Resources\icons8-view-32.png" />
+    <None Include="Resources\icons8-delete-32 %281%29.png" />
+    <None Include="Resources\icons8-update-32.png" />
+    <None Include="Resources\icons8-question-mark-96.png" />
+    <None Include="Resources\icons8-delete-view-32.png" />
+    <None Include="Resources\icons8-edit-property-32 %281%29.png" />
+    <None Include="Resources\icons8-add-new-32 %282%29.png" />
+    <None Include="Resources\icons8-new-post-48 %281%29.png" />
+    <None Include="Resources\icons8-ringing-phone-96.png" />
+    <None Include="Resources\icons8-facebook-96.png" />
+    <None Include="Resources\AniG.png" />
+    <None Include="Resources\icons8-shutdown-96 %281%29.png" />
+    <None Include="Resources\icons8-shutdown-24.png" />
+    <None Include="Resources\icons8-password-1-24.png" />
+    <None Include="Resources\icons8-edit-profile-24.png" />
+    <None Include="Resources\icons8-user-menu-female-96.png" />
+    <None Include="Resources\icons8-warehouse-24.png" />
+    <None Include="Resources\icons8-money-bag-24.png" />
+    <None Include="Resources\icons8-add-shopping-cart-50.png" />
+    <None Include="Resources\icons8-delivered-50.png" />
+    <None Include="Resources\icons8-company-24.png" />
+    <None Include="Resources\icons8-gender-equality-24.png" />
+    <None Include="Resources\icons8-management-32.png" />
+    <None Include="Resources\icons8-scooter-30.png" />
+    <None Include="Resources\icons8-scooter-60.png" />
+    <None Include="Resources\MyLG.png" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\MyLogo.png" />
+    <None Include="Resources\icons8-male-user-100.png" />
+    <None Include="Resources\BackgroundLogin.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
