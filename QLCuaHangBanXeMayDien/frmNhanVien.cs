@@ -16,16 +16,23 @@ namespace QLCuaHangBanXeMayDien
         public frmNhanVien()
         {
             InitializeComponent();
+            stateFirst();
             LoadDataNV();
-            //tôi là tiến
+
         }
         #region Phương thức của form
         void LoadDataNV()
         {
             dtgvListNV.DataSource = NhanVienBUS.Instance.GetDataNhanVien();
-            //btnAddNV.Enabled = true;
-            //btnDeleteNV.Enabled = true;
-            //btnUpdateNV.Enabled = true;
+            
+        }
+        void stateFirst()
+        {
+            ResetText();
+            CloseProperties();
+            btnAddNV.Enabled = true;
+            btnDeleteNV.Enabled = true;
+            btnUpdateNV.Enabled = true;
             btnSaveNV.Enabled = false;
             btnCancelNV.Enabled = false;
         }
@@ -120,7 +127,6 @@ namespace QLCuaHangBanXeMayDien
             //{
             //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
-
         }
         /// <summary>
         /// sự kiện sửa thông tin khách hàng
@@ -128,10 +134,12 @@ namespace QLCuaHangBanXeMayDien
         /// <param name="sender"></param>
         /// <param name="e"></param>
 
-        private void btnUpdateNV_Click(object sender, EventArgs e)
+        private void btnUpdateNV_Click_1(object sender, EventArgs e)
         {
-            //btnAddNV.Enabled = false;
-            //btnDeleteNV.Enabled = false;
+            OpenProperties();
+            btnSaveNV.Enabled = true;
+            btnCancelNV.Enabled = true;
+            
             //try
             //{
             //    if (txbMaNV.Text == "" || txbTenNV.Text == "" || (rdbNam.Checked == false && rdbNu.Checked == false) || txbNamSinhNV.Text == "" || txbDienThoaiNV.Text == "" || txbDiaChi.Text == "" || txbChucVuNV.Text == "" || txbLuongNV.Text == "")
@@ -177,12 +185,12 @@ namespace QLCuaHangBanXeMayDien
             //}
         }
 
+
         /// <summary>
         /// sự kiện đẩy dữ liệu lên text box
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
         private void dtgvListNV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
@@ -201,6 +209,7 @@ namespace QLCuaHangBanXeMayDien
                 txbLuongNV.Text = dtgvListNV.Rows[row].Cells["Luong"].Value.ToString();
             }
         }
+
         /// <summary>
         /// sự kiện xóa 
         /// </summary>
@@ -237,7 +246,6 @@ namespace QLCuaHangBanXeMayDien
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
         private void txbNamSinhNV_TextChanged(object sender, EventArgs e)
         {
             int val;
@@ -247,6 +255,7 @@ namespace QLCuaHangBanXeMayDien
                 txbNamSinhNV.ResetText();
             }
         }
+
         /// <summary>
         /// sự kiện bắt lỗi dữ liệu txbLuongNV
         /// </summary>
@@ -261,20 +270,19 @@ namespace QLCuaHangBanXeMayDien
                 txbLuongNV.ResetText();
             }
         }
+
         /// <summary>
         /// sự kiện mở các nút chọn
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
         private void btnSaveNV_Click(object sender, EventArgs e)
         {
             //btnUpdateNV.Enabled = true;
             //btnDeleteNV.Enabled = true;
             //btnAddNV.Enabled = true;
-
-
         }
+
         /// <summary>
         /// sự kiện hủy các nút chọn
         /// </summary>
@@ -282,10 +290,7 @@ namespace QLCuaHangBanXeMayDien
         /// <param name="e"></param>
         private void btnCancelNV_Click(object sender, EventArgs e)
         {
-            CloseProperties();
-            //btnUpdateNV.Enabled = false;
-            //btnDeleteNV.Enabled = false;
-            //btnAddNV.Enabled = false;
+            stateFirst();
         }
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
@@ -311,28 +316,28 @@ namespace QLCuaHangBanXeMayDien
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         /// <summary>
         ///  Chỉnh sửa thanh tìm kiếm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txbTimKiemNV_Click_1(object sender, EventArgs e)
+        private void txbTimKiemNV_Click(object sender, EventArgs e)
         {
             txbTimKiemNV.ResetText();
         }
-
         private void txbTimKiemNV_Leave(object sender, EventArgs e)
         {
             if (txbTimKiemNV.Text == "")
                 txbTimKiemNV.Text = "Tìm kiếm nhân viên";
         }
-
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void BtnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         #endregion
+
+        
     }
 
 }
