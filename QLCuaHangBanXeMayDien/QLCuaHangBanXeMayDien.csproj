@@ -134,6 +134,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLy_BUS\KhachHangBUS.cs" />
     <Compile Include="QuanLy_BUS\MatHangBUS.cs" />
+    <Compile Include="QuanLy_BUS\NhaCungCapBUS.cs" />
     <Compile Include="QuanLy_BUS\NhanVienBUS.cs" />
     <Compile Include="QuanLy_DAO\DataProvider.cs" />
     <Compile Include="QuanLy_DTO\AccountLogin.cs" />

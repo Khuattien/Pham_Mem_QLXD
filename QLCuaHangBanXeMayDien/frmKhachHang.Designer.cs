@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.panelTittleKhachHang = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbTittleKhachHang = new System.Windows.Forms.Label();
             this.grbNhanVien = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSeacrh = new System.Windows.Forms.Button();
             this.txbTimKiemKH = new System.Windows.Forms.TextBox();
             this.txbDiaChiKH = new System.Windows.Forms.TextBox();
@@ -57,8 +59,6 @@
             this.btnDeleteKH = new System.Windows.Forms.Button();
             this.btnUpdateKH = new System.Windows.Forms.Button();
             this.btnAddKH = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelTittleKhachHang.SuspendLayout();
             this.grbNhanVien.SuspendLayout();
             this.panelListKH.SuspendLayout();
@@ -79,6 +79,15 @@
             this.panelTittleKhachHang.Name = "panelTittleKhachHang";
             this.panelTittleKhachHang.Size = new System.Drawing.Size(822, 61);
             this.panelTittleKhachHang.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(389, 59);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // lbTittleKhachHang
             // 
@@ -116,6 +125,15 @@
             this.grbNhanVien.TabIndex = 3;
             this.grbNhanVien.TabStop = false;
             this.grbNhanVien.Text = "Thông tin khách hàng";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(588, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Tìm mã khách hàng";
             // 
             // btnSeacrh
             // 
@@ -280,6 +298,7 @@
             this.dtgvKhachHang.Location = new System.Drawing.Point(0, 266);
             this.dtgvKhachHang.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvKhachHang.Name = "dtgvKhachHang";
+            this.dtgvKhachHang.ReadOnly = true;
             this.dtgvKhachHang.RowHeadersWidth = 51;
             this.dtgvKhachHang.RowTemplate.Height = 24;
             this.dtgvKhachHang.Size = new System.Drawing.Size(822, 318);
@@ -291,6 +310,7 @@
             this.MaKhachHang.DataPropertyName = "MaKhachHang";
             this.MaKhachHang.HeaderText = "Mã Khách Hàng";
             this.MaKhachHang.Name = "MaKhachHang";
+            this.MaKhachHang.ReadOnly = true;
             this.MaKhachHang.Width = 120;
             // 
             // TenKhachHang
@@ -298,6 +318,7 @@
             this.TenKhachHang.DataPropertyName = "TenKhachHang";
             this.TenKhachHang.HeaderText = "Tên Khách Hàng";
             this.TenKhachHang.Name = "TenKhachHang";
+            this.TenKhachHang.ReadOnly = true;
             this.TenKhachHang.Width = 150;
             // 
             // DienThoai
@@ -305,6 +326,7 @@
             this.DienThoai.DataPropertyName = "DienThoai";
             this.DienThoai.HeaderText = "Điện thoại";
             this.DienThoai.Name = "DienThoai";
+            this.DienThoai.ReadOnly = true;
             this.DienThoai.Width = 120;
             // 
             // DiaChi
@@ -312,6 +334,7 @@
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa Chỉ";
             this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
             this.DiaChi.Width = 200;
             // 
             // Email
@@ -319,6 +342,7 @@
             this.Email.DataPropertyName = "Email";
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             this.Email.Width = 180;
             // 
             // panelControlNV
@@ -421,24 +445,6 @@
             this.btnAddKH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddKH.UseVisualStyleBackColor = false;
             this.btnAddKH.Click += new System.EventHandler(this.btnAddKH_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(588, 117);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Tìm mã khách hàng";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(389, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmKhachHang
             // 

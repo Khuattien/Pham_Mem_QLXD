@@ -34,6 +34,11 @@ namespace QLCuaHangBanXeMayDien
             ButtonFormLoad();
             addStatus = false;
             updateStatus = false;
+            if (txbMaKH.Text == "")
+            {
+                btnUpdateKH.Enabled = false;
+                btnDeleteKH.Enabled = false;
+            }
         }
         /// <summary>
         /// phương thức cài lại giá trị của các controll textbox
@@ -118,14 +123,12 @@ namespace QLCuaHangBanXeMayDien
         /// <param name="e"></param>
         private void dtgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            EnableTextBox(false);
-            btnUpdateKH.Enabled = true;
-            btnAddKH.Enabled = true;
-            btnDeleteKH.Enabled = true;
             int row = e.RowIndex;
             if (row >= 0)
             {
-                if(dtgvKhachHang.CurrentCell.Value.ToString() == "")
+                EnableTextBox(false);
+                ButtonFormLoad();
+                if (dtgvKhachHang.CurrentCell.Value.ToString() == "")
                 {
                     btnDeleteKH.Enabled = false;
                     btnUpdateKH.Enabled = false;
@@ -203,6 +206,7 @@ namespace QLCuaHangBanXeMayDien
             btnSaveKH.Enabled = false;
             btnSeacrh.Enabled = true;
             LoadDataKH();
+            ResetText();
         }
         /// <summary>
         /// sự kiện xóa 
