@@ -53,13 +53,6 @@
             this.panelListNV = new System.Windows.Forms.Panel();
             this.lbListNV = new System.Windows.Forms.Label();
             this.dtgvListNV = new System.Windows.Forms.DataGridView();
-            this.panelControlNV = new System.Windows.Forms.Panel();
-            this.BtnThoat = new System.Windows.Forms.Button();
-            this.btnCancelNV = new System.Windows.Forms.Button();
-            this.btnSaveNV = new System.Windows.Forms.Button();
-            this.btnDeleteNV = new System.Windows.Forms.Button();
-            this.btnUpdateNV = new System.Windows.Forms.Button();
-            this.btnAddNV = new System.Windows.Forms.Button();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +61,13 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelControlNV = new System.Windows.Forms.Panel();
+            this.BtnThoat = new System.Windows.Forms.Button();
+            this.btnCancelNV = new System.Windows.Forms.Button();
+            this.btnSaveNV = new System.Windows.Forms.Button();
+            this.btnDeleteNV = new System.Windows.Forms.Button();
+            this.btnUpdateNV = new System.Windows.Forms.Button();
+            this.btnAddNV = new System.Windows.Forms.Button();
             this.panelTittleNhanVien.SuspendLayout();
             this.grbNhanVien.SuspendLayout();
             this.grbGioiTInh.SuspendLayout();
@@ -361,6 +361,61 @@
             this.dtgvListNV.TabIndex = 17;
             this.dtgvListNV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListNV_CellClick);
             // 
+            // MaNhanVien
+            // 
+            this.MaNhanVien.DataPropertyName = "MaNhanVien";
+            this.MaNhanVien.HeaderText = "Mã nhân viên";
+            this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.Width = 120;
+            // 
+            // TenNhanVien
+            // 
+            this.TenNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenNhanVien.DataPropertyName = "TenNhanVien";
+            this.TenNhanVien.HeaderText = "Tên nhân viên";
+            this.TenNhanVien.Name = "TenNhanVien";
+            // 
+            // NamSinh
+            // 
+            this.NamSinh.DataPropertyName = "NamSinh";
+            this.NamSinh.HeaderText = "Năm sinh";
+            this.NamSinh.Name = "NamSinh";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Width = 90;
+            // 
+            // DienThoai
+            // 
+            this.DienThoai.DataPropertyName = "DienThoai";
+            this.DienThoai.HeaderText = "Số điện thoại";
+            this.DienThoai.Name = "DienThoai";
+            this.DienThoai.Width = 120;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 150;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.DataPropertyName = "ChucVu";
+            this.ChucVu.HeaderText = "Chức vụ";
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.Width = 150;
+            // 
+            // Luong
+            // 
+            this.Luong.DataPropertyName = "Luong";
+            this.Luong.HeaderText = "Lương";
+            this.Luong.Name = "Luong";
+            this.Luong.Width = 120;
+            // 
             // panelControlNV
             // 
             this.panelControlNV.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -471,61 +526,6 @@
             this.btnAddNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddNV.UseVisualStyleBackColor = false;
             this.btnAddNV.Click += new System.EventHandler(this.btnAddNV_Click);
-            // 
-            // MaNhanVien
-            // 
-            this.MaNhanVien.DataPropertyName = "MaNhanVien";
-            this.MaNhanVien.HeaderText = "Mã nhân viên";
-            this.MaNhanVien.Name = "MaNhanVien";
-            this.MaNhanVien.Width = 120;
-            // 
-            // TenNhanVien
-            // 
-            this.TenNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenNhanVien.DataPropertyName = "TenNhanVien";
-            this.TenNhanVien.HeaderText = "Tên nhân viên";
-            this.TenNhanVien.Name = "TenNhanVien";
-            // 
-            // NamSinh
-            // 
-            this.NamSinh.DataPropertyName = "NamSinh";
-            this.NamSinh.HeaderText = "Năm sinh";
-            this.NamSinh.Name = "NamSinh";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Width = 90;
-            // 
-            // DienThoai
-            // 
-            this.DienThoai.DataPropertyName = "DienThoai";
-            this.DienThoai.HeaderText = "Số điện thoại";
-            this.DienThoai.Name = "DienThoai";
-            this.DienThoai.Width = 120;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 150;
-            // 
-            // ChucVu
-            // 
-            this.ChucVu.DataPropertyName = "ChucVu";
-            this.ChucVu.HeaderText = "Chức vụ";
-            this.ChucVu.Name = "ChucVu";
-            this.ChucVu.Width = 150;
-            // 
-            // Luong
-            // 
-            this.Luong.DataPropertyName = "Luong";
-            this.Luong.HeaderText = "Lương";
-            this.Luong.Name = "Luong";
-            this.Luong.Width = 120;
             // 
             // frmNhanVien
             // 

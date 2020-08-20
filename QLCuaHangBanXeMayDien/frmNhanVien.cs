@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QLCuaHangBanXeMayDien
 {
@@ -93,8 +94,11 @@ namespace QLCuaHangBanXeMayDien
         private void btnAddNV_Click(object sender, EventArgs e)
         {
             OpenProperties();
+            ResetText();
             btnSaveNV.Enabled = true;
             btnCancelNV.Enabled = true;
+            btnDeleteNV.Enabled = false;
+            btnUpdateNV.Enabled = false;
 
             //try
             //{
@@ -139,6 +143,8 @@ namespace QLCuaHangBanXeMayDien
             OpenProperties();
             btnSaveNV.Enabled = true;
             btnCancelNV.Enabled = true;
+            btnAddNV.Enabled = false;
+            btnDeleteNV.Enabled = false;
             
             //try
             //{
@@ -278,9 +284,102 @@ namespace QLCuaHangBanXeMayDien
         /// <param name="e"></param>
         private void btnSaveNV_Click(object sender, EventArgs e)
         {
-            //btnUpdateNV.Enabled = true;
-            //btnDeleteNV.Enabled = true;
-            //btnAddNV.Enabled = true;
+            
+            if(btnUpdateNV.Enabled==false)
+            {
+                try
+                {
+                    if (txbMaNV.Text == "" || txbTenNV.Text == "" || (rdbNam.Checked == false && rdbNu.Checked == false) || txbNamSinhNV.Text == "" || txbDienThoaiNV.Text == "" || txbDiaChi.Text == "" || txbChucVuNV.Text == "" || txbLuongNV.Text == "")
+                    {
+                        MessageBox.Show("Chưa điền đủ thông tin nhân viên");
+                    }
+                    else
+                    {
+                        string gt;
+                        if (rdbNam.Checked == true)
+                            gt = "Nam";
+                        else
+                            gt = "Nữ";
+
+                        if (NhanVienBUS.Instance.InsertNhanvien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, int.Parse(txbDienThoaiNV.Text), txbDiaChi.Text, txbChucVuNV.Text, float.Parse(txbLuongNV.Text)))
+                        {
+                            MessageBox.Show("Thêm thành công");
+                            LoadDataNV();
+                            //ResetText();
+                            stateFirst();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Có lỗi khi thêm nhân viên");
+                            ResetText();
+                        }
+                    }
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            if(btnAddNV.Enabled==false)
+            {
+                try
+                {
+                    if (txbMaNV.Text == "" || txbTenNV.Text == "" || (rdbNam.Checked == false && rdbNu.Checked == false) || txbNamSinhNV.Text == "" || txbDienThoaiNV.Text == "" || txbDiaChi.Text == "" || txbChucVuNV.Text == "" || txbLuongNV.Text == "")
+                    {
+                        MessageBox.Show("Chưa điền đủ thông tin nhân viên");
+                       
+                        if (txbMaNV.Text == "") 
+                            txbMaNV.Focus();
+                        else
+                            if (txbTenNV.Text == "") txbTenNV.Focus();
+                                else
+                                    if (rdbNam.Checked == false && rdbNu.Checked == false) 
+                                        MessageBox.Show("Chọn giới tính");
+                                    else
+                                    {
+                                        if (txbLuongNV.Text == "") txbLuongNV.Focus();
+                                        if (txbChucVuNV.Text == "") txbChucVuNV.Focus();
+                                        if (txbDiaChi.Text == "") txbDiaChi.Focus();
+                                        if (txbDienThoaiNV.Text == "") txbDienThoaiNV.Focus();
+                                        if (txbNamSinhNV.Text == "") txbNamSinhNV.Focus();
+                                    }    
+                                        
+
+
+                    }
+                    else
+                    {
+                        string gt;
+                        if (rdbNam.Checked == true)
+                            gt = "Nam";
+                        else
+                            gt = "Nữ";
+                        if (NhanVienBUS.Instance.UpdateNhanVien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, int.Parse(txbDienThoaiNV.Text), txbDiaChi.Text, txbChucVuNV.Text, float.Parse(txbLuongNV.Text)))
+                        {
+                            MessageBox.Show("Sửa thành công");
+                            LoadDataNV();
+                            //ResetText();
+                            stateFirst();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Có lỗi khi sửa thông tin nhân viên");
+                            ResetText();
+                        }
+                    }
+                    
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
         }
 
         /// <summary>
@@ -301,15 +400,15 @@ namespace QLCuaHangBanXeMayDien
                     DataTable data = NhanVienBUS.Instance.SearchNhanVien(txbTimKiemNV.Text);
                     if (data.Rows.Count == 0)
                     {
-                        MessageBox.Show("không tìm thấy", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Không tìm thấy nhân viên", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         LoadDataNV();
                     }
                     else
                         dtgvListNV.DataSource = data;
                 }
-                else
-                    LoadDataNV();
-                txbTimKiemNV.ResetText();
+                //else
+                    //LoadDataNV();
+                //txbTimKiemNV.ResetText();
             }
             catch (Exception ex)
             {
@@ -329,15 +428,14 @@ namespace QLCuaHangBanXeMayDien
         private void txbTimKiemNV_Leave(object sender, EventArgs e)
         {
             if (txbTimKiemNV.Text == "")
-                txbTimKiemNV.Text = "Tìm kiếm nhân viên";
+                txbTimKiemNV.Text = "Nhập tên nhân viên cần tìm";
         }
         private void BtnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        #endregion
 
-        
+        #endregion
     }
 
 }

@@ -55,11 +55,6 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// <summary>
         /// phương thức sửa thông tin nhân viên
         /// </summary>
-        /// <param name="maKh"></param>
-        /// <param name="tenKh"></param>
-        /// <param name="diaC"></param>
-        /// <param name="dienT"></param>
-        /// <param name="email"></param>
         /// <returns></returns>
 
         public bool UpdateNhanVien(string manv, string tennv, int namsinh, string gt, int dt, string diachi, string chucvu, float luong)
@@ -88,7 +83,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// <returns></returns>
         public DataTable SearchNhanVien(string text)
         {
-            string query = "SELECT * FROM NhanVien WHERE MaKhachHang LIKE '%" + text + "%'";
+            string query = "SELECT * FROM NhanVien WHERE TenNhanVien LIKE '%" + text + "%'";
             DataTable result = new DataTable();
             result = DataProvider.Instance.ExecuteQuery(query);
             return result;
