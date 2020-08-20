@@ -96,6 +96,9 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.Enabled = true;
             txbDonVi.Enabled = true;
             numSoLuong.Enabled = true;
+
+            txbMaHang.Text = "Nhập mã sản phẩm mới";
+            txbMaHang.Focus();
         }
         /// <summary>
         /// Cho phép sửa các thông tin của sản phẩm trừ mã của sản phẩm.
@@ -155,6 +158,8 @@ namespace QLCuaHangBanXeMayDien
             btnInsertHang.Enabled = true;
             btnUpdateHang.Enabled = false;
             btnDeleteHang.Enabled = false;
+            btnSaveHang.Enabled = false;
+            btnCancelHang.Enabled = false;
         }
         /// <summary>
         /// Phương thức gán các giá trị vào các thuộc tính của sản phẩm mới trước khi thêm.
@@ -256,10 +261,11 @@ namespace QLCuaHangBanXeMayDien
         /// </summary>
         private void BtnInsertHang_Click(object sender, EventArgs e)
         {
+            clearTextbox();
             setEnableButton2();
             setEnableTextBox2();
-            clearTextbox();
             btnInsertStatus = true;
+
         }
         /// <summary>
         /// Sự kiện chỉnh sửa thông tin của hàng hóa
@@ -367,7 +373,7 @@ namespace QLCuaHangBanXeMayDien
             int row = dtgvDanhSach.CurrentCell.RowIndex;
             int soLuong = (int)dtgvDanhSach.Rows[row].Cells["colSoLuong"].Value;
 
-            if(soLuong > 0 )
+            if (soLuong > 0)
             {
                 MessageBox.Show("Số lượng mặt hàng này vẫn còn không thể xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -417,7 +423,7 @@ namespace QLCuaHangBanXeMayDien
             if (txbSearchID.Text != "")
             {
                 DataTable data = MatHangBUS.Instance.getListMatHangByID(txbSearchID.Text);
-                if(data.Rows.Count > 0)
+                if (data.Rows.Count > 0)
                 {
                     dtgvDanhSach.DataSource = data;
                 }
@@ -430,8 +436,9 @@ namespace QLCuaHangBanXeMayDien
             else
             {
                 loadData();
-            }    
+            }
         }
         #endregion
+
     }
 }

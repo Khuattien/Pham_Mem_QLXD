@@ -13,6 +13,7 @@ namespace QLCuaHangBanXeMayDien
             InitializeComponent();
             EnableTextBox(false);
             LoadDataKH();
+            //bằng
         }
         /// <summary>
         /// biến kiểm tra trang thái enabled của phương thức thêm
