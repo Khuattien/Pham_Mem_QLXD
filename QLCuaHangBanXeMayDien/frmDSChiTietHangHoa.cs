@@ -69,6 +69,7 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.ResetText();
             txbDonVi.ResetText();
             numSoLuong.Value = 0;
+            picAMH.Image = new Bitmap(Application.StartupPath + "\\Resources\\icons8-question-mark-96.png");
         }
         /// <summary>
         /// Không cho phép sửa xóa dữ liệu trên textbox... khi chưa nhấn thêm, sửa , xóa
@@ -108,6 +109,7 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.Enabled = true;
             txbDonVi.Enabled = true;
             numSoLuong.Enabled = true;
+            txbTenHang.Focus();
         }
 
 
@@ -150,6 +152,7 @@ namespace QLCuaHangBanXeMayDien
         /// </summary>
         private void setEnableButton4()
         {
+            btnInsertHang.Enabled = true;
             btnUpdateHang.Enabled = false;
             btnDeleteHang.Enabled = false;
         }
@@ -263,8 +266,15 @@ namespace QLCuaHangBanXeMayDien
         /// </summary>
         private void btnUpdateHang_Click(object sender, EventArgs e)
         {
-            setEnableButton2();
-            setEnableTextBox3();
+            if (txbTenHang.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                setEnableButton2();
+                setEnableTextBox3();
+            }
         }
 
         /// <summary>
@@ -373,6 +383,7 @@ namespace QLCuaHangBanXeMayDien
                         {
                             MessageBox.Show("Bạn đã xóa thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             loadData();
+                            clearTextbox();
                         }
                     }
                     catch (NullReferenceException ex)

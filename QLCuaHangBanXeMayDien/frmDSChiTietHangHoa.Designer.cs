@@ -96,7 +96,7 @@
             this.lbHeader.Location = new System.Drawing.Point(488, 18);
             this.lbHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHeader.Name = "lbHeader";
-            this.lbHeader.Size = new System.Drawing.Size(293, 26);
+            this.lbHeader.Size = new System.Drawing.Size(377, 32);
             this.lbHeader.TabIndex = 0;
             this.lbHeader.Text = "Thông tin chi tiết hàng hóa";
             this.lbHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,7 +143,7 @@
             // 
             this.numSoLuong.Location = new System.Drawing.Point(216, 166);
             this.numSoLuong.Name = "numSoLuong";
-            this.numSoLuong.Size = new System.Drawing.Size(200, 24);
+            this.numSoLuong.Size = new System.Drawing.Size(200, 28);
             this.numSoLuong.TabIndex = 4;
             // 
             // panelControlButton
@@ -270,28 +270,29 @@
             // 
             this.txbDonVi.Location = new System.Drawing.Point(216, 215);
             this.txbDonVi.Name = "txbDonVi";
-            this.txbDonVi.Size = new System.Drawing.Size(200, 24);
+            this.txbDonVi.Size = new System.Drawing.Size(200, 28);
             this.txbDonVi.TabIndex = 5;
+            this.txbDonVi.Text = "Chiếc";
             // 
             // txbNhaSX
             // 
             this.txbNhaSX.Location = new System.Drawing.Point(216, 116);
             this.txbNhaSX.Name = "txbNhaSX";
-            this.txbNhaSX.Size = new System.Drawing.Size(200, 24);
+            this.txbNhaSX.Size = new System.Drawing.Size(200, 28);
             this.txbNhaSX.TabIndex = 3;
             // 
             // txbTenHang
             // 
             this.txbTenHang.Location = new System.Drawing.Point(216, 71);
             this.txbTenHang.Name = "txbTenHang";
-            this.txbTenHang.Size = new System.Drawing.Size(200, 24);
+            this.txbTenHang.Size = new System.Drawing.Size(200, 28);
             this.txbTenHang.TabIndex = 2;
             // 
             // txbMaHang
             // 
             this.txbMaHang.Location = new System.Drawing.Point(216, 27);
             this.txbMaHang.Name = "txbMaHang";
-            this.txbMaHang.Size = new System.Drawing.Size(200, 24);
+            this.txbMaHang.Size = new System.Drawing.Size(200, 28);
             this.txbMaHang.TabIndex = 1;
             // 
             // lbDonVi
@@ -301,7 +302,7 @@
             this.lbDonVi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbDonVi.Location = new System.Drawing.Point(61, 215);
             this.lbDonVi.Name = "lbDonVi";
-            this.lbDonVi.Size = new System.Drawing.Size(56, 18);
+            this.lbDonVi.Size = new System.Drawing.Size(69, 24);
             this.lbDonVi.TabIndex = 0;
             this.lbDonVi.Text = "Đơn vị";
             // 
@@ -312,7 +313,7 @@
             this.lbSoLuong.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbSoLuong.Location = new System.Drawing.Point(61, 166);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(75, 18);
+            this.lbSoLuong.Size = new System.Drawing.Size(94, 24);
             this.lbSoLuong.TabIndex = 0;
             this.lbSoLuong.Text = "Số lượng";
             // 
@@ -323,7 +324,7 @@
             this.lbNhaSanXuat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbNhaSanXuat.Location = new System.Drawing.Point(61, 120);
             this.lbNhaSanXuat.Name = "lbNhaSanXuat";
-            this.lbNhaSanXuat.Size = new System.Drawing.Size(106, 18);
+            this.lbNhaSanXuat.Size = new System.Drawing.Size(132, 24);
             this.lbNhaSanXuat.TabIndex = 0;
             this.lbNhaSanXuat.Text = "Nhà sản xuất";
             // 
@@ -334,7 +335,7 @@
             this.lbTenHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbTenHang.Location = new System.Drawing.Point(61, 75);
             this.lbTenHang.Name = "lbTenHang";
-            this.lbTenHang.Size = new System.Drawing.Size(77, 18);
+            this.lbTenHang.Size = new System.Drawing.Size(100, 24);
             this.lbTenHang.TabIndex = 0;
             this.lbTenHang.Text = "Tên hàng";
             // 
@@ -345,7 +346,7 @@
             this.lbTTBH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbTTBH.Location = new System.Drawing.Point(474, 150);
             this.lbTTBH.Name = "lbTTBH";
-            this.lbTTBH.Size = new System.Drawing.Size(94, 18);
+            this.lbTTBH.Size = new System.Drawing.Size(117, 24);
             this.lbTTBH.TabIndex = 0;
             this.lbTTBH.Text = "Bảo hành  :";
             // 
@@ -356,7 +357,7 @@
             this.lbMT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbMT.Location = new System.Drawing.Point(474, 30);
             this.lbMT.Name = "lbMT";
-            this.lbMT.Size = new System.Drawing.Size(66, 18);
+            this.lbMT.Size = new System.Drawing.Size(79, 24);
             this.lbMT.TabIndex = 0;
             this.lbMT.Text = "Mô tả : ";
             // 
@@ -367,7 +368,7 @@
             this.lbMaHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbMaHang.Location = new System.Drawing.Point(61, 29);
             this.lbMaHang.Name = "lbMaHang";
-            this.lbMaHang.Size = new System.Drawing.Size(72, 18);
+            this.lbMaHang.Size = new System.Drawing.Size(91, 24);
             this.lbMaHang.TabIndex = 0;
             this.lbMaHang.Text = "Mã hàng";
             // 
@@ -487,7 +488,7 @@
             this.lbHeađing.Location = new System.Drawing.Point(591, 3);
             this.lbHeađing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHeađing.Name = "lbHeađing";
-            this.lbHeađing.Size = new System.Drawing.Size(145, 26);
+            this.lbHeađing.Size = new System.Drawing.Size(185, 32);
             this.lbHeađing.TabIndex = 0;
             this.lbHeađing.Text = "Bảng chi tiết";
             this.lbHeađing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -521,12 +522,12 @@
             this.txbSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearchID.Location = new System.Drawing.Point(158, 9);
             this.txbSearchID.Name = "txbSearchID";
-            this.txbSearchID.Size = new System.Drawing.Size(310, 26);
+            this.txbSearchID.Size = new System.Drawing.Size(310, 30);
             this.txbSearchID.TabIndex = 4;
             // 
             // frmDSChiTietHangHoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 731);
             this.Controls.Add(this.panelHeading);

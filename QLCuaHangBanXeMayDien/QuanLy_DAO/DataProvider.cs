@@ -20,7 +20,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DAO
         private DataProvider() { }
 
         //Server Path
-        string connectionString = @"Data Source=.\MSSQLSERVER02;Initial Catalog=DaiLyXeMayDien;Integrated Security=True";
+        string connectionString = @"Data Source=.\sqlexpress;Initial Catalog=DaiLyXeMayDien;Integrated Security=True";
 
 
         /// <summary>
