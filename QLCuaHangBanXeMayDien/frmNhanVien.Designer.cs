@@ -540,6 +540,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1080, 726);
             this.MinimumSize = new System.Drawing.Size(1080, 726);
             this.Name = "frmNhanVien";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;

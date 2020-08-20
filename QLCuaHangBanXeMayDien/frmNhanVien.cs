@@ -21,6 +21,9 @@ namespace QLCuaHangBanXeMayDien
             LoadDataNV();
 
         }
+        /// <summary>
+        /// phương thức hiện thị thông tin hàng hóa lên datagridview
+        /// </summary>
         #region Phương thức của form
         void LoadDataNV()
         {
@@ -38,7 +41,7 @@ namespace QLCuaHangBanXeMayDien
             btnCancelNV.Enabled = false;
         }
         /// <summary>
-        /// phương thức cài lại giá trị của các controll
+        /// phương thức cài lại giá trị của các control
         /// </summary>
         void ResetText()
         {
@@ -79,16 +82,12 @@ namespace QLCuaHangBanXeMayDien
             txbLuongNV.Enabled = true;
         }
 
-        /// <summary>
-        /// sự kiện thêm nhân viên
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+       
         #endregion
 
         #region Sự kiện của form
         /// <summary>
-        /// phương thức hiện thị thông tin hàng hóa lên datagridview
+        /// sự kiện bắt đầu quá trình thêm nhân viên
         /// </summary>
 
         private void btnAddNV_Click(object sender, EventArgs e)
@@ -101,7 +100,7 @@ namespace QLCuaHangBanXeMayDien
             btnUpdateNV.Enabled = false;
         }
         /// <summary>
-        /// sự kiện sửa thông tin khách hàng
+        /// sự kiện bắt đầu sửa thông tin khách hàng
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -202,7 +201,7 @@ namespace QLCuaHangBanXeMayDien
         }
 
         /// <summary>
-        /// sự kiện mở các nút chọn
+        /// sự kiện thêm và sửa thông tin nhân viên
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -229,7 +228,6 @@ namespace QLCuaHangBanXeMayDien
                         {
                             MessageBox.Show("Thêm thành công");
                             LoadDataNV();
-                            //ResetText();
                             stateFirst();
                         }
                         else
