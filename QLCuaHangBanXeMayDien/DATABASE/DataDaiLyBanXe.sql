@@ -187,7 +187,7 @@ BEGIN
 		INSERT INTO dbo.NhanVien 
 		VALUES(@MaNhanVien, @TenNhanVien, @NamSinh, @GioiTinh, @DienThoai, @DiaChi, @ChucVu, @Luong )
 	ELSE
-		RAISERROR(N'Đã tồn tại nhân viên này.',12,1)
+		RAISERROR(N'Đã tồn tại mã nhân viên này.',12,1)
 END
 
 GO

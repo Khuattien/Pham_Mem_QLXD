@@ -237,6 +237,10 @@ namespace QLCuaHangBanXeMayDien
                         }
                     }
                 }
+                catch (SqlException ex)
+                {
+                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 catch (FormatException ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
