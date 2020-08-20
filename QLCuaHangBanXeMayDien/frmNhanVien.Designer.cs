@@ -355,6 +355,7 @@
             this.dtgvListNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvListNV.Location = new System.Drawing.Point(0, 346);
             this.dtgvListNV.Name = "dtgvListNV";
+            this.dtgvListNV.ReadOnly = true;
             this.dtgvListNV.RowHeadersWidth = 51;
             this.dtgvListNV.RowTemplate.Height = 24;
             this.dtgvListNV.Size = new System.Drawing.Size(1064, 341);
@@ -366,6 +367,7 @@
             this.MaNhanVien.DataPropertyName = "MaNhanVien";
             this.MaNhanVien.HeaderText = "Mã nhân viên";
             this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.ReadOnly = true;
             this.MaNhanVien.Width = 120;
             // 
             // TenNhanVien
@@ -374,18 +376,21 @@
             this.TenNhanVien.DataPropertyName = "TenNhanVien";
             this.TenNhanVien.HeaderText = "Tên nhân viên";
             this.TenNhanVien.Name = "TenNhanVien";
+            this.TenNhanVien.ReadOnly = true;
             // 
             // NamSinh
             // 
             this.NamSinh.DataPropertyName = "NamSinh";
             this.NamSinh.HeaderText = "Năm sinh";
             this.NamSinh.Name = "NamSinh";
+            this.NamSinh.ReadOnly = true;
             // 
             // GioiTinh
             // 
             this.GioiTinh.DataPropertyName = "GioiTinh";
             this.GioiTinh.HeaderText = "Giới Tính";
             this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
             this.GioiTinh.Width = 90;
             // 
             // DienThoai
@@ -393,6 +398,7 @@
             this.DienThoai.DataPropertyName = "DienThoai";
             this.DienThoai.HeaderText = "Số điện thoại";
             this.DienThoai.Name = "DienThoai";
+            this.DienThoai.ReadOnly = true;
             this.DienThoai.Width = 120;
             // 
             // DiaChi
@@ -400,6 +406,7 @@
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa chỉ";
             this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
             this.DiaChi.Width = 150;
             // 
             // ChucVu
@@ -407,6 +414,7 @@
             this.ChucVu.DataPropertyName = "ChucVu";
             this.ChucVu.HeaderText = "Chức vụ";
             this.ChucVu.Name = "ChucVu";
+            this.ChucVu.ReadOnly = true;
             this.ChucVu.Width = 150;
             // 
             // Luong
@@ -414,6 +422,7 @@
             this.Luong.DataPropertyName = "Luong";
             this.Luong.HeaderText = "Lương";
             this.Luong.Name = "Luong";
+            this.Luong.ReadOnly = true;
             this.Luong.Width = 120;
             // 
             // panelControlNV

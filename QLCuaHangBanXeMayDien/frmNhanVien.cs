@@ -98,6 +98,7 @@ namespace QLCuaHangBanXeMayDien
             btnCancelNV.Enabled = true;
             btnDeleteNV.Enabled = false;
             btnUpdateNV.Enabled = false;
+            txbMaNV.Focus();
         }
         /// <summary>
         /// sự kiện bắt đầu sửa thông tin khách hàng
@@ -112,6 +113,7 @@ namespace QLCuaHangBanXeMayDien
             btnCancelNV.Enabled = true;
             btnAddNV.Enabled = false;
             btnDeleteNV.Enabled = false;
+            txbMaNV.Focus();
         }
 
 
@@ -131,7 +133,14 @@ namespace QLCuaHangBanXeMayDien
                 if (dtgvListNV.Rows[row].Cells["GioiTinh"].Value.ToString() == "Nam")
                     rdbNam.Checked = true;
                 else
-                    rdbNu.Checked = true;
+                    if (dtgvListNV.Rows[row].Cells["GioiTinh"].Value.ToString() == "Nữ")
+                         rdbNu.Checked = true;
+                    else
+                       {
+                            rdbNam.Checked = false;
+                            rdbNu.Checked = false;
+                       }    
+
                 txbDienThoaiNV.Text = dtgvListNV.Rows[row].Cells["DienThoai"].Value.ToString();
                 txbDiaChi.Text = dtgvListNV.Rows[row].Cells["DiaChi"].Value.ToString();
                 txbChucVuNV.Text = dtgvListNV.Rows[row].Cells["ChucVu"].Value.ToString();
@@ -146,6 +155,10 @@ namespace QLCuaHangBanXeMayDien
         /// <param name="e"></param>
         private void btnDeleteNV_Click(object sender, EventArgs e)
         {
+            txbMaNV.Enabled = true;
+            btnAddNV.Enabled = false;
+            btnUpdateNV.Enabled = false;
+            btnCancelNV.Enabled = true;
             try
             {
                 if (txbMaNV.Text == "")
