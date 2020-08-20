@@ -99,38 +99,6 @@ namespace QLCuaHangBanXeMayDien
             btnCancelNV.Enabled = true;
             btnDeleteNV.Enabled = false;
             btnUpdateNV.Enabled = false;
-
-            //try
-            //{
-            //    if (txbMaNV.Text == "" || txbTenNV.Text == "" || (rdbNam.Checked == false && rdbNu.Checked == false) || txbNamSinhNV.Text == "" || txbDienThoaiNV.Text == "" || txbDiaChi.Text == "" || txbChucVuNV.Text == "" || txbLuongNV.Text == "")
-            //    {
-            //        MessageBox.Show("Chưa điền đủ thông tin nhân viên");
-            //    }
-            //    else
-            //    {
-            //        string gt;
-            //        if (rdbNam.Checked == true)
-            //            gt = "Nam";
-            //        else
-            //            gt = "Nữ";
-
-            //        if (NhanVienBUS.Instance.InsertNhanvien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, int.Parse(txbDienThoaiNV.Text), txbDiaChi.Text, txbChucVuNV.Text, float.Parse(txbLuongNV.Text)))
-            //        {
-            //            MessageBox.Show("Thêm thành công");
-            //            LoadDataNV();
-            //            ResetText();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Có lỗi khi thêm nhân viên");
-            //            ResetText();
-            //        }
-            //    }
-            //}
-            //catch (FormatException ex)
-            //{
-            //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
         }
         /// <summary>
         /// sự kiện sửa thông tin khách hàng
@@ -145,50 +113,6 @@ namespace QLCuaHangBanXeMayDien
             btnCancelNV.Enabled = true;
             btnAddNV.Enabled = false;
             btnDeleteNV.Enabled = false;
-            
-            //try
-            //{
-            //    if (txbMaNV.Text == "" || txbTenNV.Text == "" || (rdbNam.Checked == false && rdbNu.Checked == false) || txbNamSinhNV.Text == "" || txbDienThoaiNV.Text == "" || txbDiaChi.Text == "" || txbChucVuNV.Text == "" || txbLuongNV.Text == "")
-            //    {
-            //        MessageBox.Show("Chưa điền đủ thông tin nhân viên");
-            //        if (txbMaNV.Text == "") txbMaNV.Focus();
-            //        if (txbTenNV.Text == "") txbTenNV.Focus();
-            //        if (rdbNam.Checked == false && rdbNu.Checked == false) MessageBox.Show("Chọn giới tính");
-            //        if (txbNamSinhNV.Text == "") txbNamSinhNV.Focus();
-            //        if (txbDienThoaiNV.Text == "") txbDienThoaiNV.Focus();
-            //        if (txbDiaChi.Text == "") txbDiaChi.Focus();
-            //        if (txbChucVuNV.Text == "") txbChucVuNV.Focus();
-            //        if (txbLuongNV.Text == "") txbLuongNV.Focus();
-            //    }
-            //    else
-            //    {
-            //        string gt;
-            //        if (rdbNam.Checked == true)
-            //            gt = "Nam";
-            //        else
-            //            gt = "Nữ";
-            //        if (NhanVienBUS.Instance.InsertNhanvien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, int.Parse(txbDienThoaiNV.Text), txbDiaChi.Text, txbChucVuNV.Text, float.Parse(txbLuongNV.Text)))
-            //        {
-            //            MessageBox.Show("Sửa thành công");
-            //            LoadDataNV();
-            //            ResetText();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Có lỗi khi sửa thông tin nhân viên");
-            //            ResetText();
-            //        }
-            //    }
-            //    btnUpdateNV.Enabled = false;
-            //}
-            //catch (FormatException ex)
-            //{
-            //    MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            //catch (SqlException ex)
-            //{
-            //    MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
         }
 
 
@@ -359,7 +283,6 @@ namespace QLCuaHangBanXeMayDien
                         {
                             MessageBox.Show("Sửa thành công");
                             LoadDataNV();
-                            //ResetText();
                             stateFirst();
                         }
                         else
@@ -406,9 +329,7 @@ namespace QLCuaHangBanXeMayDien
                     else
                         dtgvListNV.DataSource = data;
                 }
-                //else
-                    //LoadDataNV();
-                //txbTimKiemNV.ResetText();
+                
             }
             catch (Exception ex)
             {
