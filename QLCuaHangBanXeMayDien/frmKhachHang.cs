@@ -175,14 +175,14 @@ namespace QLCuaHangBanXeMayDien
                 }
                 else if (addStatus == true)
                 {
-                    KhachHangBUS.Instance.InsertKhachHang(txbMaKH.Text, txbTenKH.Text, txbDiaChiKH.Text, int.Parse(txbDienThoaiKH.Text), txbEmailKH.Text);
+                    KhachHangBUS.Instance.InsertKhachHang(txbMaKH.Text, txbTenKH.Text, txbDiaChiKH.Text, txbDienThoaiKH.Text, txbEmailKH.Text);
                     MessageBox.Show("đã thêm thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ResetText();
                     LoadDataKH();
                 }
                 else if(updateStatus == true)
                 {
-                    KhachHangBUS.Instance.UpdateKhachHang(txbMaKH.Text, txbTenKH.Text, txbDiaChiKH.Text, int.Parse(txbDienThoaiKH.Text), txbEmailKH.Text);
+                    KhachHangBUS.Instance.UpdateKhachHang(txbMaKH.Text, txbTenKH.Text, txbDiaChiKH.Text, txbDienThoaiKH.Text , txbEmailKH.Text);
                     MessageBox.Show("đã sửa thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ResetText();
                     LoadDataKH();

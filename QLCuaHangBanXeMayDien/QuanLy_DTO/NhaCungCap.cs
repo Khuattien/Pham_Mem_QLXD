@@ -7,21 +7,21 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
         private string maNhaCungCap;
         private string tenNhaCungCap;
         private string diaChi;
-        private int dienThoai;
+        private string dienThoai;
         private string email;
 
         #region get and set attributes
         public string MaNhaCungCap { get => maNhaCungCap; set => maNhaCungCap = value; }
         public string TenNhaCungCap { get => tenNhaCungCap; set => tenNhaCungCap = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
-        public int DienThoai { get => dienThoai; set => dienThoai = value; }
+        public string DienThoai { get => dienThoai; set => dienThoai = value; }
         public string Email { get => email; set => email = value; }
         #endregion
 
         #region Contructors
         public NhaCungCap() { }
         
-        public NhaCungCap(string maNCC, string tenNCC, string diaChi, int dienThoai, string email)
+        public NhaCungCap(string maNCC, string tenNCC, string diaChi, string dienThoai, string email)
         {
             this.maNhaCungCap = maNCC;
             this.tenNhaCungCap = tenNCC;
@@ -35,7 +35,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
             this.maNhaCungCap = row["MaNhaCungCap"].ToString();
             this.tenNhaCungCap = row["TenNhaCungCap"].ToString();
             this.diaChi = row["DiaChi"].ToString();
-            this.dienThoai = (int)row["DienThoai"];
+            this.dienThoai = row["DienThoai"].ToString();
             this.email = row["Email"].ToString();
         }
         #endregion

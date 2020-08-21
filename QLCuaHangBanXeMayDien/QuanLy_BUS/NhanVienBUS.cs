@@ -40,7 +40,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         ///  false nếu không thành công
         ///  </returns>
 
-        public bool InsertNhanvien(string manv, string tennv, int namsinh, string gt, int dt, string diachi, string chucvu, float luong)
+        public bool InsertNhanvien(string manv, string tennv, int namsinh, string gt, string dt, string diachi, string chucvu, float luong)
         {
             string query = "EXEC USP_InsertNhanVien @manv , @tennv , @namsinh , @gt , @dt , @diachi , @chucvu , @luong";
 
@@ -57,7 +57,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// </summary>
         /// <returns></returns>
 
-        public bool UpdateNhanVien(string manv, string tennv, int namsinh, string gt, int dt, string diachi, string chucvu, float luong)
+        public bool UpdateNhanVien(string manv, string tennv, int namsinh, string gt, string dt, string diachi, string chucvu, float luong)
         {
             string query = "EXEC USP_UpdateNhanVien @manv , @tennv , @namsinh , @gt , @dt , @diachi , @chucvu , @luong";
             int result = 0;

@@ -40,7 +40,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// true nếu thành công
         /// false nếu thất bại
         /// </returns>
-        public bool InsertNhaCC(string maNcc, string tenMcc, string diaC, int dienT, string email)
+        public bool InsertNhaCC(string maNcc, string tenMcc, string diaC, string dienT, string email)
         {
             string query = "EXEC dbo.USP_InsertNhaCC @MaNhaCungCap , @TenNhaCungCap , @DiaChi , @DienThoai , @Email";
 
@@ -63,7 +63,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// false nếu thất bại
         /// </returns>
 
-        public bool UpdateNhaCC(string maNcc, string tenNcc, string diaC, int dienT, string email)
+        public bool UpdateNhaCC(string maNcc, string tenNcc, string diaC, string dienT, string email)
         {
             string query = "EXEC USP_UpdateNhaCC @MaNhaCungCap , @TenNhaCungCap , @DiaChi , @DienThoai , @Email";
 

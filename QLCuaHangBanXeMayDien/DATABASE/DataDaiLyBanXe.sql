@@ -9,6 +9,19 @@ GO
 USE DaiLyXeMayDien
 
 GO
+
+-- Bảng tài khoản đăng nhập
+CREATE TABLE AccountLogin
+(
+	UserName				NVARCHAR(50)	PRIMARY KEY,
+	PassWord				NVARCHAR(50)	NOT NULL,
+	LoaiTaiKhoan			INT				NOT NULL,  -- 1 là chủ | 0 : nhân viên
+	TenHienThi				NVARCHAR(50)	NOT NULL,
+	DienThoai				NVARCHAR(15)	NOT NULL,
+	Email					NVARCHAR(100)	NOT NULL
+)
+
+GO
 -- Bảng mặt hàng
 CREATE TABLE MatHang
 (						
@@ -31,23 +44,11 @@ CREATE TABLE NhanVien
 	TenNhanVien				NVARCHAR(50)	NOT NULL,
 	NamSinh					INT				NOT NULL,
 	GioiTinh				NVARCHAR(10)	NOT NULL,
-	DienThoai				INT				NULL,
+	DienThoai				NVARCHAR(15)	NULL,
 	DiaChi					NVARCHAR(50)	NOT NULL,
 	ChucVu					NVARCHAR(30)	NOT NULL,
 	Luong					FLOAT				NULL,
 	CONSTRAINT		pk_NhanVien PRIMARY KEY(MaNhanVien)
-)
-
-GO
--- Bảng tài khoản đăng nhập
-CREATE TABLE AccountLogin
-(
-	UserName				NVARCHAR(50)	PRIMARY KEY,
-	PassWord				NVARCHAR(50)	NOT NULL,
-	LoaiTaiKhoan			INT				NOT NULL,  -- 1 là chủ | 0 : nhân viên
-	TenHienThi				NVARCHAR(50)	NOT NULL,
-	DienThoai				INT				NULL,
-	Email					NVARCHAR(50)	NULL
 )
 
 GO
@@ -57,8 +58,8 @@ CREATE TABLE KhachHang
 	MaKhachHang				NVARCHAR(20)	NOT NULL,
 	TenKhachHang			NVARCHAR(50)	NOT NULL,
 	DiaChi					NVARCHAR(50)	NOT NULL,
-	DienThoai				INT				NULL,
-	Email					NVARCHAR(50)	NULL,
+	DienThoai				NVARCHAR(15)	NULL,
+	Email					NVARCHAR(100)	NULL,
 	CONSTRAINT		pk_KhachHang PRIMARY KEY(MaKhachHang)
 )
 GO
@@ -68,8 +69,8 @@ CREATE TABLE NhaCungCap
 	MaNhaCungCap			NVARCHAR(20)	NOT NULL,
 	TenNhaCungCap			NVARCHAR(50)	NOT NULL,
 	DiaChi					NVARCHAR(50)	NOT NULL,
-	DienThoai				INT				NULL,
-	Email					NVARCHAR(50)	NULL,
+	DienThoai				NVARCHAR(15)	NULL,
+	Email					NVARCHAR(100)	NULL,
 	CONSTRAINT		pk_NhaCungCap PRIMARY KEY(MaNhaCungCap)
 )
 
@@ -128,6 +129,10 @@ CREATE TABLE ChiTietPhieuXuat
 )
 
 GO
+--Tạo một tai khoản admin mặc định cho app
+	INSERT INTO dbo.AccountLogin
+	VALUES ('admin', '1' , 1 , N'Admin', '0123456789','adminweloveanig@gmail.com')
+GO
 -- Các thủ tục cho bảng mặt hàng (thêm , sửa , xóa)
 
 CREATE PROC USP_InsertMatHang 
@@ -180,7 +185,7 @@ GO
 -- Các thủ tục cho bảng nhân viên (thêm , sửa , xóa)
 CREATE PROC USP_InsertNhanVien 
 @MaNhanVien	NVARCHAR(20), @TenNhanVien NVARCHAR(50), @NamSinh INT, @GioiTinh NVARCHAR(10),
-@DienThoai	INT, @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong	FLOAT
+@DienThoai	NVARCHAR(15), @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong FLOAT
 AS
 BEGIN
 	IF (NOT EXISTS(SELECT MaNhanVien FROM dbo.NhanVien WHERE MaNhanVien = @MaNhanVien))
@@ -194,7 +199,7 @@ GO
 
 CREATE PROC USP_UpdateNhanVien 
 @MaNhanVien	NVARCHAR(20), @TenNhanVien NVARCHAR(50), @NamSinh INT, @GioiTinh NVARCHAR(10),
-@DienThoai	INT, @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong	FLOAT
+@DienThoai	NVARCHAR(15), @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong	FLOAT
 AS
 BEGIN
 	IF (NOT EXISTS(SELECT MaNhanVien FROM dbo.NhanVien WHERE MaNhanVien = @MaNhanVien))
@@ -220,7 +225,7 @@ END
 GO
 -- Các thủ tục cho bảng Kháchh hàng (thêm , sửa , xóa)
 CREATE PROC USP_InsertKhanhHang
-@MaKhachHang NVARCHAR(20), @TenKhachHang NVARCHAR(50), @DiaChi NVARCHAR(50),@DienThoai INT, @Email NVARCHAR(50)
+@MaKhachHang NVARCHAR(20), @TenKhachHang NVARCHAR(50), @DiaChi NVARCHAR(50),@DienThoai NVARCHAR(15), @Email NVARCHAR(100)
 AS
 BEGIN
 	IF(NOT EXISTS(SELECT MaKhachHang FROM dbo.KhachHang WHERE MaKhachHang = @MaKhachHang))
@@ -232,14 +237,14 @@ END
 GO
 
 CREATE PROC USP_UpdateKhanhHang
-@MaKhachHang NVARCHAR(20), @TenKhachHang NVARCHAR(50), @DiaChi NVARCHAR(50),@DienThoai INT, @Email NVARCHAR(50)
+@MaKhachHang NVARCHAR(20), @TenKhachHang NVARCHAR(50), @DiaChi NVARCHAR(50),@DienThoai NVARCHAR(15), @Email NVARCHAR(100)
 AS
 BEGIN
 	IF(NOT EXISTS(SELECT MaKhachHang FROM dbo.KhachHang WHERE MaKhachHang = @MaKhachHang))
 		RAISERROR(N'Không tồn tại khách hàng này.',12,1)
 	ELSE
 		UPDATE dbo.KhachHang 
-		SET TenKhachHang = @TenKhachHang, DiaChi = @DiaChi , DienThoai = DienThoai , Email = @Email 
+		SET TenKhachHang = @TenKhachHang, DiaChi = @DiaChi , DienThoai = @DienThoai , Email = @Email 
 		WHERE MaKhachHang = @MaKhachHang
 END 
 
@@ -259,7 +264,7 @@ GO
 -- Các thủ tục cho bảng Nhà cung cấp
 CREATE PROC USP_InsertNhaCC
 @MaNhaCungCap NVARCHAR(20),@TenNhaCungCap NVARCHAR(50), 
-@DiaChi	NVARCHAR(50), @DienThoai INT,@Email NVARCHAR(50)
+@DiaChi	NVARCHAR(50), @DienThoai NVARCHAR(15), @Email NVARCHAR(100)
 AS
 BEGIN
 	IF(NOT EXISTS(SELECT MaNhaCungCap FROM dbo.NhaCungCap WHERE MaNhaCungCap= @MaNhaCungCap))
@@ -273,7 +278,7 @@ GO
 
 CREATE PROC USP_UpdateNhaCC
 @MaNhaCungCap NVARCHAR(20), @TenNhaCungCap NVARCHAR(50), 
-@DiaChi	NVARCHAR(50), @DienThoai INT, @Email NVARCHAR(50)
+@DiaChi	NVARCHAR(50), @DienThoai NVARCHAR(15), @Email NVARCHAR(100)
 AS
 BEGIN
 	IF(NOT EXISTS(SELECT MaNhaCungCap FROM dbo.NhaCungCap WHERE MaNhaCungCap = @MaNhaCungCap))
@@ -513,7 +518,7 @@ GO
 --Các thủ tục cho bảng AccountLogin
 CREATE PROC USP_InsertAcc
 @UserName NVARCHAR(50), @PassWord NVARCHAR(50), @LoaiTaiKhoan INT,
-@TenHienThi	NVARCHAR(50), @DienThoai INT,  @Email NVARCHAR(50)
+@TenHienThi	NVARCHAR(50), @DienThoai NVARCHAR(15),  @Email NVARCHAR(100)
 AS
 BEGIN
 	IF(EXISTS(SELECT UserName FROM dbo.AccountLogin WHERE UserName = @UserName))
@@ -527,7 +532,7 @@ GO
 
 CREATE PROC USP_UpdateAcc
 @UserName NVARCHAR(50), @PassWord NVARCHAR(50), @LoaiTaiKhoan INT,
-@TenHienThi	NVARCHAR(50), @DienThoai INT,  @Email NVARCHAR(50)
+@TenHienThi	NVARCHAR(50), @DienThoai NVARCHAR(15),  @Email NVARCHAR(100)
 AS
 BEGIN
 	IF(NOT EXISTS(SELECT UserName FROM dbo.AccountLogin WHERE UserName = @UserName))

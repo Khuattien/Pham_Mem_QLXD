@@ -47,7 +47,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         ///  false nếu không thành công
         ///  </returns>
          
-        public bool InsertKhachHang(string maKh, string tenKh, string diaC, int dienT, string email)
+        public bool InsertKhachHang(string maKh, string tenKh, string diaC, string dienT, string email)
         {
             string query = "EXEC dbo.USP_InsertKhanhHang @MaKhachHang , @TenKhachHang , @DiaChi , @DienThoai , @Email";
 
@@ -67,7 +67,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// <param name="email"></param>
         /// <returns></returns>
 
-        public bool UpdateKhachHang(string maKh, string tenKh, string diaC, int dienT, string email)
+        public bool UpdateKhachHang(string maKh, string tenKh, string diaC, string dienT, string email)
         {
             string query = "EXEC USP_UpdateKhanhHang @MaKhachHang , @TenKhachHang , @DiaChi , @DienThoai , @Email";
 

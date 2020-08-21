@@ -168,14 +168,14 @@ namespace QLCuaHangBanXeMayDien
                 }
                 else if (addStatus == true)
                 {
-                    NhaCungCapBUS.Instance.InsertNhaCC(txbMaNhaCC.Text, txbTenNhaCC.Text, txbDiaChiNhaCC.Text, int.Parse(txbDienThoaiNhaCC.Text), txbEmailNhaCC.Text);
+                    NhaCungCapBUS.Instance.InsertNhaCC(txbMaNhaCC.Text, txbTenNhaCC.Text, txbDiaChiNhaCC.Text, txbDienThoaiNhaCC.Text, txbEmailNhaCC.Text);
                     MessageBox.Show("đã thêm thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ResetText();
                     LoadDataNCC();
                 }
                 else if (updateStatus == true)
                 {
-                    NhaCungCapBUS.Instance.UpdateNhaCC(txbMaNhaCC.Text, txbTenNhaCC.Text, txbDiaChiNhaCC.Text, int.Parse(txbDienThoaiNhaCC.Text), txbEmailNhaCC.Text);
+                    NhaCungCapBUS.Instance.UpdateNhaCC(txbMaNhaCC.Text, txbTenNhaCC.Text, txbDiaChiNhaCC.Text, txbDienThoaiNhaCC.Text, txbEmailNhaCC.Text);
                     MessageBox.Show("đã sửa thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ResetText();
                     LoadDataNCC();
