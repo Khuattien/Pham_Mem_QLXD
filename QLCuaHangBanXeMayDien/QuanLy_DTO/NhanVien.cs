@@ -12,7 +12,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
         private string dienThoai;
         private string diaChi;
         private string chucVu;
-        private float luong;
+        private int luong;
         #region Get and set Attributes
         public string MaNhanVien { get => maNhanVien; set => maNhanVien = value; }
         public string TenNhanVien { get => tenNhanVien; set => tenNhanVien = value; }
@@ -21,12 +21,12 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
         public string DienThoai { get => dienThoai; set => dienThoai = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string ChucVu { get => chucVu; set => chucVu = value; }
-        public float Luong { get => luong; set => luong = value; }
+        public int Luong { get => luong; set => luong = value; }
         #endregion
         #region Contructors
         public NhanVien() { }
 
-        public NhanVien(string maNV, string tenNV, int namSinh, string gioiTinh, string dienThoai, string diaChi, string chucVu, float luong )
+        public NhanVien(string maNV, string tenNV, int namSinh, string gioiTinh, string dienThoai, string diaChi, string chucVu, int luong )
         {
             this.maNhanVien = maNV; ;
             this.tenNhanVien = tenNV;
@@ -47,7 +47,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
             this.dienThoai = row["DienThoai"].ToString();
             this.diaChi = row["DiaChi"].ToString();
             this.chucVu = row["ChucVu"].ToString();
-            this.luong = (float)row["Luong"];
+            this.luong = (int)row["Luong"];
         }
         #endregion
     }

@@ -41,6 +41,26 @@ namespace QLCuaHangBanXeMayDien
             if (txbDVTinh.Text != "")
                 xeDien.DonViTinh = txbDVTinh.Text;
 
+            if (txbGiaBan.Text != "")
+                xeDien.GiaBan = int.Parse(txbGiaBan.Text);
+            else
+                xeDien.GiaBan = 0;
+        }
+
+        #region Các sự kiện trong form
+
+        /// <summary>
+        /// Sự kiện kiểm tra giá bán nhập vào có đúng là số
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txbGiaBan_TextChanged(object sender, EventArgs e)
+        {
+            int val;
+            if (int.TryParse(txbGiaBan.Text, out val) == false && txbGiaBan.Text != "")
+            {
+                MessageBox.Show("Giá bán phải là một con số và giá tối đa hiện tại cho phép là 2,1 tỷ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         /// <summary>
@@ -57,12 +77,12 @@ namespace QLCuaHangBanXeMayDien
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     xeDien.AnhMinhHoa = dlg.FileName;
+                    picMathang.Image = Image.FromFile(xeDien.AnhMinhHoa);
                 }
-                picMathang.Image = Image.FromFile(xeDien.AnhMinhHoa);
             }
             catch (FileNotFoundException ex)
             {
-                MessageBox.Show(ex.Message , "Lỗi", MessageBoxButtons.OK , MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -84,20 +104,20 @@ namespace QLCuaHangBanXeMayDien
                 try
                 {
                     settingDataInput();
-                    bool result =  MatHangBUS.Instance.InsertMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.AnhMinhHoa);
+                    bool result = MatHangBUS.Instance.InsertMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.GiaBan,xeDien.AnhMinhHoa);
                     if (result)
                     {
                         MessageBox.Show("Thêm thành công.");
                         this.Close();
                     }
                 }
-                catch(FormatException ex)
+                catch (FormatException ex)
                 {
                     MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show(ex.Message, "Lỗi" , MessageBoxButtons.OK , MessageBoxIcon.Warning);
+                    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 catch (Exception ex)
                 {
@@ -105,5 +125,6 @@ namespace QLCuaHangBanXeMayDien
                 }
             }
         }
+        #endregion
     }
 }

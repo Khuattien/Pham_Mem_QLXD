@@ -86,7 +86,7 @@
             this.panelTittleNhanVien.Location = new System.Drawing.Point(0, 0);
             this.panelTittleNhanVien.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelTittleNhanVien.Name = "panelTittleNhanVien";
-            this.panelTittleNhanVien.Size = new System.Drawing.Size(1064, 75);
+            this.panelTittleNhanVien.Size = new System.Drawing.Size(1062, 75);
             this.panelTittleNhanVien.TabIndex = 1;
             // 
             // lbTittleNhanVien
@@ -94,10 +94,10 @@
             this.lbTittleNhanVien.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTittleNhanVien.AutoSize = true;
             this.lbTittleNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTittleNhanVien.Location = new System.Drawing.Point(459, 25);
+            this.lbTittleNhanVien.Location = new System.Drawing.Point(458, 25);
             this.lbTittleNhanVien.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbTittleNhanVien.Name = "lbTittleNhanVien";
-            this.lbTittleNhanVien.Size = new System.Drawing.Size(123, 26);
+            this.lbTittleNhanVien.Size = new System.Drawing.Size(157, 32);
             this.lbTittleNhanVien.TabIndex = 0;
             this.lbTittleNhanVien.Text = "Nhân Viên";
             // 
@@ -127,16 +127,16 @@
             this.grbNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.grbNhanVien.Name = "grbNhanVien";
             this.grbNhanVien.Padding = new System.Windows.Forms.Padding(4);
-            this.grbNhanVien.Size = new System.Drawing.Size(1064, 232);
+            this.grbNhanVien.Size = new System.Drawing.Size(1062, 232);
             this.grbNhanVien.TabIndex = 2;
             this.grbNhanVien.TabStop = false;
             this.grbNhanVien.Text = "Thông tin nhân viên";
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.Location = new System.Drawing.Point(957, 178);
+            this.btnTimkiem.Location = new System.Drawing.Point(939, 178);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(75, 26);
+            this.btnTimkiem.Size = new System.Drawing.Size(116, 30);
             this.btnTimkiem.TabIndex = 10;
             this.btnTimkiem.Text = "Search";
             this.btnTimkiem.UseVisualStyleBackColor = true;
@@ -147,7 +147,7 @@
             this.grbGioiTInh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grbGioiTInh.Controls.Add(this.rdbNu);
             this.grbGioiTInh.Controls.Add(this.rdbNam);
-            this.grbGioiTInh.Location = new System.Drawing.Point(37, 136);
+            this.grbGioiTInh.Location = new System.Drawing.Point(36, 136);
             this.grbGioiTInh.Name = "grbGioiTInh";
             this.grbGioiTInh.Size = new System.Drawing.Size(272, 68);
             this.grbGioiTInh.TabIndex = 2;
@@ -159,7 +159,7 @@
             this.rdbNu.AutoSize = true;
             this.rdbNu.Location = new System.Drawing.Point(164, 25);
             this.rdbNu.Name = "rdbNu";
-            this.rdbNu.Size = new System.Drawing.Size(47, 24);
+            this.rdbNu.Size = new System.Drawing.Size(58, 29);
             this.rdbNu.TabIndex = 3;
             this.rdbNu.TabStop = true;
             this.rdbNu.Text = "Nữ";
@@ -170,7 +170,7 @@
             this.rdbNam.AutoSize = true;
             this.rdbNam.Location = new System.Drawing.Point(49, 25);
             this.rdbNam.Name = "rdbNam";
-            this.rdbNam.Size = new System.Drawing.Size(60, 24);
+            this.rdbNam.Size = new System.Drawing.Size(74, 29);
             this.rdbNam.TabIndex = 2;
             this.rdbNam.TabStop = true;
             this.rdbNam.Text = "Nam";
@@ -179,9 +179,9 @@
             // txbTimKiemNV
             // 
             this.txbTimKiemNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbTimKiemNV.Location = new System.Drawing.Point(725, 178);
+            this.txbTimKiemNV.Location = new System.Drawing.Point(707, 178);
             this.txbTimKiemNV.Name = "txbTimKiemNV";
-            this.txbTimKiemNV.Size = new System.Drawing.Size(226, 26);
+            this.txbTimKiemNV.Size = new System.Drawing.Size(226, 30);
             this.txbTimKiemNV.TabIndex = 9;
             this.txbTimKiemNV.Click += new System.EventHandler(this.txbTimKiemNV_Click);
             this.txbTimKiemNV.Leave += new System.EventHandler(this.txbTimKiemNV_Leave);
@@ -189,68 +189,68 @@
             // txbDiaChi
             // 
             this.txbDiaChi.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbDiaChi.Location = new System.Drawing.Point(478, 136);
+            this.txbDiaChi.Location = new System.Drawing.Point(477, 136);
             this.txbDiaChi.Name = "txbDiaChi";
-            this.txbDiaChi.Size = new System.Drawing.Size(182, 26);
+            this.txbDiaChi.Size = new System.Drawing.Size(182, 30);
             this.txbDiaChi.TabIndex = 6;
             // 
             // txbDienThoaiNV
             // 
             this.txbDienThoaiNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbDienThoaiNV.Location = new System.Drawing.Point(478, 82);
+            this.txbDienThoaiNV.Location = new System.Drawing.Point(477, 82);
             this.txbDienThoaiNV.Name = "txbDienThoaiNV";
-            this.txbDienThoaiNV.Size = new System.Drawing.Size(182, 26);
+            this.txbDienThoaiNV.Size = new System.Drawing.Size(182, 30);
             this.txbDienThoaiNV.TabIndex = 5;
             // 
             // txbLuongNV
             // 
             this.txbLuongNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbLuongNV.Location = new System.Drawing.Point(816, 88);
+            this.txbLuongNV.Location = new System.Drawing.Point(815, 88);
             this.txbLuongNV.Name = "txbLuongNV";
-            this.txbLuongNV.Size = new System.Drawing.Size(182, 26);
+            this.txbLuongNV.Size = new System.Drawing.Size(182, 30);
             this.txbLuongNV.TabIndex = 8;
             this.txbLuongNV.TextChanged += new System.EventHandler(this.txbLuongNV_TextChanged);
             // 
             // txbChucVuNV
             // 
             this.txbChucVuNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbChucVuNV.Location = new System.Drawing.Point(816, 36);
+            this.txbChucVuNV.Location = new System.Drawing.Point(815, 36);
             this.txbChucVuNV.Name = "txbChucVuNV";
-            this.txbChucVuNV.Size = new System.Drawing.Size(182, 26);
+            this.txbChucVuNV.Size = new System.Drawing.Size(182, 30);
             this.txbChucVuNV.TabIndex = 7;
             // 
             // txbNamSinhNV
             // 
             this.txbNamSinhNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbNamSinhNV.Location = new System.Drawing.Point(478, 33);
+            this.txbNamSinhNV.Location = new System.Drawing.Point(477, 33);
             this.txbNamSinhNV.Name = "txbNamSinhNV";
-            this.txbNamSinhNV.Size = new System.Drawing.Size(182, 26);
+            this.txbNamSinhNV.Size = new System.Drawing.Size(182, 30);
             this.txbNamSinhNV.TabIndex = 4;
             this.txbNamSinhNV.TextChanged += new System.EventHandler(this.txbNamSinhNV_TextChanged);
             // 
             // txbTenNV
             // 
             this.txbTenNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbTenNV.Location = new System.Drawing.Point(127, 82);
+            this.txbTenNV.Location = new System.Drawing.Point(126, 82);
             this.txbTenNV.Name = "txbTenNV";
-            this.txbTenNV.Size = new System.Drawing.Size(182, 26);
+            this.txbTenNV.Size = new System.Drawing.Size(182, 30);
             this.txbTenNV.TabIndex = 1;
             // 
             // txbMaNV
             // 
             this.txbMaNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbMaNV.Location = new System.Drawing.Point(127, 36);
+            this.txbMaNV.Location = new System.Drawing.Point(126, 36);
             this.txbMaNV.Name = "txbMaNV";
-            this.txbMaNV.Size = new System.Drawing.Size(182, 26);
+            this.txbMaNV.Size = new System.Drawing.Size(182, 30);
             this.txbMaNV.TabIndex = 0;
             // 
             // lbDiaChiNV
             // 
             this.lbDiaChiNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbDiaChiNV.AutoSize = true;
-            this.lbDiaChiNV.Location = new System.Drawing.Point(383, 139);
+            this.lbDiaChiNV.Location = new System.Drawing.Point(382, 139);
             this.lbDiaChiNV.Name = "lbDiaChiNV";
-            this.lbDiaChiNV.Size = new System.Drawing.Size(57, 20);
+            this.lbDiaChiNV.Size = new System.Drawing.Size(71, 25);
             this.lbDiaChiNV.TabIndex = 0;
             this.lbDiaChiNV.Text = "Địa chỉ";
             // 
@@ -259,9 +259,9 @@
             this.lbDienThoaiNV.AccessibleDescription = "";
             this.lbDienThoaiNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbDienThoaiNV.AutoSize = true;
-            this.lbDienThoaiNV.Location = new System.Drawing.Point(383, 88);
+            this.lbDienThoaiNV.Location = new System.Drawing.Point(382, 88);
             this.lbDienThoaiNV.Name = "lbDienThoaiNV";
-            this.lbDienThoaiNV.Size = new System.Drawing.Size(81, 20);
+            this.lbDienThoaiNV.Size = new System.Drawing.Size(99, 25);
             this.lbDienThoaiNV.TabIndex = 0;
             this.lbDienThoaiNV.Text = "Điện thoại";
             // 
@@ -269,9 +269,9 @@
             // 
             this.lbLuongNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbLuongNV.AutoSize = true;
-            this.lbLuongNV.Location = new System.Drawing.Point(721, 91);
+            this.lbLuongNV.Location = new System.Drawing.Point(720, 91);
             this.lbLuongNV.Name = "lbLuongNV";
-            this.lbLuongNV.Size = new System.Drawing.Size(54, 20);
+            this.lbLuongNV.Size = new System.Drawing.Size(67, 25);
             this.lbLuongNV.TabIndex = 0;
             this.lbLuongNV.Text = "Lương";
             // 
@@ -279,9 +279,9 @@
             // 
             this.lbChucVuNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbChucVuNV.AutoSize = true;
-            this.lbChucVuNV.Location = new System.Drawing.Point(721, 36);
+            this.lbChucVuNV.Location = new System.Drawing.Point(720, 36);
             this.lbChucVuNV.Name = "lbChucVuNV";
-            this.lbChucVuNV.Size = new System.Drawing.Size(66, 20);
+            this.lbChucVuNV.Size = new System.Drawing.Size(85, 25);
             this.lbChucVuNV.TabIndex = 0;
             this.lbChucVuNV.Text = "Chức vụ";
             // 
@@ -289,9 +289,9 @@
             // 
             this.lbNamSinhNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbNamSinhNV.AutoSize = true;
-            this.lbNamSinhNV.Location = new System.Drawing.Point(383, 36);
+            this.lbNamSinhNV.Location = new System.Drawing.Point(382, 36);
             this.lbNamSinhNV.Name = "lbNamSinhNV";
-            this.lbNamSinhNV.Size = new System.Drawing.Size(75, 20);
+            this.lbNamSinhNV.Size = new System.Drawing.Size(94, 25);
             this.lbNamSinhNV.TabIndex = 0;
             this.lbNamSinhNV.Text = "Năm sinh";
             // 
@@ -299,9 +299,9 @@
             // 
             this.lbTenNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTenNV.AutoSize = true;
-            this.lbTenNV.Location = new System.Drawing.Point(28, 88);
+            this.lbTenNV.Location = new System.Drawing.Point(27, 88);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(62, 20);
+            this.lbTenNV.Size = new System.Drawing.Size(80, 25);
             this.lbTenNV.TabIndex = 0;
             this.lbTenNV.Text = "Tên NV";
             // 
@@ -309,9 +309,9 @@
             // 
             this.lbMaNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbMaNV.AutoSize = true;
-            this.lbMaNV.Location = new System.Drawing.Point(33, 36);
+            this.lbMaNV.Location = new System.Drawing.Point(32, 36);
             this.lbMaNV.Name = "lbMaNV";
-            this.lbMaNV.Size = new System.Drawing.Size(57, 20);
+            this.lbMaNV.Size = new System.Drawing.Size(73, 25);
             this.lbMaNV.TabIndex = 0;
             this.lbMaNV.Text = "Mã NV";
             // 
@@ -325,7 +325,7 @@
             this.panelListNV.Location = new System.Drawing.Point(0, 307);
             this.panelListNV.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelListNV.Name = "panelListNV";
-            this.panelListNV.Size = new System.Drawing.Size(1064, 39);
+            this.panelListNV.Size = new System.Drawing.Size(1062, 39);
             this.panelListNV.TabIndex = 3;
             // 
             // lbListNV
@@ -333,10 +333,10 @@
             this.lbListNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbListNV.AutoSize = true;
             this.lbListNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbListNV.Location = new System.Drawing.Point(369, 4);
+            this.lbListNV.Location = new System.Drawing.Point(368, 4);
             this.lbListNV.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbListNV.Name = "lbListNV";
-            this.lbListNV.Size = new System.Drawing.Size(274, 24);
+            this.lbListNV.Size = new System.Drawing.Size(336, 29);
             this.lbListNV.TabIndex = 0;
             this.lbListNV.Text = "Danh sách chi tiết nhân viên";
             // 
@@ -358,7 +358,7 @@
             this.dtgvListNV.ReadOnly = true;
             this.dtgvListNV.RowHeadersWidth = 51;
             this.dtgvListNV.RowTemplate.Height = 24;
-            this.dtgvListNV.Size = new System.Drawing.Size(1064, 341);
+            this.dtgvListNV.Size = new System.Drawing.Size(1062, 333);
             this.dtgvListNV.TabIndex = 17;
             this.dtgvListNV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListNV_CellClick);
             // 
@@ -366,6 +366,7 @@
             // 
             this.MaNhanVien.DataPropertyName = "MaNhanVien";
             this.MaNhanVien.HeaderText = "Mã nhân viên";
+            this.MaNhanVien.MinimumWidth = 6;
             this.MaNhanVien.Name = "MaNhanVien";
             this.MaNhanVien.ReadOnly = true;
             this.MaNhanVien.Width = 120;
@@ -375,6 +376,7 @@
             this.TenNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TenNhanVien.DataPropertyName = "TenNhanVien";
             this.TenNhanVien.HeaderText = "Tên nhân viên";
+            this.TenNhanVien.MinimumWidth = 6;
             this.TenNhanVien.Name = "TenNhanVien";
             this.TenNhanVien.ReadOnly = true;
             // 
@@ -382,13 +384,16 @@
             // 
             this.NamSinh.DataPropertyName = "NamSinh";
             this.NamSinh.HeaderText = "Năm sinh";
+            this.NamSinh.MinimumWidth = 6;
             this.NamSinh.Name = "NamSinh";
             this.NamSinh.ReadOnly = true;
+            this.NamSinh.Width = 125;
             // 
             // GioiTinh
             // 
             this.GioiTinh.DataPropertyName = "GioiTinh";
             this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.MinimumWidth = 6;
             this.GioiTinh.Name = "GioiTinh";
             this.GioiTinh.ReadOnly = true;
             this.GioiTinh.Width = 90;
@@ -397,6 +402,7 @@
             // 
             this.DienThoai.DataPropertyName = "DienThoai";
             this.DienThoai.HeaderText = "Số điện thoại";
+            this.DienThoai.MinimumWidth = 6;
             this.DienThoai.Name = "DienThoai";
             this.DienThoai.ReadOnly = true;
             this.DienThoai.Width = 120;
@@ -405,6 +411,7 @@
             // 
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.ReadOnly = true;
             this.DiaChi.Width = 150;
@@ -413,6 +420,7 @@
             // 
             this.ChucVu.DataPropertyName = "ChucVu";
             this.ChucVu.HeaderText = "Chức vụ";
+            this.ChucVu.MinimumWidth = 6;
             this.ChucVu.Name = "ChucVu";
             this.ChucVu.ReadOnly = true;
             this.ChucVu.Width = 150;
@@ -421,6 +429,7 @@
             // 
             this.Luong.DataPropertyName = "Luong";
             this.Luong.HeaderText = "Lương";
+            this.Luong.MinimumWidth = 6;
             this.Luong.Name = "Luong";
             this.Luong.ReadOnly = true;
             this.Luong.Width = 120;
@@ -435,9 +444,9 @@
             this.panelControlNV.Controls.Add(this.btnUpdateNV);
             this.panelControlNV.Controls.Add(this.btnAddNV);
             this.panelControlNV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControlNV.Location = new System.Drawing.Point(0, 623);
+            this.panelControlNV.Location = new System.Drawing.Point(0, 615);
             this.panelControlNV.Name = "panelControlNV";
-            this.panelControlNV.Size = new System.Drawing.Size(1064, 64);
+            this.panelControlNV.Size = new System.Drawing.Size(1062, 64);
             this.panelControlNV.TabIndex = 5;
             // 
             // BtnThoat
@@ -463,7 +472,7 @@
             this.btnCancelNV.ForeColor = System.Drawing.Color.White;
             this.btnCancelNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_32__1_;
             this.btnCancelNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelNV.Location = new System.Drawing.Point(667, 7);
+            this.btnCancelNV.Location = new System.Drawing.Point(666, 7);
             this.btnCancelNV.Name = "btnCancelNV";
             this.btnCancelNV.Size = new System.Drawing.Size(130, 45);
             this.btnCancelNV.TabIndex = 15;
@@ -479,7 +488,7 @@
             this.btnSaveNV.ForeColor = System.Drawing.Color.White;
             this.btnSaveNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_update_32;
             this.btnSaveNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveNV.Location = new System.Drawing.Point(499, 7);
+            this.btnSaveNV.Location = new System.Drawing.Point(498, 7);
             this.btnSaveNV.Name = "btnSaveNV";
             this.btnSaveNV.Size = new System.Drawing.Size(130, 45);
             this.btnSaveNV.TabIndex = 14;
@@ -495,7 +504,7 @@
             this.btnDeleteNV.ForeColor = System.Drawing.Color.White;
             this.btnDeleteNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_view_32;
             this.btnDeleteNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteNV.Location = new System.Drawing.Point(334, 7);
+            this.btnDeleteNV.Location = new System.Drawing.Point(333, 7);
             this.btnDeleteNV.Name = "btnDeleteNV";
             this.btnDeleteNV.Size = new System.Drawing.Size(130, 45);
             this.btnDeleteNV.TabIndex = 13;
@@ -511,7 +520,7 @@
             this.btnUpdateNV.ForeColor = System.Drawing.Color.White;
             this.btnUpdateNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_property_32__1_;
             this.btnUpdateNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateNV.Location = new System.Drawing.Point(168, 7);
+            this.btnUpdateNV.Location = new System.Drawing.Point(167, 7);
             this.btnUpdateNV.Name = "btnUpdateNV";
             this.btnUpdateNV.Size = new System.Drawing.Size(130, 45);
             this.btnUpdateNV.TabIndex = 12;
@@ -527,7 +536,7 @@
             this.btnAddNV.ForeColor = System.Drawing.Color.White;
             this.btnAddNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_add_new_32__2_;
             this.btnAddNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNV.Location = new System.Drawing.Point(4, 7);
+            this.btnAddNV.Location = new System.Drawing.Point(3, 7);
             this.btnAddNV.Name = "btnAddNV";
             this.btnAddNV.Size = new System.Drawing.Size(130, 45);
             this.btnAddNV.TabIndex = 11;
@@ -538,9 +547,9 @@
             // 
             // frmNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 687);
+            this.ClientSize = new System.Drawing.Size(1062, 679);
             this.Controls.Add(this.panelControlNV);
             this.Controls.Add(this.dtgvListNV);
             this.Controls.Add(this.panelListNV);

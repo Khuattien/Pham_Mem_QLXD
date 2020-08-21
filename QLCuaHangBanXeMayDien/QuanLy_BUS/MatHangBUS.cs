@@ -17,7 +17,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
             private set => instance = value; 
         }
 
-
+        private MatHangBUS() { }
         /// <summary>
         /// Phương thức lấy ra một danh sách các mặt hàng từ database
         /// </summary>
@@ -61,13 +61,13 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// Trả về true nếu thêm thành công
         /// Ngược lại false nếu thêm không thành công
         /// </returns>
-        public bool InsertMatHang(string maH,  string tenH, string nsx, string moTa, string ttBaoHanh, int soLuong, string donVi, string anhMinhHoa)
+        public bool InsertMatHang(string maH,  string tenH, string nsx, string moTa, string ttBaoHanh, int soLuong, string donVi, int giaBan ,string anhMinhHoa)
         {
-            string query = "EXEC dbo.USP_InsertMatHang @maHang , @tenHang , @nhaSX , @moTa , @thongtinBH , @soLuong , @donVi , @anhMinhHoa";
+            string query = "EXEC dbo.USP_InsertMatHang @maHang , @tenHang , @nhaSX , @moTa , @thongtinBH , @soLuong , @donVi , @giaBan , @anhMinhHoa";
 
             ///<param name="result"> đếm số dòng thực hiện thành công của ExecuteNonQuery </param>
             int result = 0;
-            result =  DataProvider.Instance.ExecuteNonQuery(query , new object[] { maH, tenH, nsx, moTa, ttBaoHanh, soLuong, donVi, anhMinhHoa});
+            result =  DataProvider.Instance.ExecuteNonQuery(query , new object[] { maH, tenH, nsx, moTa, ttBaoHanh, soLuong, donVi, giaBan, anhMinhHoa});
             // Đúng khi ExecuteNonQuery thực hiện được ít nhất 1 lần.
             return result > 0;
         }
@@ -75,11 +75,11 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         /// <summary>
         /// Phương thức thực sửa thông tin của một mặt hàng.
         /// </summary>
-        public bool UpdateMatHang(string maH, string tenH, string nsx, string moTa, string ttBaoHanh, int soLuong, string donVi, string anhMinhHoa)
+        public bool UpdateMatHang(string maH, string tenH, string nsx, string moTa, string ttBaoHanh, int soLuong, string donVi, int giaBan,string anhMinhHoa)
         {
-            string query = "EXEC dbo.USP_UpdateMatHang @maHang , @tenHang , @nhaSX , @moTa , @thongtinBH , @soLuong , @donVi , @anhMinhHoa";
+            string query = "EXEC dbo.USP_UpdateMatHang @maHang , @tenHang , @nhaSX , @moTa , @thongtinBH , @soLuong , @donVi , @giaBan , @anhMinhHoa";
             int result = 0;
-            result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maH, tenH, nsx, moTa, ttBaoHanh, soLuong, donVi, anhMinhHoa });
+            result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maH, tenH, nsx, moTa, ttBaoHanh, soLuong, donVi, giaBan, anhMinhHoa });
             return result > 0;
         }
 

@@ -37,6 +37,7 @@
             this.txbTTBH = new System.Windows.Forms.TextBox();
             this.txbMoTa = new System.Windows.Forms.TextBox();
             this.txbTenHang = new System.Windows.Forms.TextBox();
+            this.txbGiaBan = new System.Windows.Forms.TextBox();
             this.txbDVTinh = new System.Windows.Forms.TextBox();
             this.txbNSX = new System.Windows.Forms.TextBox();
             this.txbMaHang = new System.Windows.Forms.TextBox();
@@ -44,6 +45,7 @@
             this.lbMoTa = new System.Windows.Forms.Label();
             this.lbTenHang = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbGiaBan = new System.Windows.Forms.Label();
             this.lbDonVi = new System.Windows.Forms.Label();
             this.lbSoLuong = new System.Windows.Forms.Label();
             this.lbNhaSX = new System.Windows.Forms.Label();
@@ -89,6 +91,7 @@
             this.panelInfoNewMatHang.Controls.Add(this.txbTTBH);
             this.panelInfoNewMatHang.Controls.Add(this.txbMoTa);
             this.panelInfoNewMatHang.Controls.Add(this.txbTenHang);
+            this.panelInfoNewMatHang.Controls.Add(this.txbGiaBan);
             this.panelInfoNewMatHang.Controls.Add(this.txbDVTinh);
             this.panelInfoNewMatHang.Controls.Add(this.txbNSX);
             this.panelInfoNewMatHang.Controls.Add(this.txbMaHang);
@@ -96,6 +99,7 @@
             this.panelInfoNewMatHang.Controls.Add(this.lbMoTa);
             this.panelInfoNewMatHang.Controls.Add(this.lbTenHang);
             this.panelInfoNewMatHang.Controls.Add(this.label3);
+            this.panelInfoNewMatHang.Controls.Add(this.lbGiaBan);
             this.panelInfoNewMatHang.Controls.Add(this.lbDonVi);
             this.panelInfoNewMatHang.Controls.Add(this.lbSoLuong);
             this.panelInfoNewMatHang.Controls.Add(this.lbNhaSX);
@@ -114,7 +118,7 @@
             this.btnAddPic.ForeColor = System.Drawing.Color.White;
             this.btnAddPic.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_image_gallery_32;
             this.btnAddPic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddPic.Location = new System.Drawing.Point(549, 192);
+            this.btnAddPic.Location = new System.Drawing.Point(549, 225);
             this.btnAddPic.Name = "btnAddPic";
             this.btnAddPic.Size = new System.Drawing.Size(217, 32);
             this.btnAddPic.TabIndex = 4;
@@ -125,7 +129,7 @@
             // picMathang
             // 
             this.picMathang.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.picMathang.Location = new System.Drawing.Point(549, 230);
+            this.picMathang.Location = new System.Drawing.Point(549, 263);
             this.picMathang.Name = "picMathang";
             this.picMathang.Size = new System.Drawing.Size(215, 183);
             this.picMathang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,6 +170,16 @@
             this.txbTenHang.Name = "txbTenHang";
             this.txbTenHang.Size = new System.Drawing.Size(229, 28);
             this.txbTenHang.TabIndex = 2;
+            // 
+            // txbGiaBan
+            // 
+            this.txbGiaBan.Location = new System.Drawing.Point(535, 147);
+            this.txbGiaBan.MaxLength = 10;
+            this.txbGiaBan.Name = "txbGiaBan";
+            this.txbGiaBan.Size = new System.Drawing.Size(229, 28);
+            this.txbGiaBan.TabIndex = 5;
+            this.txbGiaBan.Text = "0";
+            this.txbGiaBan.TextChanged += new System.EventHandler(this.txbGiaBan_TextChanged);
             // 
             // txbDVTinh
             // 
@@ -226,6 +240,15 @@
             this.label3.Size = new System.Drawing.Size(60, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "label2";
+            // 
+            // lbGiaBan
+            // 
+            this.lbGiaBan.AutoSize = true;
+            this.lbGiaBan.Location = new System.Drawing.Point(409, 151);
+            this.lbGiaBan.Name = "lbGiaBan";
+            this.lbGiaBan.Size = new System.Drawing.Size(75, 24);
+            this.lbGiaBan.TabIndex = 0;
+            this.lbGiaBan.Text = "Giá bán";
             // 
             // lbDonVi
             // 
@@ -355,5 +378,7 @@
         private System.Windows.Forms.Button btnAddPic;
         private System.Windows.Forms.Button btnSaveMatHangMoi;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txbGiaBan;
+        private System.Windows.Forms.Label lbGiaBan;
     }
 }

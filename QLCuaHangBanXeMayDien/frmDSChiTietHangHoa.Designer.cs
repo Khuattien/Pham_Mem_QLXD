@@ -42,10 +42,12 @@
             this.picAMH = new System.Windows.Forms.PictureBox();
             this.txbBaoHanh = new System.Windows.Forms.TextBox();
             this.txbMoTa = new System.Windows.Forms.TextBox();
+            this.txbGiaBan = new System.Windows.Forms.TextBox();
             this.txbDonVi = new System.Windows.Forms.TextBox();
             this.txbNhaSX = new System.Windows.Forms.TextBox();
             this.txbTenHang = new System.Windows.Forms.TextBox();
             this.txbMaHang = new System.Windows.Forms.TextBox();
+            this.lbGiaBan = new System.Windows.Forms.Label();
             this.lbDonVi = new System.Windows.Forms.Label();
             this.lbSoLuong = new System.Windows.Forms.Label();
             this.lbNhaSanXuat = new System.Windows.Forms.Label();
@@ -54,6 +56,11 @@
             this.lbMT = new System.Windows.Forms.Label();
             this.lbMaHang = new System.Windows.Forms.Label();
             this.dtgvDanhSach = new System.Windows.Forms.DataGridView();
+            this.panelHeading = new System.Windows.Forms.Panel();
+            this.lbHeađing = new System.Windows.Forms.Label();
+            this.picIcoSearch = new System.Windows.Forms.PictureBox();
+            this.btnSearchID = new System.Windows.Forms.Button();
+            this.txbSearchID = new System.Windows.Forms.TextBox();
             this.colMaHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTenHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,12 +68,8 @@
             this.colBaoHanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelHeading = new System.Windows.Forms.Panel();
-            this.lbHeađing = new System.Windows.Forms.Label();
-            this.picIcoSearch = new System.Windows.Forms.PictureBox();
-            this.btnSearchID = new System.Windows.Forms.Button();
-            this.txbSearchID = new System.Windows.Forms.TextBox();
             this.panelHeader.SuspendLayout();
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
@@ -85,7 +88,7 @@
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1370, 66);
+            this.panelHeader.Size = new System.Drawing.Size(1503, 66);
             this.panelHeader.TabIndex = 1;
             // 
             // lbHeader
@@ -93,7 +96,7 @@
             this.lbHeader.AutoSize = true;
             this.lbHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHeader.ForeColor = System.Drawing.Color.White;
-            this.lbHeader.Location = new System.Drawing.Point(488, 18);
+            this.lbHeader.Location = new System.Drawing.Point(549, 18);
             this.lbHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHeader.Name = "lbHeader";
             this.lbHeader.Size = new System.Drawing.Size(377, 32);
@@ -110,10 +113,12 @@
             this.panelInfo.Controls.Add(this.picAMH);
             this.panelInfo.Controls.Add(this.txbBaoHanh);
             this.panelInfo.Controls.Add(this.txbMoTa);
+            this.panelInfo.Controls.Add(this.txbGiaBan);
             this.panelInfo.Controls.Add(this.txbDonVi);
             this.panelInfo.Controls.Add(this.txbNhaSX);
             this.panelInfo.Controls.Add(this.txbTenHang);
             this.panelInfo.Controls.Add(this.txbMaHang);
+            this.panelInfo.Controls.Add(this.lbGiaBan);
             this.panelInfo.Controls.Add(this.lbDonVi);
             this.panelInfo.Controls.Add(this.lbSoLuong);
             this.panelInfo.Controls.Add(this.lbNhaSanXuat);
@@ -123,8 +128,10 @@
             this.panelInfo.Controls.Add(this.lbMaHang);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInfo.Location = new System.Drawing.Point(0, 66);
+            this.panelInfo.MaximumSize = new System.Drawing.Size(1503, 321);
+            this.panelInfo.MinimumSize = new System.Drawing.Size(1503, 321);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(1370, 303);
+            this.panelInfo.Size = new System.Drawing.Size(1503, 321);
             this.panelInfo.TabIndex = 3;
             // 
             // btnImage
@@ -143,7 +150,7 @@
             // 
             this.numSoLuong.Location = new System.Drawing.Point(216, 166);
             this.numSoLuong.Name = "numSoLuong";
-            this.numSoLuong.Size = new System.Drawing.Size(200, 28);
+            this.numSoLuong.Size = new System.Drawing.Size(141, 28);
             this.numSoLuong.TabIndex = 4;
             // 
             // panelControlButton
@@ -154,9 +161,9 @@
             this.panelControlButton.Controls.Add(this.btnUpdateHang);
             this.panelControlButton.Controls.Add(this.btnInsertHang);
             this.panelControlButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControlButton.Location = new System.Drawing.Point(1170, 0);
+            this.panelControlButton.Location = new System.Drawing.Point(1303, 0);
             this.panelControlButton.Name = "panelControlButton";
-            this.panelControlButton.Size = new System.Drawing.Size(200, 303);
+            this.panelControlButton.Size = new System.Drawing.Size(200, 321);
             this.panelControlButton.TabIndex = 3;
             // 
             // btnCancelHang
@@ -266,11 +273,21 @@
             this.txbMoTa.Size = new System.Drawing.Size(307, 97);
             this.txbMoTa.TabIndex = 6;
             // 
+            // txbGiaBan
+            // 
+            this.txbGiaBan.Location = new System.Drawing.Point(216, 270);
+            this.txbGiaBan.MaxLength = 10;
+            this.txbGiaBan.Name = "txbGiaBan";
+            this.txbGiaBan.Size = new System.Drawing.Size(200, 28);
+            this.txbGiaBan.TabIndex = 5;
+            this.txbGiaBan.Text = "0";
+            this.txbGiaBan.TextChanged += new System.EventHandler(this.txbGiaBan_TextChanged);
+            // 
             // txbDonVi
             // 
             this.txbDonVi.Location = new System.Drawing.Point(216, 215);
             this.txbDonVi.Name = "txbDonVi";
-            this.txbDonVi.Size = new System.Drawing.Size(200, 28);
+            this.txbDonVi.Size = new System.Drawing.Size(141, 28);
             this.txbDonVi.TabIndex = 5;
             this.txbDonVi.Text = "Chiếc";
             // 
@@ -294,6 +311,17 @@
             this.txbMaHang.Name = "txbMaHang";
             this.txbMaHang.Size = new System.Drawing.Size(200, 28);
             this.txbMaHang.TabIndex = 1;
+            // 
+            // lbGiaBan
+            // 
+            this.lbGiaBan.AutoSize = true;
+            this.lbGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGiaBan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbGiaBan.Location = new System.Drawing.Point(61, 270);
+            this.lbGiaBan.Name = "lbGiaBan";
+            this.lbGiaBan.Size = new System.Drawing.Size(82, 24);
+            this.lbGiaBan.TabIndex = 0;
+            this.lbGiaBan.Text = "Giá bán";
             // 
             // lbDonVi
             // 
@@ -384,20 +412,81 @@
             this.colBaoHanh,
             this.colSoLuong,
             this.colDonVi,
+            this.colGiaBan,
             this.colImage});
             this.dtgvDanhSach.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtgvDanhSach.Location = new System.Drawing.Point(0, 438);
+            this.dtgvDanhSach.Location = new System.Drawing.Point(0, 457);
             this.dtgvDanhSach.Name = "dtgvDanhSach";
             this.dtgvDanhSach.RowHeadersWidth = 51;
             this.dtgvDanhSach.RowTemplate.Height = 24;
-            this.dtgvDanhSach.Size = new System.Drawing.Size(1370, 293);
+            this.dtgvDanhSach.Size = new System.Drawing.Size(1503, 267);
             this.dtgvDanhSach.TabIndex = 4;
             this.dtgvDanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDanhSach_CellContentClick);
             this.dtgvDanhSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDanhSach_CellContentClick);
             // 
+            // panelHeading
+            // 
+            this.panelHeading.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panelHeading.Controls.Add(this.lbHeađing);
+            this.panelHeading.Controls.Add(this.picIcoSearch);
+            this.panelHeading.Controls.Add(this.btnSearchID);
+            this.panelHeading.Controls.Add(this.txbSearchID);
+            this.panelHeading.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHeading.Location = new System.Drawing.Point(0, 387);
+            this.panelHeading.Name = "panelHeading";
+            this.panelHeading.Size = new System.Drawing.Size(1503, 70);
+            this.panelHeading.TabIndex = 5;
+            // 
+            // lbHeađing
+            // 
+            this.lbHeađing.AutoSize = true;
+            this.lbHeađing.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHeađing.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbHeađing.Location = new System.Drawing.Point(648, 21);
+            this.lbHeađing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbHeađing.Name = "lbHeađing";
+            this.lbHeađing.Size = new System.Drawing.Size(185, 32);
+            this.lbHeađing.TabIndex = 0;
+            this.lbHeađing.Text = "Bảng chi tiết";
+            this.lbHeađing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picIcoSearch
+            // 
+            this.picIcoSearch.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_26;
+            this.picIcoSearch.Location = new System.Drawing.Point(440, 21);
+            this.picIcoSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.picIcoSearch.Name = "picIcoSearch";
+            this.picIcoSearch.Size = new System.Drawing.Size(28, 26);
+            this.picIcoSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picIcoSearch.TabIndex = 6;
+            this.picIcoSearch.TabStop = false;
+            // 
+            // btnSearchID
+            // 
+            this.btnSearchID.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchID.ForeColor = System.Drawing.Color.White;
+            this.btnSearchID.Location = new System.Drawing.Point(19, 21);
+            this.btnSearchID.Name = "btnSearchID";
+            this.btnSearchID.Size = new System.Drawing.Size(133, 30);
+            this.btnSearchID.TabIndex = 5;
+            this.btnSearchID.Text = "Tìm mã hàng";
+            this.btnSearchID.UseVisualStyleBackColor = false;
+            this.btnSearchID.Click += new System.EventHandler(this.btnSearchID_Click);
+            // 
+            // txbSearchID
+            // 
+            this.txbSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSearchID.Location = new System.Drawing.Point(158, 21);
+            this.txbSearchID.Name = "txbSearchID";
+            this.txbSearchID.Size = new System.Drawing.Size(310, 30);
+            this.txbSearchID.TabIndex = 4;
+            this.txbSearchID.Click += new System.EventHandler(this.txbSearchID_Click);
+            this.txbSearchID.Enter += new System.EventHandler(this.btnSearchID_Click);
+            // 
             // colMaHang
             // 
-            this.colMaHang.DataPropertyName = "Mahang";
+            this.colMaHang.DataPropertyName = "MaHang";
             this.colMaHang.HeaderText = "Mã hàng";
             this.colMaHang.MinimumWidth = 6;
             this.colMaHang.Name = "colMaHang";
@@ -411,7 +500,7 @@
             this.colTenHang.MinimumWidth = 6;
             this.colTenHang.Name = "colTenHang";
             this.colTenHang.ReadOnly = true;
-            this.colTenHang.Width = 200;
+            this.colTenHang.Width = 150;
             // 
             // colNSX
             // 
@@ -458,6 +547,15 @@
             this.colDonVi.ReadOnly = true;
             this.colDonVi.Width = 125;
             // 
+            // colGiaBan
+            // 
+            this.colGiaBan.DataPropertyName = "GiaBan";
+            this.colGiaBan.HeaderText = "Giá bán";
+            this.colGiaBan.MinimumWidth = 6;
+            this.colGiaBan.Name = "colGiaBan";
+            this.colGiaBan.ReadOnly = true;
+            this.colGiaBan.Width = 150;
+            // 
             // colImage
             // 
             this.colImage.DataPropertyName = "AnhMinhHoa";
@@ -467,69 +565,11 @@
             this.colImage.ReadOnly = true;
             this.colImage.Width = 200;
             // 
-            // panelHeading
-            // 
-            this.panelHeading.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panelHeading.Controls.Add(this.lbHeađing);
-            this.panelHeading.Controls.Add(this.picIcoSearch);
-            this.panelHeading.Controls.Add(this.btnSearchID);
-            this.panelHeading.Controls.Add(this.txbSearchID);
-            this.panelHeading.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHeading.Location = new System.Drawing.Point(0, 369);
-            this.panelHeading.Name = "panelHeading";
-            this.panelHeading.Size = new System.Drawing.Size(1370, 69);
-            this.panelHeading.TabIndex = 5;
-            // 
-            // lbHeađing
-            // 
-            this.lbHeađing.AutoSize = true;
-            this.lbHeađing.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHeađing.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbHeađing.Location = new System.Drawing.Point(591, 3);
-            this.lbHeađing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbHeađing.Name = "lbHeađing";
-            this.lbHeađing.Size = new System.Drawing.Size(185, 32);
-            this.lbHeađing.TabIndex = 0;
-            this.lbHeađing.Text = "Bảng chi tiết";
-            this.lbHeađing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picIcoSearch
-            // 
-            this.picIcoSearch.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_26;
-            this.picIcoSearch.Location = new System.Drawing.Point(440, 9);
-            this.picIcoSearch.Margin = new System.Windows.Forms.Padding(0);
-            this.picIcoSearch.Name = "picIcoSearch";
-            this.picIcoSearch.Size = new System.Drawing.Size(28, 26);
-            this.picIcoSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picIcoSearch.TabIndex = 6;
-            this.picIcoSearch.TabStop = false;
-            // 
-            // btnSearchID
-            // 
-            this.btnSearchID.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchID.ForeColor = System.Drawing.Color.White;
-            this.btnSearchID.Location = new System.Drawing.Point(19, 9);
-            this.btnSearchID.Name = "btnSearchID";
-            this.btnSearchID.Size = new System.Drawing.Size(133, 30);
-            this.btnSearchID.TabIndex = 5;
-            this.btnSearchID.Text = "Tìm mã hàng";
-            this.btnSearchID.UseVisualStyleBackColor = false;
-            this.btnSearchID.Click += new System.EventHandler(this.btnSearchID_Click);
-            // 
-            // txbSearchID
-            // 
-            this.txbSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearchID.Location = new System.Drawing.Point(158, 9);
-            this.txbSearchID.Name = "txbSearchID";
-            this.txbSearchID.Size = new System.Drawing.Size(310, 30);
-            this.txbSearchID.TabIndex = 4;
-            // 
             // frmDSChiTietHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 731);
+            this.ClientSize = new System.Drawing.Size(1503, 724);
             this.Controls.Add(this.panelHeading);
             this.Controls.Add(this.dtgvDanhSach);
             this.Controls.Add(this.panelInfo);
@@ -537,8 +577,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1423, 778);
-            this.MinimumSize = new System.Drawing.Size(1364, 726);
+            this.MaximumSize = new System.Drawing.Size(1521, 771);
+            this.MinimumSize = new System.Drawing.Size(1521, 771);
             this.Name = "frmDSChiTietHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmDSChiTietHangHoa";
@@ -589,6 +629,8 @@
         private System.Windows.Forms.Label lbMT;
         private System.Windows.Forms.NumericUpDown numSoLuong;
         private System.Windows.Forms.Button btnImage;
+        private System.Windows.Forms.TextBox txbGiaBan;
+        private System.Windows.Forms.Label lbGiaBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaHang;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTenHang;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNSX;
@@ -596,6 +638,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colBaoHanh;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDonVi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGiaBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn colImage;
     }
 }

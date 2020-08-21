@@ -51,6 +51,7 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.Text = dtgvDanhSach.Rows[row].Cells["colBaoHanh"].Value.ToString();
             numSoLuong.Value = (int)dtgvDanhSach.Rows[row].Cells["colSoLuong"].Value;
             txbDonVi.Text = dtgvDanhSach.Rows[row].Cells["colDonVi"].Value.ToString();
+            txbGiaBan.Text = dtgvDanhSach.Rows[row].Cells["colGiaBan"].Value.ToString();
             picAMH.Image = Image.FromFile(dtgvDanhSach.Rows[row].Cells["colImage"].Value.ToString());
             setEnableButton3();
         }
@@ -67,8 +68,9 @@ namespace QLCuaHangBanXeMayDien
             txbNhaSX.ResetText();
             txbMoTa.ResetText();
             txbBaoHanh.ResetText();
-            txbDonVi.ResetText();
+            txbDonVi.Text = "Chiếc";
             numSoLuong.Value = 0;
+            txbGiaBan.Text = "0";
             picAMH.Image = new Bitmap(Application.StartupPath + "\\Resources\\icons8-question-mark-96.png");
         }
         /// <summary>
@@ -83,6 +85,7 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.Enabled = false;
             txbDonVi.Enabled = false;
             numSoLuong.Enabled = false;
+            txbGiaBan.Enabled = false;
         }
         /// <summary>
         /// Cho phép điền các thông tin vào textbox... để thêm sản phẩm mới.
@@ -96,7 +99,7 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.Enabled = true;
             txbDonVi.Enabled = true;
             numSoLuong.Enabled = true;
-
+            txbGiaBan.Enabled = true;
             txbMaHang.Text = "Nhập mã sản phẩm mới";
             txbMaHang.Focus();
         }
@@ -112,6 +115,7 @@ namespace QLCuaHangBanXeMayDien
             txbBaoHanh.Enabled = true;
             txbDonVi.Enabled = true;
             numSoLuong.Enabled = true;
+            txbGiaBan.Enabled = true;
             txbTenHang.Focus();
         }
 
@@ -181,6 +185,9 @@ namespace QLCuaHangBanXeMayDien
             if (txbDonVi.Text != "")
                 xeDien.DonViTinh = txbDonVi.Text;
 
+            if (txbGiaBan.Text != "")
+                xeDien.GiaBan = int.Parse(txbGiaBan.Text);
+
         }
         //Biến đánh dấu sự thay đổi ảnh minh họa của sản phẩm
         public bool picChanged = false;
@@ -197,10 +204,18 @@ namespace QLCuaHangBanXeMayDien
             xeDien.NhaSanXuat = txbNhaSX.Text;
             if (txbMoTa.Text != "")
                 xeDien.MoTa = txbMoTa.Text;
+
             if (txbBaoHanh.Text != "")
                 xeDien.ThongTinBaoHanh = txbBaoHanh.Text;
+
             xeDien.SoLuong = (int)numSoLuong.Value;
-            xeDien.DonViTinh = txbDonVi.Text;
+
+            if (txbDonVi.Text != "")
+                xeDien.DonViTinh = txbDonVi.Text;
+
+            if (txbGiaBan.Text != "")
+                xeDien.GiaBan = int.Parse(txbGiaBan.Text);
+
             if (!picChanged)
                 xeDien.AnhMinhHoa = dtgvDanhSach.Rows[row].Cells["colImage"].Value.ToString();
         }
@@ -209,6 +224,19 @@ namespace QLCuaHangBanXeMayDien
 
 
         #region Các sự kiên trên form
+        /// <summary>
+        /// Kiểm tra giá bán có đúng là một số không.
+        /// </summary>
+        private void txbGiaBan_TextChanged(object sender, EventArgs e)
+        {
+            int val;
+            if (int.TryParse(txbGiaBan.Text, out val) == false && txbGiaBan.Text != "")
+            {
+                MessageBox.Show("Giá bán phải là một con số và giá tối đa hiện tại cho phép là 2,1 tỷ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+
         /// <summary>
         /// Sự kiện hiển thị thông tin của sản phẩm lên các textbox khi
         /// nhấn vào một ô thuộc tính của sản phẩm trên dòng đó
@@ -246,9 +274,9 @@ namespace QLCuaHangBanXeMayDien
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     xeDien.AnhMinhHoa = dlg.FileName;
+                    picAMH.Image = Image.FromFile(xeDien.AnhMinhHoa);
                     picChanged = true;
                 }
-                picAMH.Image = Image.FromFile(xeDien.AnhMinhHoa);
             }
             catch (FileNotFoundException ex)
             {
@@ -304,7 +332,7 @@ namespace QLCuaHangBanXeMayDien
                     try
                     {
                         settingDataInputBeforeInsert();
-                        bool result = MatHangBUS.Instance.InsertMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.AnhMinhHoa);
+                        bool result = MatHangBUS.Instance.InsertMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.GiaBan, xeDien.AnhMinhHoa);
                         if (result)
                         {
                             MessageBox.Show("Thêm thành công.");
@@ -337,7 +365,7 @@ namespace QLCuaHangBanXeMayDien
                     try
                     {
                         settingDataInputBeforeUpdate();
-                        bool result = MatHangBUS.Instance.UpdateMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.AnhMinhHoa);
+                        bool result = MatHangBUS.Instance.UpdateMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.GiaBan, xeDien.AnhMinhHoa);
                         if (result)
                         {
                             MessageBox.Show("Đã sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -438,7 +466,18 @@ namespace QLCuaHangBanXeMayDien
                 loadData();
             }
         }
+
+        private void txbSearchID_Click(object sender, EventArgs e)
+        {
+            setEnableTextBox1();
+            setEnableButton1();
+            clearTextbox();
+        }
         #endregion
 
+        private void txbSearchID_Leave(object sender, EventArgs e)
+        {
+            loadData();
+        }
     }
 }

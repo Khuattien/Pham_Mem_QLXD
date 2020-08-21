@@ -237,7 +237,7 @@ namespace QLCuaHangBanXeMayDien
                         else
                             gt = "Nữ";
 
-                        if (NhanVienBUS.Instance.InsertNhanvien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, txbDienThoaiNV.Text, txbDiaChi.Text, txbChucVuNV.Text, float.Parse(txbLuongNV.Text)))
+                        if (NhanVienBUS.Instance.InsertNhanvien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, txbDienThoaiNV.Text, txbDiaChi.Text, txbChucVuNV.Text, int.Parse(txbLuongNV.Text)))
                         {
                             MessageBox.Show("Thêm thành công");
                             LoadDataNV();
@@ -294,7 +294,7 @@ namespace QLCuaHangBanXeMayDien
                             gt = "Nam";
                         else
                             gt = "Nữ";
-                        if (NhanVienBUS.Instance.UpdateNhanVien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, txbDienThoaiNV.Text, txbDiaChi.Text, txbChucVuNV.Text, float.Parse(txbLuongNV.Text)))
+                        if (NhanVienBUS.Instance.UpdateNhanVien(txbMaNV.Text, txbTenNV.Text, int.Parse(txbNamSinhNV.Text), gt, txbDienThoaiNV.Text, txbDiaChi.Text, txbChucVuNV.Text, int.Parse(txbLuongNV.Text)))
                         {
                             MessageBox.Show("Sửa thành công");
                             LoadDataNV();

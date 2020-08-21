@@ -39,6 +39,7 @@
             this.btnUpdateHangHoa = new System.Windows.Forms.Button();
             this.txbMota = new System.Windows.Forms.TextBox();
             this.txbThongTinBaoHanh = new System.Windows.Forms.TextBox();
+            this.lbGiaBan = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbTenHang
@@ -73,7 +74,7 @@
             // lbMoTa
             // 
             this.lbMoTa.AutoSize = true;
-            this.lbMoTa.Location = new System.Drawing.Point(35, 196);
+            this.lbMoTa.Location = new System.Drawing.Point(35, 238);
             this.lbMoTa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMoTa.Name = "lbMoTa";
             this.lbMoTa.Size = new System.Drawing.Size(71, 24);
@@ -83,7 +84,7 @@
             // lbTTBH
             // 
             this.lbTTBH.AutoSize = true;
-            this.lbTTBH.Location = new System.Drawing.Point(35, 319);
+            this.lbTTBH.Location = new System.Drawing.Point(35, 388);
             this.lbTTBH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTTBH.Name = "lbTTBH";
             this.lbTTBH.Size = new System.Drawing.Size(195, 24);
@@ -93,7 +94,7 @@
             // lbSL
             // 
             this.lbSL.AutoSize = true;
-            this.lbSL.Location = new System.Drawing.Point(41, 121);
+            this.lbSL.Location = new System.Drawing.Point(35, 121);
             this.lbSL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSL.Name = "lbSL";
             this.lbSL.Size = new System.Drawing.Size(101, 24);
@@ -113,7 +114,7 @@
             // btnDeleleHangHoa
             // 
             this.btnDeleleHangHoa.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnDeleleHangHoa.Location = new System.Drawing.Point(0, 519);
+            this.btnDeleleHangHoa.Location = new System.Drawing.Point(0, 583);
             this.btnDeleleHangHoa.Name = "btnDeleleHangHoa";
             this.btnDeleleHangHoa.Size = new System.Drawing.Size(403, 40);
             this.btnDeleleHangHoa.TabIndex = 2;
@@ -124,7 +125,7 @@
             // btnUpdateHangHoa
             // 
             this.btnUpdateHangHoa.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnUpdateHangHoa.Location = new System.Drawing.Point(0, 479);
+            this.btnUpdateHangHoa.Location = new System.Drawing.Point(0, 543);
             this.btnUpdateHangHoa.Name = "btnUpdateHangHoa";
             this.btnUpdateHangHoa.Size = new System.Drawing.Size(403, 40);
             this.btnUpdateHangHoa.TabIndex = 1;
@@ -135,7 +136,7 @@
             // txbMota
             // 
             this.txbMota.Enabled = false;
-            this.txbMota.Location = new System.Drawing.Point(115, 199);
+            this.txbMota.Location = new System.Drawing.Point(115, 279);
             this.txbMota.Multiline = true;
             this.txbMota.Name = "txbMota";
             this.txbMota.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -145,24 +146,35 @@
             // txbThongTinBaoHanh
             // 
             this.txbThongTinBaoHanh.Enabled = false;
-            this.txbThongTinBaoHanh.Location = new System.Drawing.Point(115, 346);
+            this.txbThongTinBaoHanh.Location = new System.Drawing.Point(115, 436);
             this.txbThongTinBaoHanh.Multiline = true;
             this.txbThongTinBaoHanh.Name = "txbThongTinBaoHanh";
             this.txbThongTinBaoHanh.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txbThongTinBaoHanh.Size = new System.Drawing.Size(279, 113);
+            this.txbThongTinBaoHanh.Size = new System.Drawing.Size(279, 87);
             this.txbThongTinBaoHanh.TabIndex = 3;
+            // 
+            // lbGiaBan
+            // 
+            this.lbGiaBan.AutoSize = true;
+            this.lbGiaBan.Location = new System.Drawing.Point(35, 178);
+            this.lbGiaBan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbGiaBan.Name = "lbGiaBan";
+            this.lbGiaBan.Size = new System.Drawing.Size(95, 24);
+            this.lbGiaBan.TabIndex = 0;
+            this.lbGiaBan.Text = "Giá bán  : ";
             // 
             // frmInforMatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 559);
+            this.ClientSize = new System.Drawing.Size(403, 623);
             this.Controls.Add(this.txbThongTinBaoHanh);
             this.Controls.Add(this.txbMota);
             this.Controls.Add(this.btnUpdateHangHoa);
             this.Controls.Add(this.btnDeleleHangHoa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbDonVi);
+            this.Controls.Add(this.lbGiaBan);
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.lbTTBH);
             this.Controls.Add(this.lbMoTa);
@@ -172,8 +184,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(421, 606);
-            this.MinimumSize = new System.Drawing.Size(421, 606);
+            this.MaximumSize = new System.Drawing.Size(421, 694);
+            this.MinimumSize = new System.Drawing.Size(421, 670);
             this.Name = "frmInforMatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin xe";
@@ -195,5 +207,6 @@
         private System.Windows.Forms.Button btnUpdateHangHoa;
         private System.Windows.Forms.TextBox txbMota;
         private System.Windows.Forms.TextBox txbThongTinBaoHanh;
+        private System.Windows.Forms.Label lbGiaBan;
     }
 }

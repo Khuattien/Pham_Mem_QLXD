@@ -12,6 +12,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
         private string thongTinBaoHanh;
         private int soLuong;
         private string donViTinh;
+        private int giaBan;
         private string anhMinhHoa;    // ảnh minh họa được lưu dưới dạng đường dẫn của máy cục bộ.
 
         #region Get and Set Attributes 
@@ -22,6 +23,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
         public string ThongTinBaoHanh { get => thongTinBaoHanh; set => thongTinBaoHanh = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public string DonViTinh { get => donViTinh; set => donViTinh = value; }
+        public int GiaBan { get => giaBan; set => giaBan = value; }
         public string AnhMinhHoa { get => anhMinhHoa; set => anhMinhHoa = value; }
         #endregion
         #region Contructors
@@ -34,10 +36,11 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
             this.thongTinBaoHanh = "Không có";
             this.soLuong = 0;
             this.donViTinh = "Chiếc";
+            this.giaBan = 0;
             this.anhMinhHoa = "";
         }
 
-        public MatHang(string maH, string tenH, string nhaSX, string moTa, string ttBaoHanh, int soLuong, string donVi, string image)
+        public MatHang(string maH, string tenH, string nhaSX, string moTa, string ttBaoHanh, int soLuong, string donVi, int giaBan , string image)
         {
             this.maHang = maH;
             this.tenHang = tenH;
@@ -46,6 +49,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
             this.thongTinBaoHanh = ttBaoHanh;
             this.soLuong = soLuong;
             this.donViTinh = donVi;
+            this.giaBan = giaBan;
             this.anhMinhHoa = image;
         }
 
@@ -58,6 +62,7 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
             this.thongTinBaoHanh = row["ThongTinBaoHanh"].ToString();
             this.soLuong = (int)row["SoLuong"];
             this.donViTinh = row["DonViTinh"].ToString();
+            this.giaBan = int.Parse(row["GiaBan"].ToString());
             this.anhMinhHoa = row["AnhMinhHoa"].ToString();
         }
         #endregion

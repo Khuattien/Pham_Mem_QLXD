@@ -17,7 +17,7 @@ namespace QLCuaHangBanXeMayDien
     public partial class frmUpdateHangHoa : Form
     {
         private MatHang xeDien = new MatHang();
-        public frmUpdateHangHoa( MatHang transmission)
+        public frmUpdateHangHoa(MatHang transmission)
         {
             InitializeComponent();
 
@@ -35,8 +35,10 @@ namespace QLCuaHangBanXeMayDien
             txbNhaSX.Text = xeDien.NhaSanXuat;
             numSoLuong.Value = xeDien.SoLuong;
             txbDonVi.Text = xeDien.DonViTinh;
+            txbGiaBan.Text = xeDien.GiaBan.ToString();
             txbMoTa.Text = xeDien.MoTa;
             txbTTBH.Text = xeDien.ThongTinBaoHanh;
+            txbGiaBan.Text = xeDien.GiaBan.ToString();
             picMatHang.Image = Image.FromFile(xeDien.AnhMinhHoa);
         }
         /// <summary>
@@ -52,11 +54,30 @@ namespace QLCuaHangBanXeMayDien
             if (txbTTBH.Text != "")
                 xeDien.ThongTinBaoHanh = txbTTBH.Text;
             xeDien.SoLuong = (int)numSoLuong.Value;
-            if(txbDonVi.Text != "")
+            if (txbDonVi.Text != "")
                 xeDien.DonViTinh = txbDonVi.Text;
+
+            if (txbGiaBan.Text != "")
+                xeDien.GiaBan = int.Parse(txbGiaBan.Text);
+            else
+                xeDien.GiaBan = 0;
         }
 
         #region Các sự kiện trong form cập nhập thông tin hàng hóa
+
+        /// <summary>
+        /// Sự kiện kiểm tra giá bán nhập vào có đúng là số
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txbGiaBan_TextChanged(object sender, EventArgs e)
+        {
+            int val;
+            if (int.TryParse(txbGiaBan.Text, out val) == false && txbGiaBan.Text != "")
+            {
+                MessageBox.Show("Giá bán phải là một con số và giá tối đa hiện tại cho phép là 2,1 tỷ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
 
         /// <summary>
         ///   Sự kiển hủy thay đổi các thông tin của sản phẩm 
@@ -70,9 +91,9 @@ namespace QLCuaHangBanXeMayDien
         /// </summary>
         private void btnSaveNV_Click(object sender, EventArgs e)
         {
-            if (txbTenHang.Text == "" || txbNhaSX.Text == "")
+            if (txbTenHang.Text == "" || txbNhaSX.Text == "" || txbGiaBan.Text == "")
             {
-                MessageBox.Show("Mã hàng , tên hàng, nhà sản xuất không được để trống.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Tên hàng, giá bán , nhà sản xuất không được để trống.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -80,7 +101,7 @@ namespace QLCuaHangBanXeMayDien
                 {
                     settingDataInput();
 
-                    bool result = MatHangBUS.Instance.UpdateMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.AnhMinhHoa);
+                    bool result = MatHangBUS.Instance.UpdateMatHang(xeDien.MaHang, xeDien.TenHang, xeDien.NhaSanXuat, xeDien.MoTa, xeDien.ThongTinBaoHanh, xeDien.SoLuong, xeDien.DonViTinh, xeDien.GiaBan, xeDien.AnhMinhHoa);
                     if (result)
                     {
                         MessageBox.Show("Đã sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

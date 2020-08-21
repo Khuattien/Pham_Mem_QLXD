@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.txbTenHang = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTenHang = new System.Windows.Forms.Label();
             this.txbNhaSX = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbNhaSX = new System.Windows.Forms.Label();
+            this.lbSL = new System.Windows.Forms.Label();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbDonVi = new System.Windows.Forms.Label();
             this.txbDonVi = new System.Windows.Forms.TextBox();
             this.lbMoTa = new System.Windows.Forms.Label();
             this.btnChangePic = new System.Windows.Forms.Button();
@@ -44,6 +44,8 @@
             this.lbThongTinBaoHanh = new System.Windows.Forms.Label();
             this.btnSaveNV = new System.Windows.Forms.Button();
             this.btnCancelNV = new System.Windows.Forms.Button();
+            this.lbGiaBan = new System.Windows.Forms.Label();
+            this.txbGiaBan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMatHang)).BeginInit();
             this.SuspendLayout();
@@ -52,50 +54,52 @@
             // 
             this.txbTenHang.Location = new System.Drawing.Point(193, 42);
             this.txbTenHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbTenHang.MaxLength = 500;
             this.txbTenHang.Name = "txbTenHang";
             this.txbTenHang.Size = new System.Drawing.Size(259, 30);
             this.txbTenHang.TabIndex = 1;
             // 
-            // label1
+            // lbTenHang
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tên hàng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTenHang.AutoSize = true;
+            this.lbTenHang.Location = new System.Drawing.Point(48, 42);
+            this.lbTenHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTenHang.Name = "lbTenHang";
+            this.lbTenHang.Size = new System.Drawing.Size(96, 25);
+            this.lbTenHang.TabIndex = 1;
+            this.lbTenHang.Text = "Tên hàng";
+            this.lbTenHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txbNhaSX
             // 
             this.txbNhaSX.Location = new System.Drawing.Point(193, 92);
             this.txbNhaSX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbNhaSX.MaxLength = 500;
             this.txbNhaSX.Name = "txbNhaSX";
             this.txbNhaSX.Size = new System.Drawing.Size(259, 30);
             this.txbNhaSX.TabIndex = 2;
             // 
-            // label2
+            // lbNhaSX
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 95);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nhà sản xuất";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNhaSX.AutoSize = true;
+            this.lbNhaSX.Location = new System.Drawing.Point(48, 95);
+            this.lbNhaSX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNhaSX.Name = "lbNhaSX";
+            this.lbNhaSX.Size = new System.Drawing.Size(127, 25);
+            this.lbNhaSX.TabIndex = 1;
+            this.lbNhaSX.Text = "Nhà sản xuất";
+            this.lbNhaSX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // lbSL
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 157);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Số lượng";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbSL.AutoSize = true;
+            this.lbSL.Location = new System.Drawing.Point(48, 157);
+            this.lbSL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSL.Name = "lbSL";
+            this.lbSL.Size = new System.Drawing.Size(90, 25);
+            this.lbSL.TabIndex = 1;
+            this.lbSL.Text = "Số lượng";
+            this.lbSL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // numSoLuong
             // 
@@ -104,21 +108,22 @@
             this.numSoLuong.Size = new System.Drawing.Size(148, 30);
             this.numSoLuong.TabIndex = 3;
             // 
-            // label4
+            // lbDonVi
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 216);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 25);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Đơn vị tính";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbDonVi.AutoSize = true;
+            this.lbDonVi.Location = new System.Drawing.Point(48, 214);
+            this.lbDonVi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDonVi.Name = "lbDonVi";
+            this.lbDonVi.Size = new System.Drawing.Size(103, 25);
+            this.lbDonVi.TabIndex = 1;
+            this.lbDonVi.Text = "Đơn vị tính";
+            this.lbDonVi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txbDonVi
             // 
-            this.txbDonVi.Location = new System.Drawing.Point(193, 216);
+            this.txbDonVi.Location = new System.Drawing.Point(193, 211);
             this.txbDonVi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbDonVi.MaxLength = 100;
             this.txbDonVi.Name = "txbDonVi";
             this.txbDonVi.Size = new System.Drawing.Size(148, 30);
             this.txbDonVi.TabIndex = 4;
@@ -126,7 +131,7 @@
             // lbMoTa
             // 
             this.lbMoTa.AutoSize = true;
-            this.lbMoTa.Location = new System.Drawing.Point(40, 298);
+            this.lbMoTa.Location = new System.Drawing.Point(48, 348);
             this.lbMoTa.Name = "lbMoTa";
             this.lbMoTa.Size = new System.Drawing.Size(72, 25);
             this.lbMoTa.TabIndex = 3;
@@ -161,30 +166,30 @@
             // 
             // txbTTBH
             // 
-            this.txbTTBH.Location = new System.Drawing.Point(469, 350);
+            this.txbTTBH.Location = new System.Drawing.Point(469, 390);
             this.txbTTBH.MaxLength = 100;
             this.txbTTBH.Multiline = true;
             this.txbTTBH.Name = "txbTTBH";
             this.txbTTBH.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.txbTTBH.Size = new System.Drawing.Size(262, 108);
-            this.txbTTBH.TabIndex = 6;
+            this.txbTTBH.TabIndex = 7;
             this.txbTTBH.Text = "Không có";
             // 
             // txbMoTa
             // 
-            this.txbMoTa.Location = new System.Drawing.Point(112, 350);
+            this.txbMoTa.Location = new System.Drawing.Point(112, 390);
             this.txbMoTa.MaxLength = 100;
             this.txbMoTa.Multiline = true;
             this.txbMoTa.Name = "txbMoTa";
             this.txbMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.txbMoTa.Size = new System.Drawing.Size(229, 108);
-            this.txbMoTa.TabIndex = 5;
+            this.txbMoTa.TabIndex = 6;
             this.txbMoTa.Text = "Không có";
             // 
             // lbThongTinBaoHanh
             // 
             this.lbThongTinBaoHanh.AutoSize = true;
-            this.lbThongTinBaoHanh.Location = new System.Drawing.Point(409, 298);
+            this.lbThongTinBaoHanh.Location = new System.Drawing.Point(402, 348);
             this.lbThongTinBaoHanh.Name = "lbThongTinBaoHanh";
             this.lbThongTinBaoHanh.Size = new System.Drawing.Size(197, 25);
             this.lbThongTinBaoHanh.TabIndex = 8;
@@ -198,7 +203,7 @@
             this.btnSaveNV.ForeColor = System.Drawing.Color.White;
             this.btnSaveNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_update_32;
             this.btnSaveNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveNV.Location = new System.Drawing.Point(112, 504);
+            this.btnSaveNV.Location = new System.Drawing.Point(112, 545);
             this.btnSaveNV.Name = "btnSaveNV";
             this.btnSaveNV.Size = new System.Drawing.Size(130, 45);
             this.btnSaveNV.TabIndex = 8;
@@ -214,7 +219,7 @@
             this.btnCancelNV.ForeColor = System.Drawing.Color.White;
             this.btnCancelNV.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_32__1_;
             this.btnCancelNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelNV.Location = new System.Drawing.Point(469, 504);
+            this.btnCancelNV.Location = new System.Drawing.Point(469, 545);
             this.btnCancelNV.Name = "btnCancelNV";
             this.btnCancelNV.Size = new System.Drawing.Size(130, 45);
             this.btnCancelNV.TabIndex = 9;
@@ -222,11 +227,32 @@
             this.btnCancelNV.UseVisualStyleBackColor = false;
             this.btnCancelNV.Click += new System.EventHandler(this.btnCancelNV_Click);
             // 
+            // lbGiaBan
+            // 
+            this.lbGiaBan.AutoSize = true;
+            this.lbGiaBan.Location = new System.Drawing.Point(48, 275);
+            this.lbGiaBan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbGiaBan.Name = "lbGiaBan";
+            this.lbGiaBan.Size = new System.Drawing.Size(80, 25);
+            this.lbGiaBan.TabIndex = 1;
+            this.lbGiaBan.Text = "Giá bán";
+            this.lbGiaBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txbGiaBan
+            // 
+            this.txbGiaBan.Location = new System.Drawing.Point(193, 272);
+            this.txbGiaBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbGiaBan.MaxLength = 10;
+            this.txbGiaBan.Name = "txbGiaBan";
+            this.txbGiaBan.Size = new System.Drawing.Size(259, 30);
+            this.txbGiaBan.TabIndex = 5;
+            this.txbGiaBan.TextChanged += new System.EventHandler(this.txbGiaBan_TextChanged);
+            // 
             // frmUpdateHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 563);
+            this.ClientSize = new System.Drawing.Size(744, 598);
             this.Controls.Add(this.btnCancelNV);
             this.Controls.Add(this.btnSaveNV);
             this.Controls.Add(this.btnChangePic);
@@ -236,16 +262,21 @@
             this.Controls.Add(this.lbThongTinBaoHanh);
             this.Controls.Add(this.lbMoTa);
             this.Controls.Add(this.numSoLuong);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbGiaBan);
+            this.Controls.Add(this.lbDonVi);
+            this.Controls.Add(this.lbSL);
+            this.Controls.Add(this.lbNhaSX);
+            this.Controls.Add(this.lbTenHang);
+            this.Controls.Add(this.txbGiaBan);
             this.Controls.Add(this.txbDonVi);
             this.Controls.Add(this.txbNhaSX);
             this.Controls.Add(this.txbTenHang);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(762, 645);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(762, 645);
             this.Name = "frmUpdateHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa thông tin xe";
@@ -259,12 +290,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox txbTenHang;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTenHang;
         private System.Windows.Forms.TextBox txbNhaSX;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbNhaSX;
+        private System.Windows.Forms.Label lbSL;
         private System.Windows.Forms.NumericUpDown numSoLuong;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbDonVi;
         private System.Windows.Forms.TextBox txbDonVi;
         private System.Windows.Forms.Label lbMoTa;
         private System.Windows.Forms.Button btnChangePic;
@@ -274,5 +305,7 @@
         private System.Windows.Forms.Label lbThongTinBaoHanh;
         private System.Windows.Forms.Button btnSaveNV;
         private System.Windows.Forms.Button btnCancelNV;
+        private System.Windows.Forms.Label lbGiaBan;
+        private System.Windows.Forms.TextBox txbGiaBan;
     }
 }

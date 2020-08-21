@@ -34,6 +34,7 @@ namespace QLCuaHangBanXeMayDien
             lbNhaSX.Text += XeDien.NhaSanXuat;
             lbSL.Text += XeDien.SoLuong;
             lbDonVi.Text = XeDien.DonViTinh;
+            lbGiaBan.Text += XeDien.GiaBan;
             txbMota.Text = XeDien.MoTa;
             txbThongTinBaoHanh.Text = XeDien.ThongTinBaoHanh;
         }
@@ -75,8 +76,6 @@ namespace QLCuaHangBanXeMayDien
                         this.Close();
                     }
                 }
-                else
-                    this.Close();
             }
         }
     }

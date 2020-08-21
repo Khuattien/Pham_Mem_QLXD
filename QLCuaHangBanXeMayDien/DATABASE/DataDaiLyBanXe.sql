@@ -31,7 +31,8 @@ CREATE TABLE MatHang
 	MoTa					NVARCHAR(100)	NULL,
 	ThongTinBaoHanh			NVARCHAR(100)	NULL,	
 	SoLuong					INT				NOT NULL,	
-	DonViTinh				NVARCHAR(20)	NULL,					
+	DonViTinh				NVARCHAR(20)	NULL,
+	GiaBan					INT				NOT NULL,
 	AnhMinhHoa				NVARCHAR(500)	NOT NULL,		
 	CONSTRAINT		pk_MatHang PRIMARY KEY(MaHang)
 )
@@ -47,7 +48,7 @@ CREATE TABLE NhanVien
 	DienThoai				NVARCHAR(15)	NULL,
 	DiaChi					NVARCHAR(50)	NOT NULL,
 	ChucVu					NVARCHAR(30)	NOT NULL,
-	Luong					FLOAT				NULL,
+	Luong					INT				NULL,
 	CONSTRAINT		pk_NhanVien PRIMARY KEY(MaNhanVien)
 )
 
@@ -137,12 +138,12 @@ GO
 
 CREATE PROC USP_InsertMatHang 
 @MaHang NVARCHAR(20), @TenHang NVARCHAR(50), @NhaSanXuat NVARCHAR(50), @Mota NVARCHAR(100), 
-@ThongTinBaoHanh NVARCHAR(100),@SoLuong INT, @DonViTinh NVARCHAR(20), @AnhMinhHoa NVARCHAR(500)
+@ThongTinBaoHanh NVARCHAR(100),@SoLuong INT, @DonViTinh NVARCHAR(20), @GiaBan INT , @AnhMinhHoa NVARCHAR(500)
 AS
 BEGIN
 	IF NOT EXISTS(SELECT MaHang FROM dbo.MatHang WHERE MaHang = @MaHang)
 		INSERT INTO dbo.MatHang 
-		VALUES(  @MaHang,@TenHang,@NhaSanXuat,@Mota,@ThongTinBaoHanh,@SoLuong,@DonViTinh,@AnhMinhHoa)
+		VALUES(  @MaHang,@TenHang,@NhaSanXuat,@Mota,@ThongTinBaoHanh,@SoLuong,@DonViTinh,@GiaBan,@AnhMinhHoa)
 	ELSE
 		RAISERROR(N'Đã tồn tại mã hàng này',12,1)
 END
@@ -151,7 +152,7 @@ GO
 
 CREATE PROC USP_UpdateMatHang 
 @MaHang NVARCHAR(20), @TenHang NVARCHAR(50), @NhaSanXuat NVARCHAR(50), @Mota NVARCHAR(100), 
-@ThongTinBaoHanh NVARCHAR(100),@SoLuong INT, @DonViTinh NVARCHAR(20), @AnhMinhHoa NVARCHAR(500)
+@ThongTinBaoHanh NVARCHAR(100),@SoLuong INT, @DonViTinh NVARCHAR(20), @GiaBan INT, @AnhMinhHoa NVARCHAR(500)
 AS
 BEGIN
 	IF NOT EXISTS(SELECT MaHang FROM dbo.MatHang WHERE MaHang = @MaHang)
@@ -159,7 +160,7 @@ BEGIN
 	ELSE
 		UPDATE dbo.MatHang 
 		SET TenHang = @TenHang, NhaSanXuat = @NhaSanXuat, Mota = @Mota, ThongTinBaoHanh = @ThongTinBaoHanh, 
-		SoLuong = @SoLuong, DonViTinh =  @DonViTinh, AnhMinhHoa = @AnhMinhHoa
+		SoLuong = @SoLuong, DonViTinh =  @DonViTinh, GiaBan = @GiaBan , AnhMinhHoa = @AnhMinhHoa
 		WHERE	MaHang = @MaHang
 END
 
@@ -185,7 +186,7 @@ GO
 -- Các thủ tục cho bảng nhân viên (thêm , sửa , xóa)
 CREATE PROC USP_InsertNhanVien 
 @MaNhanVien	NVARCHAR(20), @TenNhanVien NVARCHAR(50), @NamSinh INT, @GioiTinh NVARCHAR(10),
-@DienThoai	NVARCHAR(15), @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong FLOAT
+@DienThoai	NVARCHAR(15), @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong INT
 AS
 BEGIN
 	IF (NOT EXISTS(SELECT MaNhanVien FROM dbo.NhanVien WHERE MaNhanVien = @MaNhanVien))
@@ -199,7 +200,7 @@ GO
 
 CREATE PROC USP_UpdateNhanVien 
 @MaNhanVien	NVARCHAR(20), @TenNhanVien NVARCHAR(50), @NamSinh INT, @GioiTinh NVARCHAR(10),
-@DienThoai	NVARCHAR(15), @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong	FLOAT
+@DienThoai	NVARCHAR(15), @DiaChi NVARCHAR(50), @ChucVu NVARCHAR(30), @Luong INT
 AS
 BEGIN
 	IF (NOT EXISTS(SELECT MaNhanVien FROM dbo.NhanVien WHERE MaNhanVien = @MaNhanVien))
