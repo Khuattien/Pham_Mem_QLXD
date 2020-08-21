@@ -159,3 +159,4 @@ D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.cs
 D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.csproj.CoreCompileInputs.cache
 D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.exe
 D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.pdb
+H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmCreateAccount.resources

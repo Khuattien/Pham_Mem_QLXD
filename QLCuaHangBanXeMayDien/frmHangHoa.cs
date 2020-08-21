@@ -126,7 +126,13 @@ namespace QLCuaHangBanXeMayDien
                 if (listHang.Count > 0)
                     loadListXe(listHang);
                 else
+                {
                     MessageBox.Show("Không tìm thấy sản phẩm này.");
+                }
+            }
+            else
+            {
+                loadListXe(MatHangBUS.Instance.getListMatHang());
             }
         }
         #endregion

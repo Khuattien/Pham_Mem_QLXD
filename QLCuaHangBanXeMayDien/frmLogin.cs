@@ -1,10 +1,10 @@
-﻿using System;
+﻿using QLCuaHangBanXeMayDien.QuanLy_BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,10 +19,27 @@ namespace QLCuaHangBanXeMayDien
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmMainController frm = new frmMainController();
-            this.Hide();
+            if(txbUserName.Text == "" || txbPassWord.Text == "")
+            {
+                MessageBox.Show("Điền thông tin tài khoản mật khẩu để có thể đăng nhập và sử dụng.", "Thông báo" ,MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }    
+            else if (AccountBUS.Instance.checkAccount(txbUserName.Text, txbPassWord.Text))
+            {
+                frmMainController frm = new frmMainController();
+                this.Hide();
+                frm.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnNewUser_Click(object sender, EventArgs e)
+        {
+            frmCreateAccount frm = new frmCreateAccount();
             frm.ShowDialog();
-            this.Show();
         }
     }
 }

@@ -103,6 +103,26 @@ namespace QLCuaHangBanXeMayDien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cancel-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cancel-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_company_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-company-24", resourceCulture);
@@ -346,6 +366,16 @@ namespace QLCuaHangBanXeMayDien.Properties {
         internal static System.Drawing.Bitmap icons8_user_shield_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-shield-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_verified_account_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-verified-account-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

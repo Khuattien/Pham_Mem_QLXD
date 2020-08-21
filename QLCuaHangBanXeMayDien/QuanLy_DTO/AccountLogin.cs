@@ -20,7 +20,15 @@ namespace QLCuaHangBanXeMayDien.QuanLy_DTO
         public string Email { get => email; set => email = value; }
         #endregion
         #region Contructors
-        public AccountLogin() { }
+        public AccountLogin() 
+        {
+            this.userName = "";
+            this.passWord = "";
+            this.loaiTaiKhoan = 0;
+            this.tenHienThi = "";
+            this.dienThoai = "";
+            this.email = "";
+        }
         public AccountLogin(string userName, string passWord, int loaiTaiKhoan, string tenHienThi, string dienThoai, string email)
         {
             this.userName = userName;

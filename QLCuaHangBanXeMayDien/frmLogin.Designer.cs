@@ -76,7 +76,7 @@
             this.txbPassWord.Location = new System.Drawing.Point(348, 109);
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(306, 28);
-            this.txbPassWord.TabIndex = 1;
+            this.txbPassWord.TabIndex = 2;
             this.txbPassWord.UseSystemPasswordChar = true;
             // 
             // txbUserName
@@ -106,6 +106,7 @@
             this.btnNewUser.TabIndex = 1;
             this.btnNewUser.Text = "Tạo tài khoản";
             this.btnNewUser.UseVisualStyleBackColor = false;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
             // btnLogin
             // 
@@ -134,6 +135,7 @@
             this.MaximumSize = new System.Drawing.Size(986, 631);
             this.MinimumSize = new System.Drawing.Size(986, 631);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();

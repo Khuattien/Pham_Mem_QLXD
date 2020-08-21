@@ -71,7 +71,7 @@ namespace QLCuaHangBanXeMayDien
             txbDonVi.Text = "Chiếc";
             numSoLuong.Value = 0;
             txbGiaBan.Text = "0";
-            picAMH.Image = new Bitmap(Application.StartupPath + "\\Resources\\icons8-question-mark-96.png");
+            picAMH.Image = Properties.Resources.icons8_question_mark_96;
         }
         /// <summary>
         /// Không cho phép sửa xóa dữ liệu trên textbox... khi chưa nhấn thêm, sửa , xóa
