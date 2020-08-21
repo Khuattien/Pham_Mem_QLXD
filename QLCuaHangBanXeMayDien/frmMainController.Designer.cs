@@ -43,16 +43,16 @@
             this.lbTittle = new System.Windows.Forms.Label();
             this.panelAccount = new System.Windows.Forms.Panel();
             this.picAccount = new System.Windows.Forms.PictureBox();
-            this.menuControlAcount = new System.Windows.Forms.MenuStrip();
-            this.menuStripTittleAcc = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripUpdateAcc = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripChangePass = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripThoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStripAcount = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuAcount = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemThongTin = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemChangePass = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripAdmin = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripExit = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
-            this.lbFB = new System.Windows.Forms.Label();
             this.lbFaceBook = new System.Windows.Forms.Label();
             this.picEmail = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,13 +60,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelBanner = new System.Windows.Forms.Panel();
             this.picBanner = new System.Windows.Forms.PictureBox();
+            this.linkLabelFB = new System.Windows.Forms.LinkLabel();
             this.panelControlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panelControlTop.SuspendLayout();
             this.panelAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAccount)).BeginInit();
-            this.menuControlAcount.SuspendLayout();
+            this.menuStripAcount.SuspendLayout();
             this.panelContact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -252,6 +253,7 @@
             this.panelControlTop.Controls.Add(this.panelAccount);
             this.panelControlTop.Controls.Add(this.label1);
             this.panelControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControlTop.ForeColor = System.Drawing.Color.Black;
             this.panelControlTop.Location = new System.Drawing.Point(225, 0);
             this.panelControlTop.Name = "panelControlTop";
             this.panelControlTop.Size = new System.Drawing.Size(1037, 100);
@@ -263,7 +265,7 @@
             this.lbTittle.AutoSize = true;
             this.lbTittle.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTittle.ForeColor = System.Drawing.Color.White;
-            this.lbTittle.Location = new System.Drawing.Point(89, 39);
+            this.lbTittle.Location = new System.Drawing.Point(283, 39);
             this.lbTittle.Name = "lbTittle";
             this.lbTittle.Size = new System.Drawing.Size(444, 33);
             this.lbTittle.TabIndex = 4;
@@ -272,11 +274,11 @@
             // panelAccount
             // 
             this.panelAccount.Controls.Add(this.picAccount);
-            this.panelAccount.Controls.Add(this.menuControlAcount);
-            this.panelAccount.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelAccount.Location = new System.Drawing.Point(841, 0);
+            this.panelAccount.Controls.Add(this.menuStripAcount);
+            this.panelAccount.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelAccount.Location = new System.Drawing.Point(0, 0);
             this.panelAccount.Name = "panelAccount";
-            this.panelAccount.Size = new System.Drawing.Size(196, 100);
+            this.panelAccount.Size = new System.Drawing.Size(228, 100);
             this.panelAccount.TabIndex = 3;
             // 
             // picAccount
@@ -289,60 +291,71 @@
             this.picAccount.TabIndex = 2;
             this.picAccount.TabStop = false;
             // 
-            // menuControlAcount
+            // menuStripAcount
             // 
-            this.menuControlAcount.BackColor = System.Drawing.Color.Black;
-            this.menuControlAcount.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuControlAcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuControlAcount.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuControlAcount.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuStripTittleAcc});
-            this.menuControlAcount.Location = new System.Drawing.Point(71, 39);
-            this.menuControlAcount.Name = "menuControlAcount";
-            this.menuControlAcount.Size = new System.Drawing.Size(121, 33);
-            this.menuControlAcount.TabIndex = 1;
-            this.menuControlAcount.Text = "menuStrip1";
+            this.menuStripAcount.BackColor = System.Drawing.Color.Black;
+            this.menuStripAcount.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStripAcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStripAcount.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStripAcount.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuAcount});
+            this.menuStripAcount.Location = new System.Drawing.Point(71, 39);
+            this.menuStripAcount.Name = "menuStripAcount";
+            this.menuStripAcount.Size = new System.Drawing.Size(126, 34);
+            this.menuStripAcount.TabIndex = 3;
+            this.menuStripAcount.Text = "menuStripAccount";
             // 
-            // menuStripTittleAcc
+            // ToolStripMenuAcount
             // 
-            this.menuStripTittleAcc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripUpdateAcc,
-            this.toolStripChangePass,
-            this.toolStripThoat});
-            this.menuStripTittleAcc.ForeColor = System.Drawing.Color.White;
-            this.menuStripTittleAcc.Name = "menuStripTittleAcc";
-            this.menuStripTittleAcc.Size = new System.Drawing.Size(113, 29);
-            this.menuStripTittleAcc.Text = "Tài khoản";
+            this.ToolStripMenuAcount.BackColor = System.Drawing.Color.Black;
+            this.ToolStripMenuAcount.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemThongTin,
+            this.toolStripMenuItemChangePass,
+            this.toolStripAdmin,
+            this.toolStripExit});
+            this.ToolStripMenuAcount.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToolStripMenuAcount.ForeColor = System.Drawing.Color.Red;
+            this.ToolStripMenuAcount.Name = "ToolStripMenuAcount";
+            this.ToolStripMenuAcount.Size = new System.Drawing.Size(118, 30);
+            this.ToolStripMenuAcount.Text = "Tài khoản";
             // 
-            // toolStripUpdateAcc
+            // toolStripMenuItemThongTin
             // 
-            this.toolStripUpdateAcc.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.toolStripUpdateAcc.ForeColor = System.Drawing.Color.White;
-            this.toolStripUpdateAcc.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_profile_24;
-            this.toolStripUpdateAcc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripUpdateAcc.Name = "toolStripUpdateAcc";
-            this.toolStripUpdateAcc.Size = new System.Drawing.Size(213, 30);
-            this.toolStripUpdateAcc.Text = "Sửa thông tin";
+            this.toolStripMenuItemThongTin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripMenuItemThongTin.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItemThongTin.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_profile_24;
+            this.toolStripMenuItemThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItemThongTin.Name = "toolStripMenuItemThongTin";
+            this.toolStripMenuItemThongTin.Size = new System.Drawing.Size(261, 30);
+            this.toolStripMenuItemThongTin.Text = "Thông tin";
             // 
-            // toolStripChangePass
+            // toolStripMenuItemChangePass
             // 
-            this.toolStripChangePass.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.toolStripChangePass.ForeColor = System.Drawing.Color.White;
-            this.toolStripChangePass.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_password_1_24;
-            this.toolStripChangePass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripChangePass.Name = "toolStripChangePass";
-            this.toolStripChangePass.Size = new System.Drawing.Size(213, 30);
-            this.toolStripChangePass.Text = "Đổi mật khẩu";
+            this.toolStripMenuItemChangePass.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripMenuItemChangePass.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItemChangePass.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_password_1_24;
+            this.toolStripMenuItemChangePass.Name = "toolStripMenuItemChangePass";
+            this.toolStripMenuItemChangePass.Size = new System.Drawing.Size(261, 30);
+            this.toolStripMenuItemChangePass.Text = "Đổi mật khẩu";
             // 
-            // toolStripThoat
+            // toolStripAdmin
             // 
-            this.toolStripThoat.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.toolStripThoat.ForeColor = System.Drawing.Color.White;
-            this.toolStripThoat.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_shutdown_24;
-            this.toolStripThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripThoat.Name = "toolStripThoat";
-            this.toolStripThoat.Size = new System.Drawing.Size(213, 30);
-            this.toolStripThoat.Text = "Thoát";
+            this.toolStripAdmin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripAdmin.ForeColor = System.Drawing.Color.White;
+            this.toolStripAdmin.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_user_shield_32;
+            this.toolStripAdmin.Name = "toolStripAdmin";
+            this.toolStripAdmin.Size = new System.Drawing.Size(261, 30);
+            this.toolStripAdmin.Text = "Đặc quyền admin";
+            // 
+            // toolStripExit
+            // 
+            this.toolStripExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripExit.ForeColor = System.Drawing.Color.White;
+            this.toolStripExit.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_shutdown_24;
+            this.toolStripExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripExit.Name = "toolStripExit";
+            this.toolStripExit.Size = new System.Drawing.Size(261, 30);
+            this.toolStripExit.Text = "Thoát";
             // 
             // label1
             // 
@@ -356,9 +369,9 @@
             // panelContact
             // 
             this.panelContact.BackColor = System.Drawing.Color.Red;
+            this.panelContact.Controls.Add(this.linkLabelFB);
             this.panelContact.Controls.Add(this.lbEmail);
             this.panelContact.Controls.Add(this.lbPhone);
-            this.panelContact.Controls.Add(this.lbFB);
             this.panelContact.Controls.Add(this.lbFaceBook);
             this.panelContact.Controls.Add(this.picEmail);
             this.panelContact.Controls.Add(this.pictureBox1);
@@ -394,19 +407,6 @@
             this.lbPhone.TabIndex = 2;
             this.lbPhone.Text = "012.345.6789";
             this.lbPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbFB
-            // 
-            this.lbFB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbFB.AutoSize = true;
-            this.lbFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFB.ForeColor = System.Drawing.Color.White;
-            this.lbFB.Location = new System.Drawing.Point(153, 17);
-            this.lbFB.Name = "lbFB";
-            this.lbFB.Size = new System.Drawing.Size(218, 20);
-            this.lbFB.TabIndex = 2;
-            this.lbFB.Text = "Fanpage : We Love AniG";
-            this.lbFB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbFaceBook
             // 
@@ -477,6 +477,19 @@
             this.picBanner.TabIndex = 0;
             this.picBanner.TabStop = false;
             // 
+            // linkLabelFB
+            // 
+            this.linkLabelFB.AutoSize = true;
+            this.linkLabelFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelFB.LinkColor = System.Drawing.Color.White;
+            this.linkLabelFB.Location = new System.Drawing.Point(153, 17);
+            this.linkLabelFB.Name = "linkLabelFB";
+            this.linkLabelFB.Size = new System.Drawing.Size(218, 20);
+            this.linkLabelFB.TabIndex = 3;
+            this.linkLabelFB.TabStop = true;
+            this.linkLabelFB.Text = "Fanpage : We Love AniG";
+            this.linkLabelFB.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelFB_LinkClicked);
+            // 
             // frmMainController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -487,7 +500,7 @@
             this.Controls.Add(this.panelBanner);
             this.Controls.Add(this.panelControlTop);
             this.Controls.Add(this.panelControlLeft);
-            this.MainMenuStrip = this.menuControlAcount;
+            this.MainMenuStrip = this.menuStripAcount;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1280, 729);
             this.MinimumSize = new System.Drawing.Size(1280, 729);
@@ -502,8 +515,8 @@
             this.panelAccount.ResumeLayout(false);
             this.panelAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAccount)).EndInit();
-            this.menuControlAcount.ResumeLayout(false);
-            this.menuControlAcount.PerformLayout();
+            this.menuStripAcount.ResumeLayout(false);
+            this.menuStripAcount.PerformLayout();
             this.panelContact.ResumeLayout(false);
             this.panelContact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEmail)).EndInit();
@@ -529,11 +542,6 @@
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnHangHoa;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuControlAcount;
-        private System.Windows.Forms.ToolStripMenuItem menuStripTittleAcc;
-        private System.Windows.Forms.ToolStripMenuItem toolStripUpdateAcc;
-        private System.Windows.Forms.ToolStripMenuItem toolStripChangePass;
-        private System.Windows.Forms.ToolStripMenuItem toolStripThoat;
         private System.Windows.Forms.PictureBox picAccount;
         private System.Windows.Forms.PictureBox picExit;
         private System.Windows.Forms.Panel panelAccount;
@@ -541,7 +549,6 @@
         private System.Windows.Forms.PictureBox picFB;
         private System.Windows.Forms.Label lbFaceBook;
         private System.Windows.Forms.Label lbPhone;
-        private System.Windows.Forms.Label lbFB;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.PictureBox picEmail;
@@ -549,5 +556,12 @@
         private System.Windows.Forms.PictureBox picBanner;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelBanner;
+        private System.Windows.Forms.MenuStrip menuStripAcount;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuAcount;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemThongTin;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemChangePass;
+        private System.Windows.Forms.ToolStripMenuItem toolStripAdmin;
+        private System.Windows.Forms.ToolStripMenuItem toolStripExit;
+        private System.Windows.Forms.LinkLabel linkLabelFB;
     }
 }

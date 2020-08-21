@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -82,5 +83,10 @@ namespace QLCuaHangBanXeMayDien
             this.Show();
         }
 
+
+        private void linkLabelFB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.facebook.com/We-Love-ANIG-100678891551670");
+        }
     }
 }

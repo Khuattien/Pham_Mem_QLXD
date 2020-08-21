@@ -214,6 +214,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="DATABASE\DataDaiLyBanXe.sql" />
+    <None Include="Resources\icons8-user-shield-32.png" />
     <None Include="Resources\icons8-search-26.png" />
     <None Include="Resources\icons8-search-32.png" />
     <None Include="Resources\icons8-image-gallery-32.png" />
