@@ -31,13 +31,13 @@
             this.panelTittleDT = new System.Windows.Forms.Panel();
             this.lbTittleXuatHang = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnViewBenefit = new System.Windows.Forms.Button();
             this.lbEndTime = new System.Windows.Forms.Label();
             this.lbStartTime = new System.Windows.Forms.Label();
             this.dtpkEnd = new System.Windows.Forms.DateTimePicker();
             this.dtpkStart = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnViewBenefit = new System.Windows.Forms.Button();
             this.panelTittleDT.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,20 +81,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1062, 68);
             this.panel2.TabIndex = 1;
-            // 
-            // btnViewBenefit
-            // 
-            this.btnViewBenefit.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnViewBenefit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewBenefit.ForeColor = System.Drawing.Color.White;
-            this.btnViewBenefit.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_view_32__2_;
-            this.btnViewBenefit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewBenefit.Location = new System.Drawing.Point(756, 11);
-            this.btnViewBenefit.Name = "btnViewBenefit";
-            this.btnViewBenefit.Size = new System.Drawing.Size(130, 45);
-            this.btnViewBenefit.TabIndex = 3;
-            this.btnViewBenefit.Text = "Xem";
-            this.btnViewBenefit.UseVisualStyleBackColor = false;
             // 
             // lbEndTime
             // 
@@ -148,6 +134,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(868, 451);
             this.dataGridView1.TabIndex = 0;
             // 
+            // btnViewBenefit
+            // 
+            this.btnViewBenefit.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnViewBenefit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBenefit.ForeColor = System.Drawing.Color.White;
+            this.btnViewBenefit.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_view_32__2_;
+            this.btnViewBenefit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewBenefit.Location = new System.Drawing.Point(756, 11);
+            this.btnViewBenefit.Name = "btnViewBenefit";
+            this.btnViewBenefit.Size = new System.Drawing.Size(130, 45);
+            this.btnViewBenefit.TabIndex = 3;
+            this.btnViewBenefit.Text = "Xem";
+            this.btnViewBenefit.UseVisualStyleBackColor = false;
+            // 
             // frmDoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -164,7 +164,7 @@
             this.MinimumSize = new System.Drawing.Size(1080, 703);
             this.Name = "frmDoanhThu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDoanhThu";
+            this.Text = "Doanh thu";
             this.panelTittleDT.ResumeLayout(false);
             this.panelTittleDT.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -31,8 +31,6 @@
             this.panelHeaderMH = new System.Windows.Forms.Panel();
             this.labelHeaderMH = new System.Windows.Forms.Label();
             this.panelInfoNewMatHang = new System.Windows.Forms.Panel();
-            this.btnAddPic = new System.Windows.Forms.Button();
-            this.picMathang = new System.Windows.Forms.PictureBox();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
             this.txbTTBH = new System.Windows.Forms.TextBox();
             this.txbMoTa = new System.Windows.Forms.TextBox();
@@ -53,11 +51,13 @@
             this.panelControlInsert = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSaveMatHangMoi = new System.Windows.Forms.Button();
+            this.btnAddPic = new System.Windows.Forms.Button();
+            this.picMathang = new System.Windows.Forms.PictureBox();
             this.panelHeaderMH.SuspendLayout();
             this.panelInfoNewMatHang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMathang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.panelControlInsert.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMathang)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeaderMH
@@ -109,32 +109,6 @@
             this.panelInfoNewMatHang.Name = "panelInfoNewMatHang";
             this.panelInfoNewMatHang.Size = new System.Drawing.Size(778, 540);
             this.panelInfoNewMatHang.TabIndex = 1;
-            // 
-            // btnAddPic
-            // 
-            this.btnAddPic.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAddPic.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnAddPic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPic.ForeColor = System.Drawing.Color.White;
-            this.btnAddPic.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_image_gallery_32;
-            this.btnAddPic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddPic.Location = new System.Drawing.Point(549, 225);
-            this.btnAddPic.Name = "btnAddPic";
-            this.btnAddPic.Size = new System.Drawing.Size(217, 32);
-            this.btnAddPic.TabIndex = 4;
-            this.btnAddPic.Text = "Thêm ảnh";
-            this.btnAddPic.UseVisualStyleBackColor = false;
-            this.btnAddPic.Click += new System.EventHandler(this.btnAddPic_Click);
-            // 
-            // picMathang
-            // 
-            this.picMathang.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.picMathang.Location = new System.Drawing.Point(549, 263);
-            this.picMathang.Name = "picMathang";
-            this.picMathang.Size = new System.Drawing.Size(215, 183);
-            this.picMathang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMathang.TabIndex = 3;
-            this.picMathang.TabStop = false;
             // 
             // numSoLuong
             // 
@@ -329,6 +303,32 @@
             this.btnSaveMatHangMoi.UseVisualStyleBackColor = false;
             this.btnSaveMatHangMoi.Click += new System.EventHandler(this.btnSaveMatHangMoi_Click);
             // 
+            // btnAddPic
+            // 
+            this.btnAddPic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAddPic.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddPic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPic.ForeColor = System.Drawing.Color.White;
+            this.btnAddPic.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_image_gallery_32;
+            this.btnAddPic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddPic.Location = new System.Drawing.Point(549, 225);
+            this.btnAddPic.Name = "btnAddPic";
+            this.btnAddPic.Size = new System.Drawing.Size(217, 32);
+            this.btnAddPic.TabIndex = 4;
+            this.btnAddPic.Text = "Thêm ảnh";
+            this.btnAddPic.UseVisualStyleBackColor = false;
+            this.btnAddPic.Click += new System.EventHandler(this.btnAddPic_Click);
+            // 
+            // picMathang
+            // 
+            this.picMathang.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.picMathang.Location = new System.Drawing.Point(549, 263);
+            this.picMathang.Name = "picMathang";
+            this.picMathang.Size = new System.Drawing.Size(215, 183);
+            this.picMathang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMathang.TabIndex = 3;
+            this.picMathang.TabStop = false;
+            // 
             // frmInsertMatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -341,14 +341,14 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInsertMatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmInsertMatHang";
+            this.Text = "Thêm hàng";
             this.panelHeaderMH.ResumeLayout(false);
             this.panelHeaderMH.PerformLayout();
             this.panelInfoNewMatHang.ResumeLayout(false);
             this.panelInfoNewMatHang.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMathang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).EndInit();
             this.panelControlInsert.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picMathang)).EndInit();
             this.ResumeLayout(false);
 
         }

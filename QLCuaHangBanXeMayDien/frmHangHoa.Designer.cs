@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panelBottomLine = new System.Windows.Forms.Panel();
-            this.picIconSearch = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.panelControlHangHoa = new System.Windows.Forms.Panel();
-            this.btnViewListHH = new System.Windows.Forms.Button();
-            this.btnAddHangHoa = new System.Windows.Forms.Button();
             this.flpListHangHoa = new System.Windows.Forms.FlowLayoutPanel();
             this.lbTittleHangHoa = new System.Windows.Forms.Label();
             this.panelTittleHangHoa = new System.Windows.Forms.Panel();
+            this.btnViewListHH = new System.Windows.Forms.Button();
+            this.btnAddHangHoa = new System.Windows.Forms.Button();
+            this.picIconSearch = new System.Windows.Forms.PictureBox();
             this.panelBottomLine.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIconSearch)).BeginInit();
             this.panelControlHangHoa.SuspendLayout();
             this.panelTittleHangHoa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIconSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBottomLine
@@ -55,17 +55,6 @@
             this.panelBottomLine.Name = "panelBottomLine";
             this.panelBottomLine.Size = new System.Drawing.Size(1062, 59);
             this.panelBottomLine.TabIndex = 1;
-            // 
-            // picIconSearch
-            // 
-            this.picIconSearch.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_32;
-            this.picIconSearch.Location = new System.Drawing.Point(969, 16);
-            this.picIconSearch.Margin = new System.Windows.Forms.Padding(0);
-            this.picIconSearch.Name = "picIconSearch";
-            this.picIconSearch.Size = new System.Drawing.Size(33, 29);
-            this.picIconSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picIconSearch.TabIndex = 3;
-            this.picIconSearch.TabStop = false;
             // 
             // btnSearch
             // 
@@ -98,38 +87,6 @@
             this.panelControlHangHoa.Name = "panelControlHangHoa";
             this.panelControlHangHoa.Size = new System.Drawing.Size(228, 544);
             this.panelControlHangHoa.TabIndex = 2;
-            // 
-            // btnViewListHH
-            // 
-            this.btnViewListHH.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnViewListHH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnViewListHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewListHH.ForeColor = System.Drawing.Color.White;
-            this.btnViewListHH.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_property_32__1_;
-            this.btnViewListHH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewListHH.Location = new System.Drawing.Point(0, 63);
-            this.btnViewListHH.Name = "btnViewListHH";
-            this.btnViewListHH.Size = new System.Drawing.Size(228, 63);
-            this.btnViewListHH.TabIndex = 3;
-            this.btnViewListHH.Text = "DS chi tiết";
-            this.btnViewListHH.UseVisualStyleBackColor = false;
-            this.btnViewListHH.Click += new System.EventHandler(this.btnViewListHH_Click);
-            // 
-            // btnAddHangHoa
-            // 
-            this.btnAddHangHoa.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnAddHangHoa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddHangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddHangHoa.ForeColor = System.Drawing.Color.White;
-            this.btnAddHangHoa.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_add_new_32__2_;
-            this.btnAddHangHoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddHangHoa.Location = new System.Drawing.Point(0, 0);
-            this.btnAddHangHoa.Name = "btnAddHangHoa";
-            this.btnAddHangHoa.Size = new System.Drawing.Size(228, 63);
-            this.btnAddHangHoa.TabIndex = 0;
-            this.btnAddHangHoa.Text = "Thêm mới";
-            this.btnAddHangHoa.UseVisualStyleBackColor = false;
-            this.btnAddHangHoa.Click += new System.EventHandler(this.btnAddHangHoa_Click);
             // 
             // flpListHangHoa
             // 
@@ -164,6 +121,49 @@
             this.panelTittleHangHoa.Size = new System.Drawing.Size(1062, 70);
             this.panelTittleHangHoa.TabIndex = 0;
             // 
+            // btnViewListHH
+            // 
+            this.btnViewListHH.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnViewListHH.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViewListHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewListHH.ForeColor = System.Drawing.Color.White;
+            this.btnViewListHH.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_property_32__1_;
+            this.btnViewListHH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewListHH.Location = new System.Drawing.Point(0, 63);
+            this.btnViewListHH.Name = "btnViewListHH";
+            this.btnViewListHH.Size = new System.Drawing.Size(228, 63);
+            this.btnViewListHH.TabIndex = 3;
+            this.btnViewListHH.Text = "DS chi tiết";
+            this.btnViewListHH.UseVisualStyleBackColor = false;
+            this.btnViewListHH.Click += new System.EventHandler(this.btnViewListHH_Click);
+            // 
+            // btnAddHangHoa
+            // 
+            this.btnAddHangHoa.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddHangHoa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddHangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddHangHoa.ForeColor = System.Drawing.Color.White;
+            this.btnAddHangHoa.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_add_new_32__2_;
+            this.btnAddHangHoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddHangHoa.Location = new System.Drawing.Point(0, 0);
+            this.btnAddHangHoa.Name = "btnAddHangHoa";
+            this.btnAddHangHoa.Size = new System.Drawing.Size(228, 63);
+            this.btnAddHangHoa.TabIndex = 0;
+            this.btnAddHangHoa.Text = "Thêm mới";
+            this.btnAddHangHoa.UseVisualStyleBackColor = false;
+            this.btnAddHangHoa.Click += new System.EventHandler(this.btnAddHangHoa_Click);
+            // 
+            // picIconSearch
+            // 
+            this.picIconSearch.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_32;
+            this.picIconSearch.Location = new System.Drawing.Point(969, 16);
+            this.picIconSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.picIconSearch.Name = "picIconSearch";
+            this.picIconSearch.Size = new System.Drawing.Size(33, 29);
+            this.picIconSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picIconSearch.TabIndex = 3;
+            this.picIconSearch.TabStop = false;
+            // 
             // frmHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -180,13 +180,13 @@
             this.MinimumSize = new System.Drawing.Size(1080, 720);
             this.Name = "frmHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmHangHoa";
+            this.Text = "Hàng hóa";
             this.panelBottomLine.ResumeLayout(false);
             this.panelBottomLine.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIconSearch)).EndInit();
             this.panelControlHangHoa.ResumeLayout(false);
             this.panelTittleHangHoa.ResumeLayout(false);
             this.panelTittleHangHoa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIconSearch)).EndInit();
             this.ResumeLayout(false);
 
         }

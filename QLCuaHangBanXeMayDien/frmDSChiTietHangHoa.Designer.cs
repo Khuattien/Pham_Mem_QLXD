@@ -34,12 +34,6 @@
             this.btnImage = new System.Windows.Forms.Button();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
             this.panelControlButton = new System.Windows.Forms.Panel();
-            this.btnCancelHang = new System.Windows.Forms.Button();
-            this.btnSaveHang = new System.Windows.Forms.Button();
-            this.btnDeleteHang = new System.Windows.Forms.Button();
-            this.btnUpdateHang = new System.Windows.Forms.Button();
-            this.btnInsertHang = new System.Windows.Forms.Button();
-            this.picAMH = new System.Windows.Forms.PictureBox();
             this.txbBaoHanh = new System.Windows.Forms.TextBox();
             this.txbMoTa = new System.Windows.Forms.TextBox();
             this.txbGiaBan = new System.Windows.Forms.TextBox();
@@ -67,17 +61,23 @@
             this.colImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelHeading = new System.Windows.Forms.Panel();
             this.lbHeađing = new System.Windows.Forms.Label();
-            this.picIcoSearch = new System.Windows.Forms.PictureBox();
             this.btnSearchID = new System.Windows.Forms.Button();
             this.txbSearchID = new System.Windows.Forms.TextBox();
+            this.picIcoSearch = new System.Windows.Forms.PictureBox();
+            this.btnCancelHang = new System.Windows.Forms.Button();
+            this.btnSaveHang = new System.Windows.Forms.Button();
+            this.btnDeleteHang = new System.Windows.Forms.Button();
+            this.btnUpdateHang = new System.Windows.Forms.Button();
+            this.btnInsertHang = new System.Windows.Forms.Button();
+            this.picAMH = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.panelControlButton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAMH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSach)).BeginInit();
             this.panelHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcoSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAMH)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -165,99 +165,6 @@
             this.panelControlButton.Name = "panelControlButton";
             this.panelControlButton.Size = new System.Drawing.Size(200, 321);
             this.panelControlButton.TabIndex = 3;
-            // 
-            // btnCancelHang
-            // 
-            this.btnCancelHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnCancelHang.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnCancelHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelHang.ForeColor = System.Drawing.Color.White;
-            this.btnCancelHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_32__1_;
-            this.btnCancelHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelHang.Location = new System.Drawing.Point(21, 234);
-            this.btnCancelHang.Name = "btnCancelHang";
-            this.btnCancelHang.Size = new System.Drawing.Size(149, 45);
-            this.btnCancelHang.TabIndex = 12;
-            this.btnCancelHang.Text = "Hủy";
-            this.btnCancelHang.UseVisualStyleBackColor = false;
-            this.btnCancelHang.Click += new System.EventHandler(this.btnCancelHang_Click);
-            // 
-            // btnSaveHang
-            // 
-            this.btnSaveHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSaveHang.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnSaveHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveHang.ForeColor = System.Drawing.Color.White;
-            this.btnSaveHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_update_32;
-            this.btnSaveHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveHang.Location = new System.Drawing.Point(21, 183);
-            this.btnSaveHang.Name = "btnSaveHang";
-            this.btnSaveHang.Size = new System.Drawing.Size(149, 45);
-            this.btnSaveHang.TabIndex = 11;
-            this.btnSaveHang.Text = "Lưu";
-            this.btnSaveHang.UseVisualStyleBackColor = false;
-            this.btnSaveHang.Click += new System.EventHandler(this.btnSaveHang_Click);
-            // 
-            // btnDeleteHang
-            // 
-            this.btnDeleteHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnDeleteHang.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnDeleteHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteHang.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_view_32;
-            this.btnDeleteHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteHang.Location = new System.Drawing.Point(21, 132);
-            this.btnDeleteHang.Name = "btnDeleteHang";
-            this.btnDeleteHang.Size = new System.Drawing.Size(149, 45);
-            this.btnDeleteHang.TabIndex = 10;
-            this.btnDeleteHang.Text = "Xóa";
-            this.btnDeleteHang.UseVisualStyleBackColor = false;
-            this.btnDeleteHang.Click += new System.EventHandler(this.btnDeleteHang_Click);
-            // 
-            // btnUpdateHang
-            // 
-            this.btnUpdateHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnUpdateHang.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnUpdateHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateHang.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_property_32__1_;
-            this.btnUpdateHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateHang.Location = new System.Drawing.Point(21, 81);
-            this.btnUpdateHang.Name = "btnUpdateHang";
-            this.btnUpdateHang.Size = new System.Drawing.Size(149, 45);
-            this.btnUpdateHang.TabIndex = 9;
-            this.btnUpdateHang.Text = "Sửa";
-            this.btnUpdateHang.UseVisualStyleBackColor = false;
-            this.btnUpdateHang.Click += new System.EventHandler(this.btnUpdateHang_Click);
-            // 
-            // btnInsertHang
-            // 
-            this.btnInsertHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnInsertHang.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnInsertHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertHang.ForeColor = System.Drawing.Color.White;
-            this.btnInsertHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_add_new_32__2_;
-            this.btnInsertHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInsertHang.Location = new System.Drawing.Point(21, 30);
-            this.btnInsertHang.Name = "btnInsertHang";
-            this.btnInsertHang.Size = new System.Drawing.Size(149, 45);
-            this.btnInsertHang.TabIndex = 8;
-            this.btnInsertHang.Text = "Thêm mới";
-            this.btnInsertHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInsertHang.UseVisualStyleBackColor = false;
-            this.btnInsertHang.Click += new System.EventHandler(this.BtnInsertHang_Click);
-            // 
-            // picAMH
-            // 
-            this.picAMH.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.picAMH.ErrorImage = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_cancel_30;
-            this.picAMH.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_question_mark_96;
-            this.picAMH.Location = new System.Drawing.Point(925, 26);
-            this.picAMH.Name = "picAMH";
-            this.picAMH.Size = new System.Drawing.Size(274, 224);
-            this.picAMH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAMH.TabIndex = 2;
-            this.picAMH.TabStop = false;
             // 
             // txbBaoHanh
             // 
@@ -533,17 +440,6 @@
             this.lbHeađing.Text = "Bảng chi tiết";
             this.lbHeađing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picIcoSearch
-            // 
-            this.picIcoSearch.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_26;
-            this.picIcoSearch.Location = new System.Drawing.Point(440, 21);
-            this.picIcoSearch.Margin = new System.Windows.Forms.Padding(0);
-            this.picIcoSearch.Name = "picIcoSearch";
-            this.picIcoSearch.Size = new System.Drawing.Size(28, 26);
-            this.picIcoSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picIcoSearch.TabIndex = 6;
-            this.picIcoSearch.TabStop = false;
-            // 
             // btnSearchID
             // 
             this.btnSearchID.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -567,6 +463,110 @@
             this.txbSearchID.Click += new System.EventHandler(this.txbSearchID_Click);
             this.txbSearchID.Enter += new System.EventHandler(this.btnSearchID_Click);
             // 
+            // picIcoSearch
+            // 
+            this.picIcoSearch.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_26;
+            this.picIcoSearch.Location = new System.Drawing.Point(440, 21);
+            this.picIcoSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.picIcoSearch.Name = "picIcoSearch";
+            this.picIcoSearch.Size = new System.Drawing.Size(28, 26);
+            this.picIcoSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picIcoSearch.TabIndex = 6;
+            this.picIcoSearch.TabStop = false;
+            // 
+            // btnCancelHang
+            // 
+            this.btnCancelHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelHang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnCancelHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelHang.ForeColor = System.Drawing.Color.White;
+            this.btnCancelHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_32__1_;
+            this.btnCancelHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelHang.Location = new System.Drawing.Point(21, 234);
+            this.btnCancelHang.Name = "btnCancelHang";
+            this.btnCancelHang.Size = new System.Drawing.Size(149, 45);
+            this.btnCancelHang.TabIndex = 12;
+            this.btnCancelHang.Text = "Hủy";
+            this.btnCancelHang.UseVisualStyleBackColor = false;
+            this.btnCancelHang.Click += new System.EventHandler(this.btnCancelHang_Click);
+            // 
+            // btnSaveHang
+            // 
+            this.btnSaveHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSaveHang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSaveHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveHang.ForeColor = System.Drawing.Color.White;
+            this.btnSaveHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_update_32;
+            this.btnSaveHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveHang.Location = new System.Drawing.Point(21, 183);
+            this.btnSaveHang.Name = "btnSaveHang";
+            this.btnSaveHang.Size = new System.Drawing.Size(149, 45);
+            this.btnSaveHang.TabIndex = 11;
+            this.btnSaveHang.Text = "Lưu";
+            this.btnSaveHang.UseVisualStyleBackColor = false;
+            this.btnSaveHang.Click += new System.EventHandler(this.btnSaveHang_Click);
+            // 
+            // btnDeleteHang
+            // 
+            this.btnDeleteHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDeleteHang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDeleteHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteHang.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_delete_view_32;
+            this.btnDeleteHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteHang.Location = new System.Drawing.Point(21, 132);
+            this.btnDeleteHang.Name = "btnDeleteHang";
+            this.btnDeleteHang.Size = new System.Drawing.Size(149, 45);
+            this.btnDeleteHang.TabIndex = 10;
+            this.btnDeleteHang.Text = "Xóa";
+            this.btnDeleteHang.UseVisualStyleBackColor = false;
+            this.btnDeleteHang.Click += new System.EventHandler(this.btnDeleteHang_Click);
+            // 
+            // btnUpdateHang
+            // 
+            this.btnUpdateHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnUpdateHang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnUpdateHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateHang.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_edit_property_32__1_;
+            this.btnUpdateHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateHang.Location = new System.Drawing.Point(21, 81);
+            this.btnUpdateHang.Name = "btnUpdateHang";
+            this.btnUpdateHang.Size = new System.Drawing.Size(149, 45);
+            this.btnUpdateHang.TabIndex = 9;
+            this.btnUpdateHang.Text = "Sửa";
+            this.btnUpdateHang.UseVisualStyleBackColor = false;
+            this.btnUpdateHang.Click += new System.EventHandler(this.btnUpdateHang_Click);
+            // 
+            // btnInsertHang
+            // 
+            this.btnInsertHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnInsertHang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInsertHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertHang.ForeColor = System.Drawing.Color.White;
+            this.btnInsertHang.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_add_new_32__2_;
+            this.btnInsertHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInsertHang.Location = new System.Drawing.Point(21, 30);
+            this.btnInsertHang.Name = "btnInsertHang";
+            this.btnInsertHang.Size = new System.Drawing.Size(149, 45);
+            this.btnInsertHang.TabIndex = 8;
+            this.btnInsertHang.Text = "Thêm mới";
+            this.btnInsertHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInsertHang.UseVisualStyleBackColor = false;
+            this.btnInsertHang.Click += new System.EventHandler(this.BtnInsertHang_Click);
+            // 
+            // picAMH
+            // 
+            this.picAMH.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.picAMH.ErrorImage = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_cancel_30;
+            this.picAMH.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_question_mark_96;
+            this.picAMH.Location = new System.Drawing.Point(925, 26);
+            this.picAMH.Name = "picAMH";
+            this.picAMH.Size = new System.Drawing.Size(274, 224);
+            this.picAMH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAMH.TabIndex = 2;
+            this.picAMH.TabStop = false;
+            // 
             // frmDSChiTietHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -583,7 +583,7 @@
             this.MinimumSize = new System.Drawing.Size(1521, 771);
             this.Name = "frmDSChiTietHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmDSChiTietHangHoa";
+            this.Text = "Danh sách chi tiết hàng hóa";
             this.Load += new System.EventHandler(this.frmDSChiTietHangHoa_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
@@ -591,11 +591,11 @@
             this.panelInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).EndInit();
             this.panelControlButton.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picAMH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSach)).EndInit();
             this.panelHeading.ResumeLayout(false);
             this.panelHeading.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcoSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAMH)).EndInit();
             this.ResumeLayout(false);
 
         }

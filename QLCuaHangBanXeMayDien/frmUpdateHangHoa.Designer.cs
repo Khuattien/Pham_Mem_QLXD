@@ -279,7 +279,7 @@
             this.MinimumSize = new System.Drawing.Size(762, 645);
             this.Name = "frmUpdateHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sửa thông tin xe";
+            this.Text = "Cập nhập thông tin xe";
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMatHang)).EndInit();
             this.ResumeLayout(false);

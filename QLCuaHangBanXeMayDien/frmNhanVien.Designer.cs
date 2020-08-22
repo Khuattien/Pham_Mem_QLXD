@@ -130,7 +130,7 @@
             this.grbNhanVien.Size = new System.Drawing.Size(1062, 232);
             this.grbNhanVien.TabIndex = 2;
             this.grbNhanVien.TabStop = false;
-            this.grbNhanVien.Text = "Thông tin nhân viên";
+            this.grbNhanVien.Text = "Nhân viên";
             // 
             // btnTimkiem
             // 

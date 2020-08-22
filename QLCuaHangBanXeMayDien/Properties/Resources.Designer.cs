@@ -123,6 +123,16 @@ namespace QLCuaHangBanXeMayDien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_checkmark_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-checkmark-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_company_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-company-24", resourceCulture);
@@ -406,6 +416,16 @@ namespace QLCuaHangBanXeMayDien.Properties {
         internal static System.Drawing.Bitmap icons8_warehouse_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-warehouse-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap japanese_fireworks_hanabi_festivals_1280x720 {
+            get {
+                object obj = ResourceManager.GetObject("japanese-fireworks-hanabi-festivals-1280x720", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

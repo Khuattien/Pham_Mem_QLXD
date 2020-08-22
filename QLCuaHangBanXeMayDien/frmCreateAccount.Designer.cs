@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panelInfoNewAccount = new System.Windows.Forms.Panel();
+            this.lbErrorUserName = new System.Windows.Forms.Label();
+            this.lbErrorDisplayName = new System.Windows.Forms.Label();
+            this.lbErrorConfirm = new System.Windows.Forms.Label();
+            this.lbErrorPass = new System.Windows.Forms.Label();
+            this.lbErrorEmail = new System.Windows.Forms.Label();
+            this.lbErrorPhoneNumber = new System.Windows.Forms.Label();
             this.picValidConfirmPass = new System.Windows.Forms.PictureBox();
             this.picValidPass = new System.Windows.Forms.PictureBox();
             this.picValidEmail = new System.Windows.Forms.PictureBox();
@@ -63,7 +69,13 @@
             // 
             // panelInfoNewAccount
             // 
-            this.panelInfoNewAccount.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panelInfoNewAccount.BackColor = System.Drawing.Color.Black;
+            this.panelInfoNewAccount.Controls.Add(this.lbErrorUserName);
+            this.panelInfoNewAccount.Controls.Add(this.lbErrorDisplayName);
+            this.panelInfoNewAccount.Controls.Add(this.lbErrorConfirm);
+            this.panelInfoNewAccount.Controls.Add(this.lbErrorPass);
+            this.panelInfoNewAccount.Controls.Add(this.lbErrorEmail);
+            this.panelInfoNewAccount.Controls.Add(this.lbErrorPhoneNumber);
             this.panelInfoNewAccount.Controls.Add(this.picValidConfirmPass);
             this.panelInfoNewAccount.Controls.Add(this.picValidPass);
             this.panelInfoNewAccount.Controls.Add(this.picValidEmail);
@@ -86,61 +98,132 @@
             this.panelInfoNewAccount.Location = new System.Drawing.Point(77, 95);
             this.panelInfoNewAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelInfoNewAccount.Name = "panelInfoNewAccount";
-            this.panelInfoNewAccount.Size = new System.Drawing.Size(716, 331);
+            this.panelInfoNewAccount.Size = new System.Drawing.Size(716, 506);
             this.panelInfoNewAccount.TabIndex = 0;
+            // 
+            // lbErrorUserName
+            // 
+            this.lbErrorUserName.AutoSize = true;
+            this.lbErrorUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErrorUserName.ForeColor = System.Drawing.Color.Orange;
+            this.lbErrorUserName.Location = new System.Drawing.Point(249, 60);
+            this.lbErrorUserName.Name = "lbErrorUserName";
+            this.lbErrorUserName.Size = new System.Drawing.Size(34, 20);
+            this.lbErrorUserName.TabIndex = 8;
+            this.lbErrorUserName.Text = "     ";
+            // 
+            // lbErrorDisplayName
+            // 
+            this.lbErrorDisplayName.AutoSize = true;
+            this.lbErrorDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErrorDisplayName.ForeColor = System.Drawing.Color.Orange;
+            this.lbErrorDisplayName.Location = new System.Drawing.Point(249, 137);
+            this.lbErrorDisplayName.Name = "lbErrorDisplayName";
+            this.lbErrorDisplayName.Size = new System.Drawing.Size(0, 20);
+            this.lbErrorDisplayName.TabIndex = 8;
+            // 
+            // lbErrorConfirm
+            // 
+            this.lbErrorConfirm.AutoSize = true;
+            this.lbErrorConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErrorConfirm.ForeColor = System.Drawing.Color.Orange;
+            this.lbErrorConfirm.Location = new System.Drawing.Point(249, 451);
+            this.lbErrorConfirm.Name = "lbErrorConfirm";
+            this.lbErrorConfirm.Size = new System.Drawing.Size(34, 20);
+            this.lbErrorConfirm.TabIndex = 8;
+            this.lbErrorConfirm.Text = "     ";
+            // 
+            // lbErrorPass
+            // 
+            this.lbErrorPass.AutoSize = true;
+            this.lbErrorPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErrorPass.ForeColor = System.Drawing.Color.Orange;
+            this.lbErrorPass.Location = new System.Drawing.Point(249, 374);
+            this.lbErrorPass.Name = "lbErrorPass";
+            this.lbErrorPass.Size = new System.Drawing.Size(34, 20);
+            this.lbErrorPass.TabIndex = 8;
+            this.lbErrorPass.Text = "     ";
+            // 
+            // lbErrorEmail
+            // 
+            this.lbErrorEmail.AutoSize = true;
+            this.lbErrorEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErrorEmail.ForeColor = System.Drawing.Color.Orange;
+            this.lbErrorEmail.Location = new System.Drawing.Point(249, 295);
+            this.lbErrorEmail.Name = "lbErrorEmail";
+            this.lbErrorEmail.Size = new System.Drawing.Size(34, 20);
+            this.lbErrorEmail.TabIndex = 8;
+            this.lbErrorEmail.Text = "     ";
+            // 
+            // lbErrorPhoneNumber
+            // 
+            this.lbErrorPhoneNumber.AutoSize = true;
+            this.lbErrorPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErrorPhoneNumber.ForeColor = System.Drawing.Color.Orange;
+            this.lbErrorPhoneNumber.Location = new System.Drawing.Point(249, 218);
+            this.lbErrorPhoneNumber.Name = "lbErrorPhoneNumber";
+            this.lbErrorPhoneNumber.Size = new System.Drawing.Size(34, 20);
+            this.lbErrorPhoneNumber.TabIndex = 8;
+            this.lbErrorPhoneNumber.Text = "     ";
             // 
             // picValidConfirmPass
             // 
-            this.picValidConfirmPass.Location = new System.Drawing.Point(574, 260);
+            this.picValidConfirmPass.Location = new System.Drawing.Point(565, 418);
             this.picValidConfirmPass.Name = "picValidConfirmPass";
             this.picValidConfirmPass.Size = new System.Drawing.Size(36, 30);
+            this.picValidConfirmPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValidConfirmPass.TabIndex = 7;
             this.picValidConfirmPass.TabStop = false;
             // 
             // picValidPass
             // 
-            this.picValidPass.Location = new System.Drawing.Point(574, 214);
+            this.picValidPass.Location = new System.Drawing.Point(565, 341);
             this.picValidPass.Name = "picValidPass";
             this.picValidPass.Size = new System.Drawing.Size(36, 30);
+            this.picValidPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValidPass.TabIndex = 7;
             this.picValidPass.TabStop = false;
             // 
             // picValidEmail
             // 
-            this.picValidEmail.Location = new System.Drawing.Point(574, 168);
+            this.picValidEmail.Location = new System.Drawing.Point(565, 262);
             this.picValidEmail.Name = "picValidEmail";
             this.picValidEmail.Size = new System.Drawing.Size(36, 30);
+            this.picValidEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValidEmail.TabIndex = 7;
             this.picValidEmail.TabStop = false;
             // 
             // picValidPhoneNumeber
             // 
-            this.picValidPhoneNumeber.Location = new System.Drawing.Point(574, 125);
+            this.picValidPhoneNumeber.Location = new System.Drawing.Point(565, 185);
             this.picValidPhoneNumeber.Name = "picValidPhoneNumeber";
             this.picValidPhoneNumeber.Size = new System.Drawing.Size(36, 30);
+            this.picValidPhoneNumeber.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValidPhoneNumeber.TabIndex = 7;
             this.picValidPhoneNumeber.TabStop = false;
             // 
             // picValidDisplayname
             // 
-            this.picValidDisplayname.Location = new System.Drawing.Point(574, 81);
+            this.picValidDisplayname.Location = new System.Drawing.Point(565, 104);
             this.picValidDisplayname.Name = "picValidDisplayname";
             this.picValidDisplayname.Size = new System.Drawing.Size(36, 30);
+            this.picValidDisplayname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValidDisplayname.TabIndex = 7;
             this.picValidDisplayname.TabStop = false;
             // 
             // picValidUsername
             // 
-            this.picValidUsername.Location = new System.Drawing.Point(574, 37);
+            this.picValidUsername.Location = new System.Drawing.Point(565, 27);
             this.picValidUsername.Name = "picValidUsername";
             this.picValidUsername.Size = new System.Drawing.Size(36, 30);
+            this.picValidUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValidUsername.TabIndex = 7;
             this.picValidUsername.TabStop = false;
             // 
             // txbConfirmPass
             // 
-            this.txbConfirmPass.Location = new System.Drawing.Point(262, 260);
-            this.txbConfirmPass.MaxLength = 100;
+            this.txbConfirmPass.Location = new System.Drawing.Point(253, 418);
+            this.txbConfirmPass.MaxLength = 30;
             this.txbConfirmPass.Name = "txbConfirmPass";
             this.txbConfirmPass.Size = new System.Drawing.Size(306, 30);
             this.txbConfirmPass.TabIndex = 6;
@@ -148,8 +231,8 @@
             // 
             // txbPassword
             // 
-            this.txbPassword.Location = new System.Drawing.Point(262, 214);
-            this.txbPassword.MaxLength = 100;
+            this.txbPassword.Location = new System.Drawing.Point(253, 341);
+            this.txbPassword.MaxLength = 30;
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(306, 30);
             this.txbPassword.TabIndex = 5;
@@ -157,7 +240,7 @@
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(262, 168);
+            this.txbEmail.Location = new System.Drawing.Point(253, 262);
             this.txbEmail.MaxLength = 200;
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(306, 30);
@@ -165,7 +248,7 @@
             // 
             // txbPhoneNumber
             // 
-            this.txbPhoneNumber.Location = new System.Drawing.Point(262, 125);
+            this.txbPhoneNumber.Location = new System.Drawing.Point(253, 185);
             this.txbPhoneNumber.MaxLength = 10;
             this.txbPhoneNumber.Name = "txbPhoneNumber";
             this.txbPhoneNumber.Size = new System.Drawing.Size(306, 30);
@@ -173,15 +256,15 @@
             // 
             // txbDisplayName
             // 
-            this.txbDisplayName.Location = new System.Drawing.Point(262, 81);
-            this.txbDisplayName.MaxLength = 100;
+            this.txbDisplayName.Location = new System.Drawing.Point(253, 104);
+            this.txbDisplayName.MaxLength = 30;
             this.txbDisplayName.Name = "txbDisplayName";
             this.txbDisplayName.Size = new System.Drawing.Size(306, 30);
             this.txbDisplayName.TabIndex = 2;
             // 
             // txbUserName
             // 
-            this.txbUserName.Location = new System.Drawing.Point(262, 37);
+            this.txbUserName.Location = new System.Drawing.Point(253, 27);
             this.txbUserName.MaxLength = 30;
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(306, 30);
@@ -191,7 +274,7 @@
             // 
             this.lbConfirmPassword.AutoSize = true;
             this.lbConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbConfirmPassword.Location = new System.Drawing.Point(131, 263);
+            this.lbConfirmPassword.Location = new System.Drawing.Point(122, 421);
             this.lbConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbConfirmPassword.Name = "lbConfirmPassword";
             this.lbConfirmPassword.Size = new System.Drawing.Size(104, 25);
@@ -202,7 +285,7 @@
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.Location = new System.Drawing.Point(131, 214);
+            this.lbPassword.Location = new System.Drawing.Point(122, 341);
             this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(101, 25);
@@ -213,7 +296,7 @@
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(131, 168);
+            this.lbEmail.Location = new System.Drawing.Point(122, 262);
             this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(65, 25);
@@ -224,7 +307,7 @@
             // 
             this.lbPhoneNumber.AutoSize = true;
             this.lbPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhoneNumber.Location = new System.Drawing.Point(131, 125);
+            this.lbPhoneNumber.Location = new System.Drawing.Point(122, 185);
             this.lbPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhoneNumber.Name = "lbPhoneNumber";
             this.lbPhoneNumber.Size = new System.Drawing.Size(109, 25);
@@ -235,7 +318,7 @@
             // 
             this.lbDisplayName.AutoSize = true;
             this.lbDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDisplayName.Location = new System.Drawing.Point(131, 81);
+            this.lbDisplayName.Location = new System.Drawing.Point(122, 104);
             this.lbDisplayName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDisplayName.Name = "lbDisplayName";
             this.lbDisplayName.Size = new System.Drawing.Size(126, 25);
@@ -246,7 +329,7 @@
             // 
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUserName.Location = new System.Drawing.Point(131, 37);
+            this.lbUserName.Location = new System.Drawing.Point(122, 27);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(108, 25);
@@ -255,7 +338,7 @@
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelHeader.BackColor = System.Drawing.Color.MidnightBlue;
             this.panelHeader.Controls.Add(this.lbHeadingCreateAccount);
             this.panelHeader.ForeColor = System.Drawing.Color.White;
             this.panelHeader.Location = new System.Drawing.Point(141, 12);
@@ -275,9 +358,9 @@
             // 
             // btnCreateAccount
             // 
-            this.btnCreateAccount.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnCreateAccount.BackColor = System.Drawing.Color.DarkBlue;
             this.btnCreateAccount.ForeColor = System.Drawing.Color.White;
-            this.btnCreateAccount.Location = new System.Drawing.Point(213, 448);
+            this.btnCreateAccount.Location = new System.Drawing.Point(204, 609);
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(108, 35);
             this.btnCreateAccount.TabIndex = 7;
@@ -287,22 +370,23 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnCancel.BackColor = System.Drawing.Color.DarkBlue;
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(569, 448);
+            this.btnCancel.Location = new System.Drawing.Point(549, 609);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(108, 35);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmCreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QLCuaHangBanXeMayDien.Properties.Resources.BackgroundLogin;
+            this.BackgroundImage = global::QLCuaHangBanXeMayDien.Properties.Resources.japanese_fireworks_hanabi_festivals_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(871, 495);
+            this.ClientSize = new System.Drawing.Size(871, 656);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreateAccount);
             this.Controls.Add(this.panelHeader);
@@ -310,12 +394,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(889, 542);
             this.MinimumSize = new System.Drawing.Size(889, 542);
             this.Name = "frmCreateAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Create Account";
-            this.Load += new System.EventHandler(this.frmCreateAccount_Load);
+            this.Text = "Tạo tài khoản mới";
             this.panelInfoNewAccount.ResumeLayout(false);
             this.panelInfoNewAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picValidConfirmPass)).EndInit();
@@ -355,5 +437,11 @@
         private System.Windows.Forms.PictureBox picValidConfirmPass;
         private System.Windows.Forms.PictureBox picValidPass;
         private System.Windows.Forms.PictureBox picValidEmail;
+        private System.Windows.Forms.Label lbErrorDisplayName;
+        private System.Windows.Forms.Label lbErrorConfirm;
+        private System.Windows.Forms.Label lbErrorPass;
+        private System.Windows.Forms.Label lbErrorEmail;
+        private System.Windows.Forms.Label lbErrorPhoneNumber;
+        private System.Windows.Forms.Label lbErrorUserName;
     }
 }

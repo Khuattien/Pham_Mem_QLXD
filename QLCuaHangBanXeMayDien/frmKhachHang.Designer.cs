@@ -33,7 +33,6 @@
             this.lbTittleKhachHang = new System.Windows.Forms.Label();
             this.grbNhanVien = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSeacrh = new System.Windows.Forms.Button();
             this.txbTimKiemKH = new System.Windows.Forms.TextBox();
             this.txbDiaChiKH = new System.Windows.Forms.TextBox();
             this.txbDienThoaiKH = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             this.btnDeleteKH = new System.Windows.Forms.Button();
             this.btnUpdateKH = new System.Windows.Forms.Button();
             this.btnAddKH = new System.Windows.Forms.Button();
+            this.btnSeacrh = new System.Windows.Forms.Button();
             this.panelTittleKhachHang.SuspendLayout();
             this.grbNhanVien.SuspendLayout();
             this.panelListKH.SuspendLayout();
@@ -83,7 +83,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(519, 73);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 1;
@@ -121,9 +121,9 @@
             this.grbNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
             this.grbNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbNhanVien.Location = new System.Drawing.Point(0, 75);
-            this.grbNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.grbNhanVien.Name = "grbNhanVien";
-            this.grbNhanVien.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbNhanVien.Padding = new System.Windows.Forms.Padding(4);
             this.grbNhanVien.Size = new System.Drawing.Size(1093, 213);
             this.grbNhanVien.TabIndex = 3;
             this.grbNhanVien.TabStop = false;
@@ -138,20 +138,6 @@
             this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "Tìm mã khách hàng";
-            // 
-            // btnSeacrh
-            // 
-            this.btnSeacrh.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSeacrh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeacrh.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSeacrh.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_26;
-            this.btnSeacrh.Location = new System.Drawing.Point(723, 169);
-            this.btnSeacrh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnSeacrh.Name = "btnSeacrh";
-            this.btnSeacrh.Size = new System.Drawing.Size(59, 36);
-            this.btnSeacrh.TabIndex = 7;
-            this.btnSeacrh.UseVisualStyleBackColor = false;
-            this.btnSeacrh.Click += new System.EventHandler(this.btnSeacrh_Click);
             // 
             // txbTimKiemKH
             // 
@@ -453,6 +439,20 @@
             this.btnAddKH.UseVisualStyleBackColor = false;
             this.btnAddKH.Click += new System.EventHandler(this.btnAddKH_Click);
             // 
+            // btnSeacrh
+            // 
+            this.btnSeacrh.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSeacrh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeacrh.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSeacrh.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_26;
+            this.btnSeacrh.Location = new System.Drawing.Point(723, 169);
+            this.btnSeacrh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSeacrh.Name = "btnSeacrh";
+            this.btnSeacrh.Size = new System.Drawing.Size(59, 36);
+            this.btnSeacrh.TabIndex = 7;
+            this.btnSeacrh.UseVisualStyleBackColor = false;
+            this.btnSeacrh.Click += new System.EventHandler(this.btnSeacrh_Click);
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -469,7 +469,7 @@
             this.MinimumSize = new System.Drawing.Size(1111, 756);
             this.Name = "frmKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmKhachHang";
+            this.Text = "Khách hàng";
             this.panelTittleKhachHang.ResumeLayout(false);
             this.panelTittleKhachHang.PerformLayout();
             this.grbNhanVien.ResumeLayout(false);

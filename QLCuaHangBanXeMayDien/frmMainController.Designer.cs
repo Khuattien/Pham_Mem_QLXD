@@ -47,7 +47,7 @@
             this.ToolStripMenuAcount = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemThongTin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemChangePass = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripAdmin = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuAdmin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripExit = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
@@ -302,7 +302,7 @@
             this.ToolStripMenuAcount});
             this.menuStripAcount.Location = new System.Drawing.Point(71, 39);
             this.menuStripAcount.Name = "menuStripAcount";
-            this.menuStripAcount.Size = new System.Drawing.Size(276, 34);
+            this.menuStripAcount.Size = new System.Drawing.Size(126, 34);
             this.menuStripAcount.TabIndex = 3;
             this.menuStripAcount.Text = "menuStripAccount";
             // 
@@ -312,7 +312,7 @@
             this.ToolStripMenuAcount.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemThongTin,
             this.toolStripMenuItemChangePass,
-            this.toolStripAdmin,
+            this.toolStripMenuAdmin,
             this.toolStripExit});
             this.ToolStripMenuAcount.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToolStripMenuAcount.ForeColor = System.Drawing.Color.Red;
@@ -341,14 +341,14 @@
             this.toolStripMenuItemChangePass.Text = "Đổi mật khẩu";
             this.toolStripMenuItemChangePass.Click += new System.EventHandler(this.toolStripMenuItemChangePass_Click);
             // 
-            // toolStripAdmin
+            // toolStripMenuAdmin
             // 
-            this.toolStripAdmin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.toolStripAdmin.ForeColor = System.Drawing.Color.White;
-            this.toolStripAdmin.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_user_shield_32;
-            this.toolStripAdmin.Name = "toolStripAdmin";
-            this.toolStripAdmin.Size = new System.Drawing.Size(261, 30);
-            this.toolStripAdmin.Text = "Đặc quyền admin";
+            this.toolStripMenuAdmin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripMenuAdmin.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuAdmin.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_user_shield_32;
+            this.toolStripMenuAdmin.Name = "toolStripMenuAdmin";
+            this.toolStripMenuAdmin.Size = new System.Drawing.Size(261, 30);
+            this.toolStripMenuAdmin.Text = "Đặc quyền admin";
             // 
             // toolStripExit
             // 
@@ -510,6 +510,7 @@
             this.Name = "frmMainController";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đại lý xe máy điện AnG";
+            this.Load += new System.EventHandler(this.frmMainController_Load);
             this.panelControlLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
@@ -563,7 +564,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuAcount;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemThongTin;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemChangePass;
-        private System.Windows.Forms.ToolStripMenuItem toolStripAdmin;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuAdmin;
         private System.Windows.Forms.ToolStripMenuItem toolStripExit;
         private System.Windows.Forms.LinkLabel linkLabelFB;
     }

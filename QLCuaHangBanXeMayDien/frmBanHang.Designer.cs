@@ -403,7 +403,7 @@
             this.MinimumSize = new System.Drawing.Size(1062, 801);
             this.Name = "frmBanHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmBanHang";
+            this.Text = "Bán hàng";
             this.panelTittleXuatHang.ResumeLayout(false);
             this.panelTittleXuatHang.PerformLayout();
             this.grbPhieuXuat.ResumeLayout(false);

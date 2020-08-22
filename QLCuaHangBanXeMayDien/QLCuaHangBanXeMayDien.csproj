@@ -242,6 +242,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="DATABASE\DataDaiLyBanXe.sql" />
+    <None Include="Resources\icons8-checkmark-48.png" />
+    <None Include="Resources\japanese-fireworks-hanabi-festivals-1280x720.jpg" />
     <None Include="Resources\icons8-cancel-30.png" />
     <None Include="Resources\icons8-cancel-32.png" />
     <None Include="Resources\icons8-verified-account-32.png" />

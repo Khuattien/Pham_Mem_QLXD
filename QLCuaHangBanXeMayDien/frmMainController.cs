@@ -107,5 +107,13 @@ namespace QLCuaHangBanXeMayDien
             frmChangePassWord frm = new frmChangePassWord(account);
             frm.ShowDialog();
         }
+
+        private void frmMainController_Load(object sender, EventArgs e)
+        {
+            if(account.LoaiTaiKhoan == 0)
+            {
+                toolStripMenuAdmin.Enabled = false;
+            }    
+        }
     }
 }

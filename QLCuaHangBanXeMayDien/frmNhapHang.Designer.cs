@@ -403,7 +403,7 @@
             this.MinimumSize = new System.Drawing.Size(1080, 808);
             this.Name = "frmNhapHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNhapHang";
+            this.Text = "Nhập hàng";
             this.panelTittleNhapHang.ResumeLayout(false);
             this.panelTittleNhapHang.PerformLayout();
             this.grbPhieuNhap.ResumeLayout(false);

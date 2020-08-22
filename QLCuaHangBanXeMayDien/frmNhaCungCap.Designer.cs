@@ -31,7 +31,6 @@
             this.panelTittleNhaCC = new System.Windows.Forms.Panel();
             this.lbTittleNhaCC = new System.Windows.Forms.Label();
             this.grbKhachHang = new System.Windows.Forms.GroupBox();
-            this.btnSearchNcc = new System.Windows.Forms.Button();
             this.txbTimKiemNhaCC = new System.Windows.Forms.TextBox();
             this.txbDiaChiNhaCC = new System.Windows.Forms.TextBox();
             this.txbDienThoaiNhaCC = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@
             this.btnDeleteNhaCC = new System.Windows.Forms.Button();
             this.btnUpdateNhaCC = new System.Windows.Forms.Button();
             this.btnAddNhaCC = new System.Windows.Forms.Button();
+            this.btnSearchNcc = new System.Windows.Forms.Button();
             this.panelTittleNhaCC.SuspendLayout();
             this.grbKhachHang.SuspendLayout();
             this.panelListNhaCC.SuspendLayout();
@@ -116,16 +116,6 @@
             this.grbKhachHang.TabIndex = 4;
             this.grbKhachHang.TabStop = false;
             this.grbKhachHang.Text = "Thông tin nhà cung cấp";
-            // 
-            // btnSearchNcc
-            // 
-            this.btnSearchNcc.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_32;
-            this.btnSearchNcc.Location = new System.Drawing.Point(783, 170);
-            this.btnSearchNcc.Name = "btnSearchNcc";
-            this.btnSearchNcc.Size = new System.Drawing.Size(36, 36);
-            this.btnSearchNcc.TabIndex = 2;
-            this.btnSearchNcc.UseVisualStyleBackColor = true;
-            this.btnSearchNcc.Click += new System.EventHandler(this.btnSearchNcc_Click_1);
             // 
             // txbTimKiemNhaCC
             // 
@@ -421,6 +411,16 @@
             this.btnAddNhaCC.UseVisualStyleBackColor = false;
             this.btnAddNhaCC.Click += new System.EventHandler(this.btnAddNhaCC_Click_1);
             // 
+            // btnSearchNcc
+            // 
+            this.btnSearchNcc.Image = global::QLCuaHangBanXeMayDien.Properties.Resources.icons8_search_32;
+            this.btnSearchNcc.Location = new System.Drawing.Point(783, 170);
+            this.btnSearchNcc.Name = "btnSearchNcc";
+            this.btnSearchNcc.Size = new System.Drawing.Size(36, 36);
+            this.btnSearchNcc.TabIndex = 2;
+            this.btnSearchNcc.UseVisualStyleBackColor = true;
+            this.btnSearchNcc.Click += new System.EventHandler(this.btnSearchNcc_Click_1);
+            // 
             // frmNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -438,7 +438,7 @@
             this.MinimumSize = new System.Drawing.Size(1080, 726);
             this.Name = "frmNhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNhaCungCap";
+            this.Text = "Nhà cung cấp";
             this.Load += new System.EventHandler(this.frmNhaCungCap_Load);
             this.panelTittleNhaCC.ResumeLayout(false);
             this.panelTittleNhaCC.PerformLayout();
