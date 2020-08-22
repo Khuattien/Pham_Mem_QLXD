@@ -47,5 +47,10 @@ namespace QLCuaHangBanXeMayDien
         {
             panelLogin.BackColor = Color.FromArgb(100,0,48,143);
         }
+
+        private void lbGetPassword_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng chưa cập nhập.");
+        }
     }
 }

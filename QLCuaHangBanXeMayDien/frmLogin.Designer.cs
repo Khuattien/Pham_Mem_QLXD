@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.lbGetPassword = new System.Windows.Forms.Label();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +102,7 @@
             // 
             // btnNewUser
             // 
-            this.btnNewUser.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnNewUser.BackColor = System.Drawing.Color.Teal;
             this.btnNewUser.Location = new System.Drawing.Point(370, 405);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(224, 48);
@@ -112,7 +113,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnLogin.BackColor = System.Drawing.Color.Teal;
             this.btnLogin.Location = new System.Drawing.Point(370, 336);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(224, 48);
@@ -121,6 +122,20 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // lbGetPassword
+            // 
+            this.lbGetPassword.AutoSize = true;
+            this.lbGetPassword.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbGetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGetPassword.ForeColor = System.Drawing.Color.Gold;
+            this.lbGetPassword.Location = new System.Drawing.Point(477, 470);
+            this.lbGetPassword.Name = "lbGetPassword";
+            this.lbGetPassword.Size = new System.Drawing.Size(121, 18);
+            this.lbGetPassword.TabIndex = 3;
+            this.lbGetPassword.Text = "Quên mật khẩu ?";
+            this.lbGetPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbGetPassword.Click += new System.EventHandler(this.lbGetPassword_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -128,6 +143,7 @@
             this.BackgroundImage = global::QLCuaHangBanXeMayDien.Properties.Resources.BackgroundLogin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(968, 584);
+            this.Controls.Add(this.lbGetPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.panelLogin);
@@ -144,6 +160,7 @@
             this.panelLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -157,6 +174,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lbGetPassword;
     }
 }
 

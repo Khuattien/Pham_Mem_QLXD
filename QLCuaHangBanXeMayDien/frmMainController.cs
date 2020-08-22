@@ -96,5 +96,16 @@ namespace QLCuaHangBanXeMayDien
             Process.Start("https://www.facebook.com/We-Love-ANIG-100678891551670");
         }
 
+        private void toolStripMenuItemThongTin_Click(object sender, EventArgs e)
+        {
+            frmAccountInformation frm = new frmAccountInformation(account);
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItemChangePass_Click(object sender, EventArgs e)
+        {
+            frmChangePassWord frm = new frmChangePassWord(account);
+            frm.ShowDialog();
+        }
     }
 }

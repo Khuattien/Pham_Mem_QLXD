@@ -302,7 +302,7 @@
             this.ToolStripMenuAcount});
             this.menuStripAcount.Location = new System.Drawing.Point(71, 39);
             this.menuStripAcount.Name = "menuStripAcount";
-            this.menuStripAcount.Size = new System.Drawing.Size(126, 34);
+            this.menuStripAcount.Size = new System.Drawing.Size(276, 34);
             this.menuStripAcount.TabIndex = 3;
             this.menuStripAcount.Text = "menuStripAccount";
             // 
@@ -329,6 +329,7 @@
             this.toolStripMenuItemThongTin.Name = "toolStripMenuItemThongTin";
             this.toolStripMenuItemThongTin.Size = new System.Drawing.Size(261, 30);
             this.toolStripMenuItemThongTin.Text = "Thông tin";
+            this.toolStripMenuItemThongTin.Click += new System.EventHandler(this.toolStripMenuItemThongTin_Click);
             // 
             // toolStripMenuItemChangePass
             // 
@@ -338,6 +339,7 @@
             this.toolStripMenuItemChangePass.Name = "toolStripMenuItemChangePass";
             this.toolStripMenuItemChangePass.Size = new System.Drawing.Size(261, 30);
             this.toolStripMenuItemChangePass.Text = "Đổi mật khẩu";
+            this.toolStripMenuItemChangePass.Click += new System.EventHandler(this.toolStripMenuItemChangePass_Click);
             // 
             // toolStripAdmin
             // 

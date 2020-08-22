@@ -45,6 +45,26 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
             
             return listHang;
         }
+        public List<MatHang> getListMatHang(string query)
+        {
+            List<MatHang> listHang = new List<MatHang>();
+            //Lấy dữ liệu đưa vào bảng.
+            DataTable result = new DataTable();
+            result = DataProvider.Instance.ExecuteQuery(query);
+
+            if (result != null)
+            {
+                foreach (DataRow item in result.Rows)
+                {
+                    //trả về một đối tượng xe điện từ một dòng trong bảng result
+                    MatHang xeDien = new MatHang(item);
+                    //Thêm đối tượng vào danh sách.
+                    listHang.Add(xeDien);
+                }
+            }
+
+            return listHang;
+        }
 
         /// <summary>
         /// Phương thức thêm một mặt hàng mới

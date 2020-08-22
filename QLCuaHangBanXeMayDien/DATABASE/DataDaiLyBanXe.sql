@@ -540,7 +540,7 @@ BEGIN
 		RAISERROR(N'Không tồn tại tài khoản này.',12,1)
 	ELSE
 		UPDATE dbo.AccountLogin
-		SET TenHienThi= @TenHienThi,DienThoai =@DienThoai,Email =@Email
+		SET PassWord = @PassWord, LoaiTaiKhoan = @LoaiTaiKhoan, TenHienThi= @TenHienThi, DienThoai =@DienThoai, Email =@Email
 		WHERE UserName = @UserName
 END
 

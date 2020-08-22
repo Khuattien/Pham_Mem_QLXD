@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAccountInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountInformation.Designer.cs">
+      <DependentUpon>frmAccountInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassWord.Designer.cs">
+      <DependentUpon>frmChangePassWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     <Compile Include="QuanLy_DTO\NhanVien.cs" />
     <Compile Include="QuanLy_DTO\PhieuNhap.cs" />
     <Compile Include="QuanLy_DTO\PhieuXuat.cs" />
+    <EmbeddedResource Include="frmAccountInformation.resx">
+      <DependentUpon>frmAccountInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassWord.resx">
+      <DependentUpon>frmChangePassWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreateAccount.resx">
       <DependentUpon>frmCreateAccount.cs</DependentUpon>
     </EmbeddedResource>

@@ -160,3 +160,5 @@ D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.cs
 D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.exe
 D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.pdb
 H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmCreateAccount.resources
+H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmAccountInformation.resources
+H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmChangePassWord.resources

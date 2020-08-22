@@ -71,5 +71,12 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
             return data.Rows.Count > 0;
         }
 
+        public bool changePassword(string username, string newpassword)
+        {
+            string query = "UPDATE dbo.AccountLogin SET PassWord = @password WHERE UserName = @username";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { newpassword,username});
+            return result > 0;
+        }
+
     }
 }
