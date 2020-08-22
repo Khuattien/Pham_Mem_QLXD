@@ -9,17 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLCuaHangBanXeMayDien.QuanLy_DTO;
 
 namespace QLCuaHangBanXeMayDien
 {
     public partial class frmNhanVien : Form
     {
-        public frmNhanVien()
+        private AccountLogin account = new AccountLogin();
+
+        public frmNhanVien(AccountLogin transmission)
         {
             InitializeComponent();
             stateFirst();
             LoadDataNV();
 
+            account = transmission;
         }
         /// <summary>
         /// phương thức hiện thị thông tin hàng hóa lên datagridview
@@ -372,6 +376,16 @@ namespace QLCuaHangBanXeMayDien
         }
 
         #endregion
+
+        private void frmNhanVien_Load(object sender, EventArgs e)
+        {
+            if(account.LoaiTaiKhoan == 0)
+            {
+                btnAddNV.Enabled = false;
+                btnUpdateNV.Enabled = false;
+                btnDeleteNV.Enabled = false;
+            }
+        }
     }
 
 }

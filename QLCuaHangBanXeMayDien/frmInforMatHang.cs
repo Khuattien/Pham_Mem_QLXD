@@ -15,13 +15,16 @@ namespace QLCuaHangBanXeMayDien
 {
     public partial class frmInforMatHang : Form
     {
-        MatHang XeDien = new MatHang();
+        private MatHang XeDien = new MatHang();
+        private AccountLogin account = new AccountLogin();
 
-        public frmInforMatHang(MatHang transmission)
+        public frmInforMatHang(MatHang transmission , AccountLogin  accountLogin)
         {
             InitializeComponent();
 
             XeDien = transmission;
+            account = accountLogin;
+
             loadInfo();
         }
 
@@ -76,6 +79,15 @@ namespace QLCuaHangBanXeMayDien
                         this.Close();
                     }
                 }
+            }
+        }
+
+        private void frmInforMatHang_Load(object sender, EventArgs e)
+        {
+            if(account.LoaiTaiKhoan == 0)
+            {
+                btnUpdateHangHoa.Enabled = false;
+                btnDeleleHangHoa.Enabled = false;
             }
         }
     }

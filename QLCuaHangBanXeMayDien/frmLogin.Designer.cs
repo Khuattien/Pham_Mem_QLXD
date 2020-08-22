@@ -42,7 +42,7 @@
             // 
             // panelLogin
             // 
-            this.panelLogin.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelLogin.BackColor = System.Drawing.Color.DarkBlue;
             this.panelLogin.Controls.Add(this.lbPass);
             this.panelLogin.Controls.Add(this.lbUser);
             this.panelLogin.Controls.Add(this.txbPassWord);
@@ -56,18 +56,20 @@
             // lbPass
             // 
             this.lbPass.AutoSize = true;
-            this.lbPass.Location = new System.Drawing.Point(245, 109);
+            this.lbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPass.Location = new System.Drawing.Point(221, 109);
             this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(92, 24);
+            this.lbPass.Size = new System.Drawing.Size(98, 25);
             this.lbPass.TabIndex = 2;
             this.lbPass.Text = "Password";
             // 
             // lbUser
             // 
             this.lbUser.AutoSize = true;
-            this.lbUser.Location = new System.Drawing.Point(245, 49);
+            this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.Location = new System.Drawing.Point(221, 49);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(97, 24);
+            this.lbUser.Size = new System.Drawing.Size(102, 25);
             this.lbUser.TabIndex = 2;
             this.lbUser.Text = "Username";
             // 
@@ -99,7 +101,7 @@
             // 
             // btnNewUser
             // 
-            this.btnNewUser.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnNewUser.BackColor = System.Drawing.Color.DarkBlue;
             this.btnNewUser.Location = new System.Drawing.Point(370, 405);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(224, 48);
@@ -110,7 +112,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnLogin.BackColor = System.Drawing.Color.DarkBlue;
             this.btnLogin.Location = new System.Drawing.Point(370, 336);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(224, 48);
@@ -137,6 +139,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

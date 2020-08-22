@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLCuaHangBanXeMayDien.QuanLy_DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,15 +14,18 @@ namespace QLCuaHangBanXeMayDien
 {
     public partial class frmMainController : Form
     {
-        public frmMainController()
+        private AccountLogin account = new AccountLogin();
+
+        public frmMainController(AccountLogin transmission)
         {
             InitializeComponent();
+            account = transmission;
          
         }
 
         private void btnHangHoa_Click(object sender, EventArgs e)
         {
-            frmHangHoa frm = new frmHangHoa();
+            frmHangHoa frm = new frmHangHoa(account);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -29,7 +33,7 @@ namespace QLCuaHangBanXeMayDien
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-            frmNhanVien frm = new frmNhanVien();
+            frmNhanVien frm = new frmNhanVien(account);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -45,7 +49,7 @@ namespace QLCuaHangBanXeMayDien
 
         private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
-            frmNhaCungCap frm = new frmNhaCungCap();
+            frmNhaCungCap frm = new frmNhaCungCap(account);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -83,10 +87,14 @@ namespace QLCuaHangBanXeMayDien
             this.Show();
         }
 
-
+        private void picExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void linkLabelFB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://www.facebook.com/We-Love-ANIG-100678891551670");
         }
+
     }
 }

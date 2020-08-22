@@ -17,9 +17,13 @@ namespace QLCuaHangBanXeMayDien
 {
     public partial class frmDSChiTietHangHoa : Form
     {
-        public frmDSChiTietHangHoa()
+        private AccountLogin account = new AccountLogin();
+        public frmDSChiTietHangHoa(AccountLogin accountLogin)
         {
             InitializeComponent();
+
+            account = accountLogin;
+
             loadData();
             setEnableButton1();
             setEnableTextBox1();
@@ -478,6 +482,15 @@ namespace QLCuaHangBanXeMayDien
         private void txbSearchID_Leave(object sender, EventArgs e)
         {
             loadData();
+        }
+
+        private void frmDSChiTietHangHoa_Load(object sender, EventArgs e)
+        {
+            if(account.LoaiTaiKhoan == 0)
+            {
+                btnUpdateHang.Enabled = false;
+                btnDeleteHang.Enabled = false;
+            }
         }
     }
 }

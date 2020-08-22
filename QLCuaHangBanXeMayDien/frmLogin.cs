@@ -1,4 +1,5 @@
 ﻿using QLCuaHangBanXeMayDien.QuanLy_BUS;
+using QLCuaHangBanXeMayDien.QuanLy_DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace QLCuaHangBanXeMayDien
             }    
             else if (AccountBUS.Instance.checkAccount(txbUserName.Text, txbPassWord.Text))
             {
-                frmMainController frm = new frmMainController();
+                frmMainController frm = new frmMainController(AccountBUS.Instance.getAccountByUserNameAndPassWord(txbUserName.Text,txbPassWord.Text));
                 this.Hide();
                 frm.ShowDialog();
                 this.Show();
@@ -40,6 +41,11 @@ namespace QLCuaHangBanXeMayDien
         {
             frmCreateAccount frm = new frmCreateAccount();
             frm.ShowDialog();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            panelLogin.BackColor = Color.FromArgb(100,0,48,143);
         }
     }
 }

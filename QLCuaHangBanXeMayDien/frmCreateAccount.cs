@@ -90,5 +90,9 @@ namespace QLCuaHangBanXeMayDien
             }
         }
 
+        private void frmCreateAccount_Load(object sender, EventArgs e)
+        {
+            panelInfoNewAccount.BackColor = Color.FromArgb(100,123,104,238);
+        }
     }
 }

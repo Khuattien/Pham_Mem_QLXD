@@ -189,6 +189,7 @@
             this.Name = "frmInforMatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin xe";
+            this.Load += new System.EventHandler(this.frmInforMatHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

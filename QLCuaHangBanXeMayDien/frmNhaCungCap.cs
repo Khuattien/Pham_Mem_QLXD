@@ -3,16 +3,19 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QLCuaHangBanXeMayDien.QuanLy_BUS;
+using QLCuaHangBanXeMayDien.QuanLy_DTO;
 
 namespace QLCuaHangBanXeMayDien
 {
     public partial class frmNhaCungCap : Form
     {
-        public frmNhaCungCap()
+        private AccountLogin account = new AccountLogin();
+        public frmNhaCungCap(AccountLogin transmission)
         {
             InitializeComponent();
             EnableTextBox(false);
             LoadDataNCC();
+            account = transmission;
         }
         /// <summary>
         /// biến kiểm tra trang thái enabled của phương thức thêm
@@ -228,7 +231,16 @@ namespace QLCuaHangBanXeMayDien
                 txbDienThoaiNhaCC.ResetText();
             }
         }
-        #endregion
 
+        private void frmNhaCungCap_Load(object sender, EventArgs e)
+        {
+            if(account.LoaiTaiKhoan == 0)
+            {
+                btnUpdateNhaCC.Enabled = false;
+                btnDeleteNhaCC.Enabled = false;
+            }
+        }
+
+        #endregion
     }
 }

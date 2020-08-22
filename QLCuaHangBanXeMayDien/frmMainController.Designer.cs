@@ -51,6 +51,7 @@
             this.toolStripExit = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
+            this.linkLabelFB = new System.Windows.Forms.LinkLabel();
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
             this.lbFaceBook = new System.Windows.Forms.Label();
@@ -60,7 +61,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelBanner = new System.Windows.Forms.Panel();
             this.picBanner = new System.Windows.Forms.PictureBox();
-            this.linkLabelFB = new System.Windows.Forms.LinkLabel();
             this.panelControlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -105,6 +105,7 @@
             this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picExit.TabIndex = 9;
             this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
             // btnHangTon
             // 
@@ -382,6 +383,19 @@
             this.panelContact.Size = new System.Drawing.Size(1037, 62);
             this.panelContact.TabIndex = 3;
             // 
+            // linkLabelFB
+            // 
+            this.linkLabelFB.AutoSize = true;
+            this.linkLabelFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelFB.LinkColor = System.Drawing.Color.White;
+            this.linkLabelFB.Location = new System.Drawing.Point(153, 17);
+            this.linkLabelFB.Name = "linkLabelFB";
+            this.linkLabelFB.Size = new System.Drawing.Size(218, 20);
+            this.linkLabelFB.TabIndex = 3;
+            this.linkLabelFB.TabStop = true;
+            this.linkLabelFB.Text = "Fanpage : We Love AniG";
+            this.linkLabelFB.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelFB_LinkClicked);
+            // 
             // lbEmail
             // 
             this.lbEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -476,19 +490,6 @@
             this.picBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBanner.TabIndex = 0;
             this.picBanner.TabStop = false;
-            // 
-            // linkLabelFB
-            // 
-            this.linkLabelFB.AutoSize = true;
-            this.linkLabelFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelFB.LinkColor = System.Drawing.Color.White;
-            this.linkLabelFB.Location = new System.Drawing.Point(153, 17);
-            this.linkLabelFB.Name = "linkLabelFB";
-            this.linkLabelFB.Size = new System.Drawing.Size(218, 20);
-            this.linkLabelFB.TabIndex = 3;
-            this.linkLabelFB.TabStop = true;
-            this.linkLabelFB.Text = "Fanpage : We Love AniG";
-            this.linkLabelFB.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelFB_LinkClicked);
             // 
             // frmMainController
             // 

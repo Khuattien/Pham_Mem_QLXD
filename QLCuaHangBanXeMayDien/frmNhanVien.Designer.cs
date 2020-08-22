@@ -565,6 +565,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNhanVien";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.panelTittleNhanVien.ResumeLayout(false);
             this.panelTittleNhanVien.PerformLayout();
             this.grbNhanVien.ResumeLayout(false);

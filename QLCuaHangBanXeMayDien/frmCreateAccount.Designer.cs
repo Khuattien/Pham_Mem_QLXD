@@ -63,7 +63,7 @@
             // 
             // panelInfoNewAccount
             // 
-            this.panelInfoNewAccount.BackColor = System.Drawing.Color.MediumPurple;
+            this.panelInfoNewAccount.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panelInfoNewAccount.Controls.Add(this.picValidConfirmPass);
             this.panelInfoNewAccount.Controls.Add(this.picValidPass);
             this.panelInfoNewAccount.Controls.Add(this.picValidEmail);
@@ -190,60 +190,66 @@
             // lbConfirmPassword
             // 
             this.lbConfirmPassword.AutoSize = true;
+            this.lbConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConfirmPassword.Location = new System.Drawing.Point(131, 263);
             this.lbConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbConfirmPassword.Name = "lbConfirmPassword";
-            this.lbConfirmPassword.Size = new System.Drawing.Size(96, 25);
+            this.lbConfirmPassword.Size = new System.Drawing.Size(104, 25);
             this.lbConfirmPassword.TabIndex = 4;
             this.lbConfirmPassword.Text = "Xác nhận";
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
+            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.Location = new System.Drawing.Point(131, 214);
             this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(93, 25);
+            this.lbPassword.Size = new System.Drawing.Size(101, 25);
             this.lbPassword.TabIndex = 4;
             this.lbPassword.Text = "Mật khẩu";
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmail.Location = new System.Drawing.Point(131, 168);
             this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(60, 25);
+            this.lbEmail.Size = new System.Drawing.Size(65, 25);
             this.lbEmail.TabIndex = 4;
             this.lbEmail.Text = "Email";
             // 
             // lbPhoneNumber
             // 
             this.lbPhoneNumber.AutoSize = true;
+            this.lbPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPhoneNumber.Location = new System.Drawing.Point(131, 125);
             this.lbPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhoneNumber.Name = "lbPhoneNumber";
-            this.lbPhoneNumber.Size = new System.Drawing.Size(99, 25);
+            this.lbPhoneNumber.Size = new System.Drawing.Size(109, 25);
             this.lbPhoneNumber.TabIndex = 4;
             this.lbPhoneNumber.Text = "Điện thoại";
             // 
             // lbDisplayName
             // 
             this.lbDisplayName.AutoSize = true;
+            this.lbDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDisplayName.Location = new System.Drawing.Point(131, 81);
             this.lbDisplayName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDisplayName.Name = "lbDisplayName";
-            this.lbDisplayName.Size = new System.Drawing.Size(114, 25);
+            this.lbDisplayName.Size = new System.Drawing.Size(126, 25);
             this.lbDisplayName.TabIndex = 4;
             this.lbDisplayName.Text = "Tên hiển thị";
             // 
             // lbUserName
             // 
             this.lbUserName.AutoSize = true;
+            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserName.Location = new System.Drawing.Point(131, 37);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(99, 25);
+            this.lbUserName.Size = new System.Drawing.Size(108, 25);
             this.lbUserName.TabIndex = 4;
             this.lbUserName.Text = "Tài khoản";
             // 
@@ -308,7 +314,8 @@
             this.MinimumSize = new System.Drawing.Size(889, 542);
             this.Name = "frmCreateAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CreateAccount";
+            this.Text = "Create Account";
+            this.Load += new System.EventHandler(this.frmCreateAccount_Load);
             this.panelInfoNewAccount.ResumeLayout(false);
             this.panelInfoNewAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picValidConfirmPass)).EndInit();

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
+using QLCuaHangBanXeMayDien.QuanLy_DTO;
 
 namespace QLCuaHangBanXeMayDien.QuanLy_BUS
 {
@@ -21,6 +22,23 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
 
         private AccountBUS() { }
         
+        public AccountLogin getAccountByUserNameAndPassWord(string username, string password)
+        {
+            AccountLogin account = new AccountLogin();
+
+            string query = "SELECT * FROM dbo.AccountLogin WHERE UserName = @username AND PassWord = @password";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password});
+            if(data.Rows.Count > 0)
+            {
+                foreach (DataRow item in data.Rows)
+                {
+                    account = new AccountLogin(item);
+                }
+            }
+
+            return account;
+        }
+
         public bool InsertAccount(string username , string password , int accountType , string displayName, string phoneNumber , string email)
         {
             int result = 0;

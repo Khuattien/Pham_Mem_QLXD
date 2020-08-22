@@ -17,10 +17,12 @@ namespace QLCuaHangBanXeMayDien
 {
     public partial class frmHangHoa : Form
     {
-        public frmHangHoa()
+        private AccountLogin account = new AccountLogin();
+        public frmHangHoa(AccountLogin transmission)
         {
             InitializeComponent();
             loadListXe(MatHangBUS.Instance.getListMatHang());
+            account = transmission;
         }
 
         MatHang hang = new MatHang();
@@ -99,7 +101,7 @@ namespace QLCuaHangBanXeMayDien
         {
             MatHang result = ((sender as PictureBox).Tag) as MatHang;
             //Sao chép dữ liệu của đối tượng để truyền dữ liệu sang form khác làm việc
-            frmInforMatHang frm = new frmInforMatHang(result);
+            frmInforMatHang frm = new frmInforMatHang(result ,account);
             frm.ShowDialog();
             loadListXe(MatHangBUS.Instance.getListMatHang());
         }
@@ -108,7 +110,7 @@ namespace QLCuaHangBanXeMayDien
         /// </summary>
         private void btnViewListHH_Click(object sender, EventArgs e)
         {
-            frmDSChiTietHangHoa frm = new frmDSChiTietHangHoa();
+            frmDSChiTietHangHoa frm = new frmDSChiTietHangHoa(account);
             this.Hide();
             frm.ShowDialog();
             this.Show();
