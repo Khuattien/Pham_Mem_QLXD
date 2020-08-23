@@ -126,6 +126,21 @@ namespace QLCuaHangBanXeMayDien
             btnCancelAcc.Enabled = true;
         }
 
+        /// <summary>
+        /// Trạng thái các button khi mới mở form
+        /// </summary>
+        private void setButton3()
+        {
+            btnInsertAcc.Enabled = true;
+            btnUpdateAcc.Enabled = false;
+            btnDeleteAcc.Enabled = false;
+            btnSaveAcc.Enabled = false;
+            btnCancelAcc.Enabled = false;
+        }
+
+        /// <summary>
+        /// Lấy các giá trị từ datagridview đưa lên textbox
+        /// </summary>
         private void getValueFromCellDataGridView()
         {
             int row = dtgvListAccount.CurrentCell.RowIndex;
@@ -141,6 +156,11 @@ namespace QLCuaHangBanXeMayDien
                 cbxAccountType.SelectedIndex = 0;
         }
 
+
+        /// <summary>
+        /// Phương thức kiểm tra định dạng
+        /// </summary>
+
         private bool CheckRegExp(string reg, TextBox textBox)
         {
             Regex regex = new Regex(reg);
@@ -149,6 +169,10 @@ namespace QLCuaHangBanXeMayDien
             else
                 return false;
         }
+
+        /// <summary>
+        /// Kiểm tra hợp lệ dữ liệu nhập vào trước khi thêm mới 
+        /// </summary>
         private bool processingInfoAccountBeforCreate()
         {
             int allIsOK = 1;
@@ -222,6 +246,10 @@ namespace QLCuaHangBanXeMayDien
             return allIsOK == 6;
         }
 
+
+        /// <summary>
+        /// Kiểm tra hợp lệ dữ liệu nhập vào trước khi sửa đổi
+        /// </summary>
         private bool processingInfoAccountBeforUpdate()
         {
             int allIsOK = 0;

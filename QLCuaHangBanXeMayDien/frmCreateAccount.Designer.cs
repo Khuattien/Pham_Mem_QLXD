@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelInfoNewAccount = new System.Windows.Forms.Panel();
             this.lbErrorUserName = new System.Windows.Forms.Label();
             this.lbErrorDisplayName = new System.Windows.Forms.Label();
@@ -57,6 +58,8 @@
             this.lbHeadingCreateAccount = new System.Windows.Forms.Label();
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.toolTipUser = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipPass = new System.Windows.Forms.ToolTip(this.components);
             this.panelInfoNewAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picValidConfirmPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picValidPass)).BeginInit();
@@ -236,6 +239,8 @@
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(306, 30);
             this.txbPassword.TabIndex = 5;
+            this.toolTipPass.SetToolTip(this.txbPassword, "Mật khẩu ít nhất phải 8 ký tự. Gồm ít nhất một số, một chữ in hoa và một ký đặc b" +
+        "iệt. ");
             this.txbPassword.UseSystemPasswordChar = true;
             // 
             // txbEmail
@@ -269,6 +274,7 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(306, 30);
             this.txbUserName.TabIndex = 1;
+            this.toolTipUser.SetToolTip(this.txbUserName, "Tên tài khoản ít nhất 6 ký tự. Gồm các ký tụ a-z 0-9 và viết liền không dấu.");
             // 
             // lbConfirmPassword
             // 
@@ -380,6 +386,14 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // toolTipUser
+            // 
+            this.toolTipUser.ToolTipTitle = "Tài khoản hợp lệ :";
+            // 
+            // toolTipPass
+            // 
+            this.toolTipPass.ToolTipTitle = "Mật khẩu hợp lệ :";
+            // 
             // frmCreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -443,5 +457,7 @@
         private System.Windows.Forms.Label lbErrorEmail;
         private System.Windows.Forms.Label lbErrorPhoneNumber;
         private System.Windows.Forms.Label lbErrorUserName;
+        private System.Windows.Forms.ToolTip toolTipUser;
+        private System.Windows.Forms.ToolTip toolTipPass;
     }
 }

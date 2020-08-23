@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelLine3 = new System.Windows.Forms.Panel();
             this.panelLine2 = new System.Windows.Forms.Panel();
             this.panelLine1 = new System.Windows.Forms.Panel();
             this.lbenteroldpassfail = new System.Windows.Forms.Label();
+            this.lbErrorPassReg = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbConfirmNewPassMess = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
@@ -43,8 +46,7 @@
             this.lbNewPass = new System.Windows.Forms.Label();
             this.lbOldPassMess = new System.Windows.Forms.Label();
             this.lbOldPass = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbErrorPassReg = new System.Windows.Forms.Label();
+            this.toolTipPass = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,6 +113,26 @@
             this.lbenteroldpassfail.TabIndex = 3;
             this.lbenteroldpassfail.Text = "      ";
             // 
+            // lbErrorPassReg
+            // 
+            this.lbErrorPassReg.AutoSize = true;
+            this.lbErrorPassReg.ForeColor = System.Drawing.Color.Magenta;
+            this.lbErrorPassReg.Location = new System.Drawing.Point(207, 136);
+            this.lbErrorPassReg.Name = "lbErrorPassReg";
+            this.lbErrorPassReg.Size = new System.Drawing.Size(34, 20);
+            this.lbErrorPassReg.TabIndex = 3;
+            this.lbErrorPassReg.Text = "     ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Magenta;
+            this.label1.Location = new System.Drawing.Point(207, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "     ";
+            // 
             // lbConfirmNewPassMess
             // 
             this.lbConfirmNewPassMess.AutoSize = true;
@@ -167,6 +189,8 @@
             this.txbNewPass.Name = "txbNewPass";
             this.txbNewPass.Size = new System.Drawing.Size(297, 23);
             this.txbNewPass.TabIndex = 2;
+            this.toolTipPass.SetToolTip(this.txbNewPass, "Mật khẩu ít nhất phải 8 ký tự. Gồm ít nhất một số, một chữ in hoa và một ký đặc b" +
+        "iệt. ");
             this.txbNewPass.UseSystemPasswordChar = true;
             // 
             // txbOldPass
@@ -225,25 +249,9 @@
             this.lbOldPass.TabIndex = 0;
             this.lbOldPass.Text = "Mật khẩu cũ : ";
             // 
-            // label1
+            // toolTipPass
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Magenta;
-            this.label1.Location = new System.Drawing.Point(207, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "     ";
-            // 
-            // lbErrorPassReg
-            // 
-            this.lbErrorPassReg.AutoSize = true;
-            this.lbErrorPassReg.ForeColor = System.Drawing.Color.Magenta;
-            this.lbErrorPassReg.Location = new System.Drawing.Point(207, 136);
-            this.lbErrorPassReg.Name = "lbErrorPassReg";
-            this.lbErrorPassReg.Size = new System.Drawing.Size(34, 20);
-            this.lbErrorPassReg.TabIndex = 3;
-            this.lbErrorPassReg.Text = "     ";
+            this.toolTipPass.ToolTipTitle = "Mật khẩu hợp lệ :";
             // 
             // frmChangePassWord
             // 
@@ -284,5 +292,6 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label lbErrorPassReg;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTipPass;
     }
 }

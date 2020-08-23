@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelHeading = new System.Windows.Forms.Panel();
             this.lbHeading = new System.Windows.Forms.Label();
             this.txbUsername = new System.Windows.Forms.TextBox();
@@ -61,6 +62,8 @@
             this.lbErrorPass = new System.Windows.Forms.Label();
             this.lbErrorPhoneNumber = new System.Windows.Forms.Label();
             this.lbErrorEmail = new System.Windows.Forms.Label();
+            this.toolTipUser = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipPass = new System.Windows.Forms.ToolTip(this.components);
             this.panelHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListAccount)).BeginInit();
             this.grbInfoAccount.SuspendLayout();
@@ -96,6 +99,7 @@
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(232, 30);
             this.txbUsername.TabIndex = 1;
+            this.toolTipUser.SetToolTip(this.txbUsername, "Tên tài khoản ít nhất 6 ký tự. Gồm các ký tụ a-z 0-9 và viết liền không dấu.");
             // 
             // dtgvListAccount
             // 
@@ -163,6 +167,8 @@
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(232, 30);
             this.txbPassword.TabIndex = 2;
+            this.toolTipPass.SetToolTip(this.txbPassword, "Mật khẩu ít nhất phải 8 ký tự. Gồm ít nhất một số, một chữ in hoa và một ký đặc b" +
+        "iệt. ");
             // 
             // lbPassword
             // 
@@ -448,6 +454,14 @@
             this.lbErrorEmail.TabIndex = 12;
             this.lbErrorEmail.Text = "     ";
             // 
+            // toolTipUser
+            // 
+            this.toolTipUser.ToolTipTitle = "Tài khoản hợp lệ :";
+            // 
+            // toolTipPass
+            // 
+            this.toolTipPass.ToolTipTitle = "Mật khẩu hợp lệ :";
+            // 
             // frmQuanLyTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -509,5 +523,7 @@
         private System.Windows.Forms.Label lbErrorEmail;
         private System.Windows.Forms.Label lbErrorPhoneNumber;
         private System.Windows.Forms.Label lbErrorUserName;
+        private System.Windows.Forms.ToolTip toolTipUser;
+        private System.Windows.Forms.ToolTip toolTipPass;
     }
 }

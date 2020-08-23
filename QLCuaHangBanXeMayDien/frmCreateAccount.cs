@@ -21,7 +21,7 @@ namespace QLCuaHangBanXeMayDien
             InitializeComponent();
         }
 
-        AccountLogin account = new AccountLogin();
+        private AccountLogin account = new AccountLogin();
 
         /// <summary>
         /// PHương thức kiểm tra định dạng một textbox
