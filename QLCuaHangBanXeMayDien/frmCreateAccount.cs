@@ -23,6 +23,12 @@ namespace QLCuaHangBanXeMayDien
 
         AccountLogin account = new AccountLogin();
 
+        /// <summary>
+        /// PHương thức kiểm tra định dạng một textbox
+        /// </summary>
+        /// <param name="reg"> Biểu thức chính quy </param>
+        /// <param name="textBox"> textbox được kiểm tra</param>
+        /// <returns>đúng khi chữ trong textbox đúng định dạng</returns>
         private bool CheckRegExp(string reg, TextBox textBox)
         {
             Regex regex = new Regex(reg);
@@ -32,18 +38,28 @@ namespace QLCuaHangBanXeMayDien
                 return false;
         }
 
+        /// <summary>
+        /// Hiển thị thông báo khi nhập các thông tin chính xác
+        /// </summary>
         private void InputIsValid(Label label , PictureBox picture)
         {
             label.ResetText();
             picture.Image = Properties.Resources.icons8_checkmark_48;
         }
 
+        /// <summary>
+        /// Hiển thị thông báo khi nhập các thông tin không chính xác
+        /// </summary>
         private void InputIsInValid(Label label, PictureBox picture, string mess)
         {
             label.Text = mess;
             picture.Image = Properties.Resources.icons8_cancel_30;
         }
 
+
+        /// <summary>
+        /// Sử lý dữ liệu nhập vào trước khi tạo một tài khoản mới
+        /// </summary>
         private bool processingInfoAccountBeforCreate()
         {
             int allIsOK = 1;
@@ -132,6 +148,10 @@ namespace QLCuaHangBanXeMayDien
             return allIsOK == 6;
         }
 
+
+        /// <summary>
+        ///Sụ kiện tạo tài khoản
+        /// </summary>
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
             try

@@ -302,7 +302,7 @@
             this.ToolStripMenuAcount});
             this.menuStripAcount.Location = new System.Drawing.Point(71, 39);
             this.menuStripAcount.Name = "menuStripAcount";
-            this.menuStripAcount.Size = new System.Drawing.Size(126, 34);
+            this.menuStripAcount.Size = new System.Drawing.Size(276, 34);
             this.menuStripAcount.TabIndex = 3;
             this.menuStripAcount.Text = "menuStripAccount";
             // 
@@ -349,6 +349,7 @@
             this.toolStripMenuAdmin.Name = "toolStripMenuAdmin";
             this.toolStripMenuAdmin.Size = new System.Drawing.Size(261, 30);
             this.toolStripMenuAdmin.Text = "Đặc quyền admin";
+            this.toolStripMenuAdmin.Click += new System.EventHandler(this.toolStripMenuAdmin_Click);
             // 
             // toolStripExit
             // 

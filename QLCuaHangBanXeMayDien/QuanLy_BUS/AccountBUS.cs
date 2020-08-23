@@ -21,6 +21,14 @@ namespace QLCuaHangBanXeMayDien.QuanLy_BUS
         }
 
         private AccountBUS() { }
+
+        public DataTable getListAccount()
+        {
+            DataTable data = new DataTable();
+            string query = "SELECT * FROM dbo.AccountLogin";
+            data = DataProvider.Instance.ExecuteQuery(query);
+            return data;
+        }
         
         public AccountLogin getAccountByUserNameAndPassWord(string username, string password)
         {

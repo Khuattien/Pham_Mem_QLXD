@@ -108,6 +108,12 @@ namespace QLCuaHangBanXeMayDien
             frm.ShowDialog();
         }
 
+        private void toolStripMenuAdmin_Click(object sender, EventArgs e)
+        {
+            frmQuanLyTaiKhoan frm = new frmQuanLyTaiKhoan();
+            frm.ShowDialog();
+        }
+
         private void frmMainController_Load(object sender, EventArgs e)
         {
             if(account.LoaiTaiKhoan == 0)
@@ -115,5 +121,6 @@ namespace QLCuaHangBanXeMayDien
                 toolStripMenuAdmin.Enabled = false;
             }    
         }
+
     }
 }

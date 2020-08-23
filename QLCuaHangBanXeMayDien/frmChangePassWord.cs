@@ -24,6 +24,10 @@ namespace QLCuaHangBanXeMayDien
 
             account = accountLogin;
         }
+        /// <summary>
+        /// Phương thức kiểm tra đinh dạng mật khẩu
+        /// </summary>
+        /// <returns></returns>
         private bool CheckPassRegExp()
         {
             Regex regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,20}$");
@@ -32,6 +36,11 @@ namespace QLCuaHangBanXeMayDien
             else
                 return false;
         }
+
+
+        /// <summary>
+        /// Sự kiện thay đổi mật khẩu
+        /// </summary>
 
         private void btnOK_Click(object sender, EventArgs e)
         {

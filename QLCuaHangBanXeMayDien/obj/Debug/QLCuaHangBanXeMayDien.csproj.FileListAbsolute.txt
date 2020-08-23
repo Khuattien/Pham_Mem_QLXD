@@ -162,3 +162,4 @@ D:\C#\BTL\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.pd
 H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmCreateAccount.resources
 H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmAccountInformation.resources
 H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmChangePassWord.resources
+H:\BTLC#\Pham_Mem_QLXD\QLCuaHangBanXeMayDien\obj\Debug\QLCuaHangBanXeMayDien.frmQuanLyTaiKhoan.resources
