@@ -122,5 +122,9 @@ namespace QLCuaHangBanXeMayDien
             }    
         }
 
+        private void toolStripExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

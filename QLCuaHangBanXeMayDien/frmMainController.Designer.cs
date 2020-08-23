@@ -360,6 +360,7 @@
             this.toolStripExit.Name = "toolStripExit";
             this.toolStripExit.Size = new System.Drawing.Size(261, 30);
             this.toolStripExit.Text = "Thoát";
+            this.toolStripExit.Click += new System.EventHandler(this.toolStripExit_Click);
             // 
             // label1
             // 
